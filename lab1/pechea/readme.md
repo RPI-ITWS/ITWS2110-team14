@@ -17,3 +17,5 @@ Created SSH keys and linked it to GitHub. Also connected it to github desktop.
 After all that, I began to to work on my group site portfolio.
 
 I imported a picture from my phone, moved this readme file to the group site from the spot I made it originally, and began to think of how I wanted my page to look.
+
+Additionally, I created our team's logo (which is, of course, subject to change) - and our slogan "Why not buy and sell?".
