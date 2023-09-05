@@ -1,6 +1,7 @@
 #aboutUs {
    margin-bottom: 100px;
    margin-left: 60px;
+   margin-top: 100px;
 }
 
 #achievementsAndExperience {
@@ -53,6 +54,7 @@ footer {
 .navBar {
    color: white;
    font-size: 30px;
+   /* background-color:#313338; */
    opacity: 0.4;
    overflow: hidden;
    position: fixed;
