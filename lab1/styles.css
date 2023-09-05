@@ -19,6 +19,12 @@ body {
    margin-left: 210px;
 }
 
+#cropLogo {
+   clip-path: circle();
+   height: 100px;
+   width: 100px;
+}
+
 .floatTextNextToImg { /* Lines up text with headshot */
    float: right;
    margin-right: 700px;
@@ -61,6 +67,10 @@ footer {
 
 .navBar a:hover {
    color: red;
+}
+
+#spaceLogoNavbar {
+   padding: 5%;
 }
 
 .spaceOutNavContent {
