@@ -51,3 +51,4 @@ ISSUES THAT AROSE:
       a.) I just moved the paragraph tags that contained the major and role above the headshots. Order does matter in tags, did not realize at first (yikes)
    5. My major and role formatting being wonky
       a.) For some reason my major and role formatting drifted to the bottom left of my headshot, however I wanted it in the "middle" right of the headshot.
+      b.) The issue is it's long length, so I have to find a way to create a certain size for the info
