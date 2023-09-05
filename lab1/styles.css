@@ -108,3 +108,17 @@ footer {
 .spaceOutNavContent {
    padding: 3%;
 }
+
+#millen11floatInfo {
+   float: right;
+   margin-right: 650px;
+}
+
+.millen11sectionSpace {
+   margin-bottom: 100px;
+   margin-left: 30px;
+}
+
+#millen11spaceBelowNav {
+   margin-top: 200px;
+}
