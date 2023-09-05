@@ -1,0 +1,66 @@
+#aboutUs {
+   margin-bottom: 100px;
+   margin-left: 60px;
+}
+
+#achievementsAndExperience {
+   margin-top: 100px;
+   margin-left: 60px;
+}
+
+body {
+   font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+   font-size: 20px;
+   background-color: #313338;
+   color: white;
+}
+
+.centerNamesHeadshots {
+   margin-left: 210px;
+}
+
+.floatTextNextToImg { /*Lines up text with headshot*/
+   float: right;
+   margin-top: 45px;
+   margin-right: 1900px;
+}
+
+#meetTheTeam {
+   margin-left: 60px;
+}
+
+.roundHeadshots { /*Makes headshots on the home page circular*/
+   border-radius: 50%;
+   clip-path: circle();
+   height:150px;
+   margin-left: 180px;
+   width:200px;
+}
+
+footer {
+   text-align: center;
+   width: 100%;
+}
+
+.navBar {
+   text-align: center;
+   position: fixed;
+   top: 0;
+   width: 100%;
+   opacity: .4;
+   font-size: 30px;
+   color: white;
+   overflow: hidden;
+}
+
+.navBar a {
+   color: white;
+}
+
+.navBar a:hover {
+   color:red
+}
+
+.spaceOutNavContent {
+   padding: 3%;
+}
