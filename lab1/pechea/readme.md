@@ -23,3 +23,13 @@ Additionally, I created our team's logo (which is, of course, subject to change)
 Created a custom image class for my picture on my personal porfolio, and began to make my info section.
 
 Used this tutorial https://www.tutorialspoint.com/html/html_email_links.htm to figure out email links.
+
+I began the process of laying out my divs as I wanted them, and began with my personal information. It wasn't hard by itself,
+but it did take some work to get it and the image lined up and looking how I wanted it.
+
+The other sections were simply, using a similar strucutre to what I used before.
+
+The exception to this simplicity was the "experience" section, which is not cooperating and lining up despite its div having the same class.
+
+After fiddling with it and reviewing the css sheet, I realized that because I had copied the navbar initially, and used the same tag
+"#achievementsAndExperience" as the index, it was behaving differently. I simply changed the tag.

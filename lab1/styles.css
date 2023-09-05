@@ -41,29 +41,6 @@ body {
    width: 200px;
 }
 
-.roundHeadshotsAidanPersonalTest { /* Makes headshots on the home page circular */
-   border-radius: 50%;
-   clip-path: circle();
-   height: 300px;
-   margin-left: 100px;
-   margin-top: 100px;
-   width: 400px;
-}
-
-.roundHeadshotsAidanPersonal { /* version of roundHeadshots for pechea.html */
-   border-radius: 50%;
-   clip-path: circle();
-   height: 300px;
-   width: 400px;
-   float: left;
-}
-
-.aidanPersonalInformation { /* for pechea.html informational text */
-   float: left;
-   margin-right: 700px;
-   margin-top: 45px;
-}
-
 footer {
    text-align: center;
    width: 100%;
@@ -98,5 +75,26 @@ footer {
 }
 
 .spaceOutNavContent {
+   padding: 3%;
+}
+
+.roundHeadshotsAidanPersonal { /* version of roundHeadshots for pechea.html */
+   border-radius: 50%;
+   clip-path: circle();
+   padding: 1%;
+   height: 300px;
+   width: 300px;
+   float: left;
+}
+
+.aidanPersonalInformation { /* for pechea.html informational text */
+   float: left;
+   margin-right: 700px;
+   margin-top: 85px;
+   
+}
+
+
+.pecheaDiv {
    padding: 3%;
 }
