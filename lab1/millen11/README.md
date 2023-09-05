@@ -55,3 +55,7 @@ ISSUES THAT AROSE:
    5. My major and role formatting being wonky
       a.) For some reason my major and role formatting drifted to the bottom left of my headshot, however I wanted it in the "middle" right of the headshot.
       b.) The issue is it's long length, so I have to find a way to create a certain size for the info
+      c.) Alex just used padding and percentages instead of pixels to fix this
+   6. Skills section indented more than all others
+      a.) It was in the experience div, making it a child of such the other subsections
+   7. Footer not centered, despite using text-align:center

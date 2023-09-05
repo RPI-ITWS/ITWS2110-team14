@@ -22,13 +22,12 @@ body { /*Universal formatting for all non-head/footer content*/
    font-size: 20px;
 }
 
-.floatTextNextToImg { /* Lines up text with headshot */
-   padding: 0 10% 0 10%;
+.centerFooter { /*Center's footer*/
+   text-align: center;
 }
 
-.footer { /*Distinction, because footers are essential*/
-   text-align: center;
-   width: 100%;
+.floatTextNextToImg { /* Lines up text with headshot */
+   padding: 0 10% 0 10%;
 }
 
 #meetTheTeam { /*Basic formatting for the member display*/
