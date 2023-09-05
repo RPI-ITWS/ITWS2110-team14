@@ -9,11 +9,10 @@
    margin-top: 100px;
 }
 
-body {
-   background-color: #313338;
-   color: white;
-   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-   font-size: 20px;
+.aidanPersonalInformation { /* for pechea.html informational text */
+   float: left;
+   margin-right: 700px;
+   margin-top: 85px;
 }
 
 .centerNamesHeadshots {
@@ -22,7 +21,6 @@ body {
 
 .floatTextNextToImg { /* Lines up text with headshot */
    padding: 0 10% 0 10%;
-
 }
 
 #meetTheTeam {
@@ -30,26 +28,48 @@ body {
    margin-top: 5px;
 }
 
-.roundHeadshots { /* Makes headshots on the home page circular */
-   border-radius: 50%;
-   clip-path: circle();
-   height: 150px;
-   margin-left: 180px;
-   margin-right: none;
-   float: left;
-   padding: none;
-   width: 200px;
+#millen11contact {
+   margin-top: 50px;
+   margin-left: 45px;
 }
 
-footer {
-   text-align: center;
-   width: 100%;
+#millen11education {
+   margin-top: 50px;
+   margin-left: 45px;
+}
+
+#millen11experience {
+   margin-top: 50px;
+   margin-left: 45px;
+}
+
+#millen11floatInfo {
+   float: right;
+   margin-right: 650px;
+}
+
+#millen11objective {
+   margin-top: 50px;
+   margin-left: 45px;
+}
+
+#millen11skills {
+   margin-top: 50px;
+   margin-left: 45px;
+}
+
+#millen11spaceBelowNav {
+   margin-top: 100px;
+}
+
+.millen11subSection {
+   margin: 50px 0px 0px 0px;
 }
 
 .navBar {
+   background-color: #666666;
    color: white;
    font-size: 30px;
-   background-color:#666666;;
    overflow: hidden;
    position: absolute;
    top: 0;
@@ -57,7 +77,6 @@ footer {
    width: 100%;
    padding: 0 10px 10px 10px;
    margin: 0 0 5px 0;
-   
 }
 
 .navBar a {
@@ -66,6 +85,13 @@ footer {
 
 .navBar a:hover {
    color: red;
+}
+
+body {
+   background-color: #313338;
+   color: white;
+   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+   font-size: 20px;
 }
 
 #spaceLogoNavbar {
@@ -82,40 +108,16 @@ footer {
    margin-right: 650px;
 }
 
-#millen11contact {
-   margin-top: 50px;
-   margin-left: 45px;
+.roundHeadshots { /* Makes headshots on the home page circular */
+   border-radius: 50%;
+   clip-path: circle();
+   height: 150px;
+   margin-left: 180px;
+   margin-right: none;
+   float: left;
+   padding: none;
+   width: 200px;
 }
-
-#millen11objective {
-   margin-top: 50px;
-   margin-left: 45px;
-}
-
-#millen11education {
-   margin-top: 50px;
-   margin-left: 45px;
-}
-
-#millen11experience {
-   margin-top: 50px;
-   margin-left: 45px;
-}
-
-#millen11skills {
-   margin-top: 50px;
-   margin-left: 45px;
-}
-
-.millen11subSection {
-   margin: 50px 0px 0px 0px;
-}
-
-#millen11spaceBelowNav {
-   margin-top: 100px;
-}
-
-
 
 .roundHeadshotsAidanPersonal { /* version of roundHeadshots for pechea.html */
    border-radius: 50%;
@@ -126,14 +128,7 @@ footer {
    float: left;
 }
 
-.aidanPersonalInformation { /* for pechea.html informational text */
-   float: left;
-   margin-right: 700px;
-   margin-top: 85px;
-   
-}
-
-
-.pecheaDiv {
-   padding: 3%;
+.footer {
+   text-align: center;
+   width: 100%;
 }
