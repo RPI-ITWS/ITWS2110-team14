@@ -46,6 +46,13 @@ body {
    width: 200px;
 }
 
+.mockupImage { /* For mockup images on the main page */
+   scale: 30%;
+   padding: none;
+   margin-left: 60px;
+
+}
+
 .roundHeadshotsAidanPersonalTest { /* Makes headshots on the home page circular */
    border-radius: 50%;
    clip-path: circle();
