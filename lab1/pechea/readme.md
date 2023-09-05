@@ -19,3 +19,7 @@ After all that, I began to to work on my group site portfolio.
 I imported a picture from my phone, moved this readme file to the group site from the spot I made it originally, and began to think of how I wanted my page to look.
 
 Additionally, I created our team's logo (which is, of course, subject to change) - and our slogan "Why not buy and sell?".
+
+Created a custom image class for my picture on my personal porfolio, and began to make my info section.
+
+Used this tutorial https://www.tutorialspoint.com/html/html_email_links.htm to figure out email links.
