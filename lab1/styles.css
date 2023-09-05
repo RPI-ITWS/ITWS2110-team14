@@ -73,7 +73,6 @@ footer {
    color: white;
    font-size: 30px;
    background-color:#666666;;
-   
    overflow: hidden;
    position: absolute;
    top: 0;
@@ -106,11 +105,36 @@ footer {
    margin-right: 650px;
 }
 
-.millen11sectionSpace {
-   margin-bottom: 100px;
-   margin-left: 30px;
+#millen11contact {
+   margin-top: 50px;
+   margin-left: 45px;
+}
+
+#millen11objective {
+   margin-top: 50px;
+   margin-left: 45px;
+}
+
+#millen11education {
+   margin-top: 50px;
+   margin-left: 45px;
+}
+
+#millen11experience {
+   margin-top: 50px;
+   margin-left: 45px;
+}
+
+#millen11skills {
+   margin-top: 50px;
+   margin-left: 45px;
+}
+
+.millen11subSection {
+   margin: 50px 0px 0px 0px;
 }
 
 #millen11spaceBelowNav {
-   margin-top: 200px;
+   margin-top: 100px;
 }
+

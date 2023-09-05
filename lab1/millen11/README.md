@@ -31,12 +31,15 @@ How to create a navigation bar:
 How to fix an element (Navigation bar) at a postion:
   https://www.w3schools.com/howto/howto_css_fixed_menu.asp
 
+The margin shorthand notation/order:
+https://www.w3schools.com/css/css_margin.asp
+
 DESIGN DECISIONS of index.html:
    We decided to list each member in alphabetical order and display some basic information. 
 
 DESIGN of resume.html:
    1. I decided to keep my website very simple but more or less modern compared to my last designed website (in INTRO)
-   2. As someone who wants to work in the Quant realm, I tried to emphasize such on my page with mentions to Jane Street among other things
+   2. As someone who wants to work in the Quant realm, I tried to emphasize such on my page
    3. My IT and CS concentration is in ML, so I tried to mention my novice abilities
    4. I attempted to match the index.html's styling while having a personal element to it
 
