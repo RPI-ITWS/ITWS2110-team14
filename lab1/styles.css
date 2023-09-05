@@ -21,7 +21,7 @@ body {
 
 .floatTextNextToImg { /* Lines up text with headshot */
    float: right;
-   margin-right: 1900px;
+   margin-right: 700px;
    margin-top: 45px;
 }
 
