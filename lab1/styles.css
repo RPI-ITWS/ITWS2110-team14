@@ -1,10 +1,10 @@
-#aboutUs {
+#aboutUs { /*Formatting for the About Us section*/
    margin-bottom: 100px;
    margin-left: 60px;
    margin-top: 100px;
 }
 
-#achievementsAndExperience {
+#achievementsAndExperience { /*Formatting for "our" past experience and achievements*/
    margin-left: 60px;
    margin-top: 100px;
 }
@@ -15,33 +15,29 @@
    margin-top: 85px;
 }
 
-body {
+body { /*Universal formatting for all non-head/footer content*/
    background-color: #313338;
    color: white;
    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
    font-size: 20px;
 }
 
-
-.centerNamesHeadshots {
-   margin-left: 210px;
-}
-
 .floatTextNextToImg { /* Lines up text with headshot */
    padding: 0 10% 0 10%;
 }
 
-.footer {
+.footer { /*Distinction, because footers are essential*/
    text-align: center;
    width: 100%;
 }
 
-#meetTheTeam {
+#meetTheTeam { /*Basic formatting for the member display*/
    margin-left: 60px;
    margin-top: 5px;
 }
 
-#millen11contact {
+/*Formatting for Na'Sir's personal page, all asides floatInfo and subSection are used to navigate throughout page in navBar*/
+#millen11contact {  
    margin-top: 50px;
    margin-left: 45px;
 }
@@ -56,7 +52,7 @@ body {
    margin-left: 45px;
 }
 
-#millen11floatInfo {
+#millen11floatInfo {  /*Puts the contact info next to headshot*/
    float: right;
    margin-right: 650px;
 }
@@ -75,11 +71,11 @@ body {
    margin-top: 100px;
 }
 
-.millen11subSection {
+.millen11subSection {  /*Formatting each indivudal experience,etc in a given section*/
    margin: 50px 0px 0px 0px;
 }
 
-.navBar {
+.navBar {  /*Navigation bar*/
    background-color: #666666;
    color: white;
    font-size: 30px;
@@ -92,11 +88,11 @@ body {
    margin: 0 0 5px 0;
 }
 
-.navBar a {
+.navBar a {  /*navBar color for text/links*/
    color: white;
 }
 
-.navBar a:hover {
+.navBar a:hover {  /*Hover color on navBar text*/
    color: red;
 }
 
@@ -120,11 +116,6 @@ body {
    float: left;
 }
 
-#spaceLogoNavbar {
-   float: left;
-   padding: 5%;
-}
-
-.spaceOutNavContent {
+.spaceOutNavContent {  /*Spacing between elements in navBar*/
    padding: 3%;
 }
