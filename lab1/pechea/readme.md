@@ -39,3 +39,7 @@ Finished fabricating job experiences, and added a joke to the links for the comp
 Met with group to research hCard. Used this source, and the template code, which I modified with the proper informaiton: 
 https://www.htmlandcssbook.com/extras/introduction-to-hcard/
 also used http://microformats.org/wiki/h-card for reference
+
+Made some small semantic changes to my page as well.
+
+Validated personal html.
