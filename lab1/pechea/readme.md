@@ -35,3 +35,11 @@ After fiddling with it and reviewing the css sheet, I realized that because I ha
 "#achievementsAndExperience" as the index, it was behaving differently. I simply changed the tag.
 
 Finished fabricating job experiences, and added a joke to the links for the companes that (probably, but I am not 100% sure) don't exist.
+
+Met with group to research hCard. Used this source, and the template code, which I modified with the proper informaiton: 
+https://www.htmlandcssbook.com/extras/introduction-to-hcard/
+also used http://microformats.org/wiki/h-card for reference
+
+Made some small semantic changes to my page as well.
+
+Validated personal html.
