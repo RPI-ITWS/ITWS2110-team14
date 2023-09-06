@@ -2,12 +2,14 @@
   /*Formatting for the About Us section*/
   margin-bottom: 100px;
   margin-left: 60px;
+  margin-right: 60px;
   margin-top: 100px;
 }
 
 #achievementsAndExperience {
   /*Formatting for "our" past experience and achievements*/
   margin-left: 60px;
+  margin-right: 60px;
   margin-top: 100px;
 }
 
