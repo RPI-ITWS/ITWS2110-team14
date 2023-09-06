@@ -52,21 +52,22 @@ body {
 #millen11contact {
   margin-top: 50px;
   margin-left: 45px;
+  margin-right: 45px;
 }
 
 #millen11education {
   margin-top: 50px;
   margin-left: 45px;
+  margin-right: 45px;
 }
 
 #millen11experience {
   margin-top: 50px;
   margin-left: 45px;
+  margin-right: 45px;
 }
 
 #millen11floatInfo {
-  /*Puts the contact info next to headshot*/
-  /* float: right; */
   padding: 0 10% 0 38%;
 }
 
@@ -77,13 +78,15 @@ body {
 
 #millen11objective {
   clear: left;
-  margin-top: px;
+  margin-top: 50px;
   margin-left: 45px;
+  margin-right: 45px;
 }
 
 #millen11skills {
   margin-top: 50px;
   margin-left: 45px;
+  margin-right: 45px;
 }
 
 #millen11spaceBelowNav {
@@ -107,8 +110,8 @@ body {
   overflow: hidden;
   position: absolute;
   top: 0;
-  text-align: center;
   width: 100%;
+  text-align: center;
   padding: 0 10px 10px 10px;
   margin: 0 0 5px 0;
 }
