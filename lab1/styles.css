@@ -95,10 +95,60 @@ body {
   margin: 50px 0px 0px 0px;
 }
 
+/*Formatting for Peter's page*/
+
+#simonp2aboutme {
+  clear: left;
+  margin-left: 45px;
+  margin-right: 45px;
+}
+
+#simonp2contact {
+  margin-top: 50px;
+  margin-left: 45px;
+  margin-right: 45px;
+}
+
+#simonp2education {
+  margin-top: 50px;
+  margin-left: 45px;
+  margin-right: 45px;
+}
+
+#simonp2experience {
+  margin-top: 50px;
+  margin-left: 45px;
+  margin-right: 45px;
+}
+
+#simonp2floatInfo {
+  padding: 0 10% 0 38%;
+}
+
+#simonp2headshot {
+  height: 300px;
+  width: 300px;
+}
+
+#simonp2skills {
+  margin-top: 50px;
+  margin-left: 45px;
+  margin-right: 45px;
+}
+
+#simonp2spaceBelowNav {
+  margin-top: 110px;
+}
+
+.simonp2subSection {
+  margin: 50px 0px 0px 0px;
+}
+
 .mockupImage {
   height: 50%;
   width: 50%;
 }
+
 .navBar {
   /*Navigation bar*/
   background-color: rgb(29, 28, 28);
