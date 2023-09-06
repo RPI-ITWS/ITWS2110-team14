@@ -46,16 +46,26 @@ DESIGN of resume.html:
 ISSUES THAT AROSE:
    1. Floating summary text rightward next to headshot
       a.) Fixed using margin-right and fixing headshots sizing
+
    2. Creating universal sizing for headshots on index.html
       a.) Figure out a balance between size and lack of stretch, I ended up applying a height and width of 200 and 150 pixels respectively
+
    3. Getting snippets from summaries and displaying it on index.html 
       a.) I was going to use a technique similar to Lab 8 in Intro to get data from a JSON file and display a small portion of a members summary on the index.html. However, that approach was a bit too much for this assignment.
+
    4. Centering major and role on index next to headshot
       a.) I just moved the paragraph tags that contained the major and role above the headshots. Order does matter in tags, did not realize at first (yikes)
+
    5. My major and role formatting being wonky
       a.) For some reason my major and role formatting drifted to the bottom left of my headshot, however I wanted it in the "middle" right of the headshot.
       b.) The issue is it's long length, so I have to find a way to create a certain size for the info
-      c.) Alex just used padding and percentages instead of pixels to fix this
+      c.) Alex just used padding and percentages instead of pixeles to fix this
+
    6. Skills section indented more than all others
       a.) It was in the experience div, making it a child of such the other subsections
-   7. Footer not centered, despite using text-align:center
+
+   7. Footer not centered, despite using text-align:center 
+      a.) Needed to create an id to center the footer's child: <p>
+
+   8. Personal info and objective formatting overlapping
+      a.)
