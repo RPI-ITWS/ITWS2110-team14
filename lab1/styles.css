@@ -27,7 +27,7 @@ body { /*Universal formatting for all non-head/footer content*/
 }
 
 .floatTextNextToImg { /* Lines up text with headshot */
-   padding: 0 10% 0 10%;
+   padding: 0 10% 0 18%;
 }
 
 #meetTheTeam { /*Basic formatting for the member display*/
@@ -100,8 +100,8 @@ body { /*Universal formatting for all non-head/footer content*/
 }
 
 .roundHeadshots { /* Makes headshots on the home page circular */
-   border-radius: 50%;
-   clip-path: circle();
+   border-radius: 100%;
+   /* clip-path: circle(); */
    height: 150px;
    margin-left: 180px;
    margin-right: 0;
@@ -112,7 +112,7 @@ body { /*Universal formatting for all non-head/footer content*/
 
 .roundHeadshotsAidanPersonal { /* version of roundHeadshots for pechea.html */
    border-radius: 50%;
-   clip-path: circle();
+   /* clip-path: circle(); */
    padding: 1%;
    height: 300px;
    width: 300px;
