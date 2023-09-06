@@ -74,6 +74,10 @@ body { /*Universal formatting for all non-head/footer content*/
    margin: 50px 0px 0px 0px;
 }
 
+.mockupImage {
+   height: 500px;
+   width: 500px;
+}
 .navBar {  /*Navigation bar*/
    background-color: #666666;
    color: white;
