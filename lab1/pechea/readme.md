@@ -33,3 +33,5 @@ The exception to this simplicity was the "experience" section, which is not coop
 
 After fiddling with it and reviewing the css sheet, I realized that because I had copied the navbar initially, and used the same tag
 "#achievementsAndExperience" as the index, it was behaving differently. I simply changed the tag.
+
+Finished fabricating job experiences, and added a joke to the links for the companes that (probably, but I am not 100% sure) don't exist.
