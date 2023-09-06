@@ -74,7 +74,17 @@ body {
 }
 
 #millen11floatInfo {
-  padding: 0 10% 0 38%;
+  padding: 1% 10% 0 38%;
+  color: white;
+  font-size: 25px;
+}
+
+#millen11floatInfo a {
+  color: white;
+}
+
+#millen11floatInfo a:hover {
+  color: red;
 }
 
 #millen11headshot {
@@ -94,6 +104,17 @@ body {
   margin-left: 45px;
   margin-right: 45px;
 }
+.millen11links {
+  color: white;
+}
+
+.millen11links a {
+  color: white;
+}
+
+.millen11links a:hover {
+  color: red;
+}
 
 #millen11spaceBelowNav {
   margin-top: 100px;
@@ -104,6 +125,17 @@ body {
   margin: 50px 0px 0px 0px;
 }
 
+.millen11schoolLinks {
+  color: white;
+}
+
+.millen11schoolLinks a {
+  color: white;
+}
+
+.millen11schoolLinks a:hover {
+  color: red;
+}
 /*Formatting for Peter's page*/
 
 #simonp2aboutme {
@@ -168,7 +200,7 @@ body {
   top: 0;
   width: 100%;
   text-align: center;
-  padding: 0 10px 10px 10px;
+  padding: 0 10px 10px 0;
   margin: 0 0 5px 0;
 }
 
