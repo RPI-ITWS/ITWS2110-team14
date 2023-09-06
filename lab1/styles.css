@@ -2,12 +2,14 @@
   /*Formatting for the About Us section*/
   margin-bottom: 100px;
   margin-left: 60px;
+  margin-right: 60px;
   margin-top: 100px;
 }
 
 #achievementsAndExperience {
   /*Formatting for "our" past experience and achievements*/
   margin-left: 60px;
+  margin-right: 60px;
   margin-top: 100px;
 }
 
@@ -56,21 +58,22 @@ body {
 #millen11contact {
   margin-top: 50px;
   margin-left: 45px;
+  margin-right: 45px;
 }
 
 #millen11education {
   margin-top: 50px;
   margin-left: 45px;
+  margin-right: 45px;
 }
 
 #millen11experience {
   margin-top: 50px;
   margin-left: 45px;
+  margin-right: 45px;
 }
 
 #millen11floatInfo {
-  /*Puts the contact info next to headshot*/
-  /* float: right; */
   padding: 0 10% 0 38%;
 }
 
@@ -81,13 +84,15 @@ body {
 
 #millen11objective {
   clear: left;
-  margin-top: px;
+  margin-top: 50px;
   margin-left: 45px;
+  margin-right: 45px;
 }
 
 #millen11skills {
   margin-top: 50px;
   margin-left: 45px;
+  margin-right: 45px;
 }
 
 #millen11spaceBelowNav {
@@ -99,10 +104,60 @@ body {
   margin: 50px 0px 0px 0px;
 }
 
+/*Formatting for Peter's page*/
+
+#simonp2aboutme {
+  clear: left;
+  margin-left: 45px;
+  margin-right: 45px;
+}
+
+#simonp2contact {
+  margin-top: 50px;
+  margin-left: 45px;
+  margin-right: 45px;
+}
+
+#simonp2education {
+  margin-top: 50px;
+  margin-left: 45px;
+  margin-right: 45px;
+}
+
+#simonp2experience {
+  margin-top: 50px;
+  margin-left: 45px;
+  margin-right: 45px;
+}
+
+#simonp2floatInfo {
+  padding: 0 10% 0 38%;
+}
+
+#simonp2headshot {
+  height: 300px;
+  width: 300px;
+}
+
+#simonp2skills {
+  margin-top: 50px;
+  margin-left: 45px;
+  margin-right: 45px;
+}
+
+#simonp2spaceBelowNav {
+  margin-top: 110px;
+}
+
+.simonp2subSection {
+  margin: 50px 0px 0px 0px;
+}
+
 .mockupImage {
   height: 50%;
   width: 50%;
 }
+
 .navBar {
   /*Navigation bar*/
   background-color: rgb(29, 28, 28);
@@ -111,8 +166,8 @@ body {
   overflow: hidden;
   position: absolute;
   top: 0;
-  text-align: center;
   width: 100%;
+  text-align: center;
   padding: 0 10px 10px 10px;
   margin: 0 0 5px 0;
 }
