@@ -18,6 +18,10 @@
   margin-top: 85px;
 }
 
+.pecheaDiv {
+  padding: 3%;
+}
+
 body {
   /*Universal formatting for all non-head/footer content*/
   overflow-x: hidden;
