@@ -2,6 +2,7 @@
    margin-bottom: 100px;
    margin-left: 60px;
    margin-top: 100px;
+   background-color: ;
 }
 
 #achievementsAndExperience { /*Formatting for "our" past experience and achievements*/
@@ -16,6 +17,7 @@
 }
 
 body { /*Universal formatting for all non-head/footer content*/
+   overflow-x: hidden;
    background-color: #313338;
    color: white;
    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
@@ -27,7 +29,11 @@ body { /*Universal formatting for all non-head/footer content*/
 }
 
 .floatTextNextToImg { /* Lines up text with headshot */
-   padding: 0 10% 0 18%;
+   padding: 0 10% 0 25%;
+}
+
+#increaseSloganSize { /*Increases the slogan size in the About Us section*/
+   font-size: 25px;
 }
 
 #meetTheTeam { /*Basic formatting for the member display*/
@@ -52,12 +58,18 @@ body { /*Universal formatting for all non-head/footer content*/
 }
 
 #millen11floatInfo {  /*Puts the contact info next to headshot*/
-   float: right;
-   margin-right: 650px;
+   /* float: right; */
+   padding:0 10% 0 38%;
+}
+
+#millen11headshot {
+   height: 300px;
+   width: 300px;
 }
 
 #millen11objective {
-   margin-top: 50px;
+   clear: left;
+   margin-top: px;
    margin-left: 45px;
 }
 
@@ -75,11 +87,11 @@ body { /*Universal formatting for all non-head/footer content*/
 }
 
 .mockupImage {
-   height: 500px;
-   width: 500px;
+   height: 50%;
+   width: 50%;
 }
 .navBar {  /*Navigation bar*/
-   background-color: #666666;
+   background-color: rgb(29, 28, 28);
    color: white;
    font-size: 30px;
    overflow: hidden;
@@ -101,7 +113,6 @@ body { /*Universal formatting for all non-head/footer content*/
 
 .roundHeadshots { /* Makes headshots on the home page circular */
    border-radius: 100%;
-   /* clip-path: circle(); */
    height: 150px;
    margin-left: 180px;
    margin-right: 0;
@@ -112,7 +123,6 @@ body { /*Universal formatting for all non-head/footer content*/
 
 .roundHeadshotsAidanPersonal { /* version of roundHeadshots for pechea.html */
    border-radius: 50%;
-   /* clip-path: circle(); */
    padding: 1%;
    height: 300px;
    width: 300px;

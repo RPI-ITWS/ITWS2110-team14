@@ -4,7 +4,7 @@ Lab 1: Creating a group home page and personal portfolio
 Technologies: HTML5, CSS3
 
 SUMMARY:
-In Lab1, I as well as my peers in <group name>, created a portfolio page to document our work and achievements toegther. Additionally, each person's section on index.html contains a link to each person's respective personal portfolio/resume.
+In Lab1, I as well as my peers in Rensselaer Polytechnic Marketplace, created a portfolio page to document our work and achievements toegther. Additionally, each person's section on index.html contains a link to each person's respective personal portfolio/resume.
 
 DOCUMENTATION:
 Relaearning basics of classes and IDs
@@ -19,9 +19,6 @@ How to crop images (circle):
 How to integrate/use <br>:
  ChatGPT for line break
 
-Reference website:
-  https://tangiblematerials.com/
-
 How to apply opacity to an element:
   https://blog.hubspot.com/website/opacity-css#:~:text=To%20set%20the%20opacity%20of,invisible).
 
@@ -32,10 +29,14 @@ How to fix an element (Navigation bar) at a postion:
   https://www.w3schools.com/howto/howto_css_fixed_menu.asp
 
 The margin shorthand notation/order:
-https://www.w3schools.com/css/css_margin.asp
+   https://www.w3schools.com/css/css_margin.asp
+
+How to remove left to right scrolling:
+   https://www.scaler.com/topics/css-disable-scroll/
 
 DESIGN DECISIONS of index.html:
-   We decided to list each member in alphabetical order and display some basic information. 
+   We decided to list each member in alphabetical order and display some basic information. Additonally,
+   I utilized github's UI/color scheme on the website, because it is a great example of a dark theme
 
 DESIGN of resume.html:
    1. I decided to keep my website very simple but more or less modern compared to my last designed website (in INTRO)
@@ -68,4 +69,11 @@ ISSUES THAT AROSE:
       a.) Needed to create an id to center the footer's child: <p>
 
    8. Personal info and objective formatting overlapping
-      a.)
+      a.) Just used padding similar to Alex's method prior. I guess padding + float is very good for niche cases like this.
+
+   9. Fixing validation issues
+      a.) clip-path was not valid, so I had to increase all headshots border-radius, however
+         that made the images stretch. So I had to resize the height and width
+   
+   10.) Removing random scrolling left to right
+      a.) Used overflow-x:hidden, also learned that this in regards to y allows no vertical scrolling
