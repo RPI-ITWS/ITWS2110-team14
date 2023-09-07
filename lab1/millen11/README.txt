@@ -4,7 +4,8 @@ Lab 1: Creating a group home page and personal portfolio
 Technologies: HTML5, CSS3
 
 SUMMARY:
-In Lab1, I as well as my peers in Rensselaer Polytechnic Marketplace, created a portfolio page to document our work and achievements toegther. Additionally, each person's section on index.html contains a link to each person's respective personal portfolio/resume.
+   In Lab1, I as well as my peers in Rensselaer Polytechnic Marketplace, created a portfolio page to document our work and achievements toegther.
+Additionally, each person's section on index.html contains a link to each person's respective personal portfolio/resume.
 
 DOCUMENTATION:
 Relaearning basics of classes and IDs
@@ -34,15 +35,19 @@ The margin shorthand notation/order:
 How to remove left to right scrolling:
    https://www.scaler.com/topics/css-disable-scroll/
 
+How hcard works and template code:
+   https://www.htmlandcssbook.com/extras/introduction-to-hcard/
+
 DESIGN DECISIONS of index.html:
-   We decided to list each member in alphabetical order and display some basic information. Additonally,
-   I utilized github's UI/color scheme on the website, because it is a great example of a dark theme
+   1. We decided to list each member in alphabetical order and display some basic information
+   2. I utilized github's UI/color scheme on the website, because it is a great example of a dark theme
+   3. Minamilistic, although there is a lot of empty space
+   4. Admittedly, the website has an amateur feel to it
 
 DESIGN of resume.html:
    1. I decided to keep my website very simple but more or less modern compared to my last designed website (in INTRO)
-   2. As someone who wants to work in the Quant realm, I tried to emphasize such on my page
-   3. My IT and CS concentration is in ML, so I tried to mention my novice abilities
-   4. I attempted to match the index.html's styling while having a personal element to it
+   2. My IT and CS concentration is in ML, so I tried to mention my novice abilities
+   3. I attempted to match the index.html's styling while having a personal element to it
 
 ISSUES THAT AROSE:
    1. Floating summary text rightward next to headshot
@@ -59,11 +64,11 @@ ISSUES THAT AROSE:
 
    5. My major and role formatting being wonky
       a.) For some reason my major and role formatting drifted to the bottom left of my headshot, however I wanted it in the "middle" right of the headshot.
-      b.) The issue is it's long length, so I have to find a way to create a certain size for the info
+      b.) The issue is it's long length, so I have to find a way to create a certain size for the info (WASN'T NECESSARY)
       c.) Alex just used padding and percentages instead of pixeles to fix this
 
    6. Skills section indented more than all others
-      a.) It was in the experience div, making it a child of such the other subsections
+      a.) It was in the experience div, making it a child like the other subsections
 
    7. Footer not centered, despite using text-align:center 
       a.) Needed to create an id to center the footer's child: <p>
@@ -77,3 +82,8 @@ ISSUES THAT AROSE:
    
    10.) Removing random scrolling left to right
       a.) Used overflow-x:hidden, also learned that this in regards to y allows no vertical scrolling
+   
+   11.) Links not turning red on hover
+      a.) Using className a:hover and the color still is not changing, maybe it needs to be an id?
+      b.) Removed a, thus millen11links:hover works since we are applying this effect to a header, not a regular link
+      c.) Using ChatGPT's assistance. Explained that the a tag sort of re directed the purpose of the link

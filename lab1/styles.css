@@ -20,10 +20,6 @@
   margin-top: 85px;
 }
 
-.pecheaDiv {
-  padding: 3%;
-}
-
 body {
   /*Universal formatting for all non-head/footer content*/
   overflow-x: hidden;
@@ -74,7 +70,17 @@ body {
 }
 
 #millen11floatInfo {
-  padding: 0 10% 0 38%;
+  padding: 1% 10% 0 38%;
+  color: white;
+  font-size: 25px;
+}
+
+#millen11floatInfo a {
+  color: white;
+}
+
+#millen11floatInfo a:hover {
+  color: red;
 }
 
 #millen11headshot {
@@ -94,6 +100,17 @@ body {
   margin-left: 45px;
   margin-right: 45px;
 }
+.millen11links {
+  color: white;
+}
+
+.millen11links a {
+  color: white;
+}
+
+.millen11links:hover {
+  color: red;
+}
 
 #millen11spaceBelowNav {
   margin-top: 100px;
@@ -102,6 +119,71 @@ body {
 .millen11subSection {
   /*Formatting each indivudal experience,etc in a given section*/
   margin: 50px 0px 0px 0px;
+}
+
+.millen11schoolLinks {
+  color: white;
+}
+
+.millen11schoolLinks a {
+  color: white;
+}
+
+.millen11schoolLinks a:hover {
+  color: red;
+}
+
+.mockupImage {
+  height: 50%;
+  width: 50%;
+}
+
+.pecheaDiv {
+  padding: 3%;
+}
+
+.navBar {
+  /*Navigation bar*/
+  background-color: rgb(29, 28, 28);
+  color: white;
+  font-size: 30px;
+  overflow: hidden;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  text-align: center;
+  padding: 0 10px 10px 0;
+  margin: 0 0 5px 0;
+}
+
+.navBar a {
+  /*navBar color for text/links*/
+  color: white;
+}
+
+.navBar a:hover {
+  /*Hover color on navBar text*/
+  color: red;
+}
+
+.roundHeadshots {
+  /* Makes headshots on the home page circular */
+  border-radius: 100%;
+  height: 150px;
+  margin-left: 180px;
+  margin-right: 0;
+  float: left;
+  padding: 0;
+  width: 150px;
+}
+
+.roundHeadshotsAidanPersonal {
+  /* version of roundHeadshots for pechea.html */
+  border-radius: 50%;
+  padding: 1%;
+  height: 300px;
+  width: 300px;
+  float: left;
 }
 
 /*Formatting for Peter's page*/
@@ -149,60 +231,36 @@ body {
   margin-top: 110px;
 }
 
+.spaceOutNavContent {
+  /*Spacing between elements in navBar*/
+  padding: 3%;
+}
 .simonp2subSection {
   margin: 50px 0px 0px 0px;
 }
 
-.mockupImage {
-  height: 50%;
-  width: 50%;
-}
 
-.navBar {
-  /*Navigation bar*/
-  background-color: rgb(29, 28, 28);
-  color: white;
-  font-size: 30px;
-  overflow: hidden;
-  position: absolute;
-  top: 0;
-  width: 100%;
-  text-align: center;
-  padding: 0 10px 10px 10px;
-  margin: 0 0 5px 0;
-}
-
-.navBar a {
-  /*navBar color for text/links*/
-  color: white;
-}
-
-.navBar a:hover {
-  /*Hover color on navBar text*/
-  color: red;
-}
-
-.roundHeadshots {
-  /* Makes headshots on the home page circular */
+#coteaImage{
   border-radius: 100%;
   height: 150px;
-  margin-left: 180px;
-  margin-right: 0;
-  float: left;
   padding: 0;
-  width: 150px;
-}
-
-.roundHeadshotsAidanPersonal {
-  /* version of roundHeadshots for pechea.html */
-  border-radius: 50%;
-  padding: 1%;
   height: 300px;
   width: 300px;
   float: left;
+  margin-right: 50px;
 }
 
-.spaceOutNavContent {
-  /*Spacing between elements in navBar*/
-  padding: 3%;
+#coteaContact{
+  margin-top: 110px;
+  margin-left: 150px;
+  margin-bottom: 250px;
+}
+
+.coteaHeaderSpacing{
+  font-size: 40px;
+}
+
+#coteaAboutMe{
+  margin-top: 50px;
+  margin-left: 150px;
 }
