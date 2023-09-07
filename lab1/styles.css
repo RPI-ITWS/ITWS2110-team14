@@ -112,7 +112,7 @@ body {
   color: white;
 }
 
-.millen11links a:hover {
+.millen11links:hover {
   color: red;
 }
 
