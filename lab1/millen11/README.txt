@@ -86,3 +86,4 @@ ISSUES THAT AROSE:
    11.) Links not turning red on hover
       a.) Using className a:hover and the color still is not changing, maybe it needs to be an id?
       b.) Removed a, thus millen11links:hover works since we are applying this effect to a header, not a regular link
+      c.) Using ChatGPT's assistance. Explained that the a tag sort of re directed the purpose of the link
