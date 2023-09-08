@@ -25,13 +25,29 @@ body {
   overflow-x: hidden;
   background-color: #313338;
   color: white;
-  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-family: "Franklin Gothic Medium", "Calibri", sans-serif;
   font-size: 20px;
 }
 
 .centerFooter {
   /*Center's footer*/
   text-align: center;
+}
+
+.u-email {
+  color: white;
+}
+
+.u-email:hover {
+  color: red;
+}
+
+.inline-content {
+  display: inline;
+}
+
+.right-aligned {
+  float: right;
 }
 
 .floatTextNextToImg {
@@ -263,4 +279,35 @@ body {
 #coteaAboutMe{
   margin-top: 50px;
   margin-left: 150px;
+}
+
+
+/*Formatting for Anish's page*/
+
+.patela16Div {
+  padding: 8px;
+  margin: 16px;
+  width: 1200px;
+}
+
+.patela16Div p {
+  width: 600px;
+}
+
+.patela16AboutMe {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  margin: 100px auto 0px auto;
+}
+
+.patela16Headshot {
+  border-radius: 50%;
+  height: 300px;
+  width: 300px;
+  margin-right: 32px;
+}
+
+.patela16-list-content {
+  width: 750px;
 }
