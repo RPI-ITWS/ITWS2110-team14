@@ -28,20 +28,18 @@ body {
 }
 
  .dropdown {
-   position: absolute;
+   position: center;
    display: inline-block;
    width: 1000px;
    text-align: center;
- }
-
- .dropbtn {
+   margin-top: 50px;
    background-color: #524439;
    color: #BAA89B;
    padding: 16px;
    font-size: 16px;
    border: none;
    position: absolute;
-   text-align: center;
+   : center;
  }
  
  
