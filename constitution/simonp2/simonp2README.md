@@ -14,7 +14,8 @@ https://constitution.congress.gov/constitution/
 -Classy Color Palette
 https://mycolor.space/?hex=%23DDA77B&sub=1
 
--
+-Centering Solutions
+https://www.w3.org/Style/Examples/007/center.en.html
 
 Conflicts:
 
