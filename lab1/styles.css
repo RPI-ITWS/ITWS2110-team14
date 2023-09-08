@@ -264,3 +264,19 @@ body {
   margin-top: 50px;
   margin-left: 150px;
 }
+
+.coteaDescription{
+  clear: left;
+  margin-right: 150px;
+  margin-left: 50px;
+}
+
+#coteaEducation{
+  margin-top: 50px;
+  margin-left: 150px;
+}
+
+.coteaSection{
+  margin: 50px 0px 0px 50px;
+
+}
