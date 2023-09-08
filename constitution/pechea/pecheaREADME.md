@@ -1,0 +1,1 @@
+Created some basic files and brainstormed site layout with my team.
