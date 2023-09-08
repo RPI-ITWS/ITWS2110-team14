@@ -260,7 +260,7 @@ body {
   font-size: 40px;
 }
 
-#coteaAboutMe{
+.coteaBigSection{
   margin-top: 50px;
   margin-left: 150px;
 }
@@ -271,10 +271,6 @@ body {
   margin-left: 50px;
 }
 
-#coteaEducation{
-  margin-top: 50px;
-  margin-left: 150px;
-}
 
 .coteaSection{
   margin: 50px 0px 0px 50px;
