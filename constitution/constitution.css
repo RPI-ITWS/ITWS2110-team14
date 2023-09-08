@@ -1,0 +1,21 @@
+.navBar {
+  /*Navigation bar*/
+  background-color: ;
+  color: ;
+  font-size: ;
+  overflow: ;
+  position: ;
+  top: ;
+  width: ;
+  text-align: ;
+  padding: ;
+  margin: ;
+}
+.navBar a {
+  /*navBar color for text/links*/
+  color: ;
+}
+.navBar a:hover {
+  /*Hover color on navBar text*/
+  color: ;
+}
