@@ -25,6 +25,7 @@
 body {
   background-color: #dda77b;
   margin: 0 0 0 0;
+  overflow-x: hidden;
 }
 
 /*text box styling*/
@@ -34,13 +35,6 @@ body {
   padding: 16px;
   font-size: 16px;
   border: none;
-}
-
-/*more alignment styling*/
-.dropdown {
-  position: relative;
-  display: inline-block;
-  width: 500px;
 }
 
 /*content after you click on the response*/
@@ -63,16 +57,35 @@ body {
 
 .parentContainer {
   /* The box that will display the current Article, Amendment, etc as well as contain all the other dropdowns */
+  background-color: #7dc097;
+  padding: 0 5% 0 25%;
+  /* position: relative; */
+  font-size: 20px;
+  display: inline-block;
+  margin: 5% 0 0 0;
+  height: 250px;
+  width: 500px;
 }
 
 .textContainer {
   /* A dropdown that will display the full original text from the constitution for the given Article, Amendment, etc */
+  font-size: 15px;
 }
 
 .summaryContainer {
   /* The brief description of the given Article, Amendment, etc that also can be toggled */
+  font-size: 15px;
 }
 
 .analysisContainer {
   /* A dropdown that will display team14's analysis of an Article, Amendment, etc */
+  font-size: 15px;
+}
+
+#preamble {
+  /* Link to Preamble section */
+}
+
+#historyConstitution {
+  /* Link to history of the constitution section */
 }
