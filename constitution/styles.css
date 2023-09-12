@@ -59,19 +59,20 @@ body {
   /* The box that will display the current Article, Amendment, etc as well as contain all the other dropdowns */
   background-color: #524439;
   border-radius: 15%;
+  box-shadow: 5px 10px;
   padding: 3%;
   position: relative;
   font-size: 20px;
   display: inline-block;
   margin: 8%;
   height: 250px;
-  width: 500px;
+  width: 40%;
 }
 
 .textContainer {
   /* A dropdown that will display the full original text from the constitution for the given Article, Amendment, etc */
   font-size: 15px;
-  overflow-y: scroll;
+  overflow: auto;
   background-color: white;
 }
 
@@ -117,7 +118,20 @@ body {
   color: #7dc097;
 } */
 
-.spaceOutNavContent {
-  /*Spacing between elements in navBar*/
+.navBarElements {
+  /*Spacing between elements in navBar, as well as basic element formatting*/
   padding: 2%;
+}
+
+.navBarElements:hover,
+.navBarElements:focus {
+  background-color: black;
+}
+
+#navBarDropElements {
+}
+.navBarDropdown {
+}
+
+.dropdownIndicator {
 }
