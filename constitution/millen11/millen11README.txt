@@ -42,7 +42,8 @@ Documentation:
    Smooth Scroll reference:
       https://www.w3schools.com/howto/howto_css_smooth_scroll.asp#section1
 
-
+   Linear Gradient:
+      https://www.w3schools.com/css/css3_gradients.asp
 Issues:
    1. How to create a box like visual for each sub section (a specific amendment, article, etc)
       a) Due to padding (I believe) the background color for a "box" follows from where it is from the far left
