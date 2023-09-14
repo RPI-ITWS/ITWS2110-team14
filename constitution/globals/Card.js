@@ -4,8 +4,8 @@ class Card extends HTMLElement {
     super();
     this.attachShadow({ mode: 'open' });
 
-    this._width = '150px';
-    this._height = '200px';
+    this._width = '400px';
+    this._height = '250px';
     this._padding = "16px";
     this._margin = "16px";
     this._backgroundColor = 'rgb(82, 68, 57)';
@@ -15,16 +15,16 @@ class Card extends HTMLElement {
   }
 
   static get observedAttributes() {
-    return ['width', 'height', 'background-color', 'shadow'];
+    return ['width', 'height', 'padding', 'margin', 'background-color', 'shadow'];
   }
 
   attributeChangedCallback(name, oldVal, newVal) {
-    'width' ? this._width = newVal : null;
-    'height' ? this._height = newVal : null;
-    'padding' ? this._padding = newVal : null;
-    'margin' ? this._margin = newVal : null;
-    'background-color' ? this._backgroundColor = newVal : null;
-    'shadow' ? this._shadow = newVal : null;
+    this._width = name === 'width' ? newVal : this._width;
+    this._height = name === 'height' ? newVal : this._height;
+    this._padding = name === 'padding' ? newVal : this._padding;
+    this._margin = name === 'margin' ? newVal : this._margin;
+    this._backgroundColor = name === 'background-color' ? newVal : this._backgroundColor;
+    this._shadow = name === 'shadow' ? newVal : this._shadow;
     this.render();
   }
 
