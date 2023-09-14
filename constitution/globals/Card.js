@@ -8,6 +8,12 @@ class Card extends HTMLElement {
     this._height = '250px';
     this._padding = "16px";
     this._margin = "16px";
+    this._position = "static";
+    this._float = "left";
+    this._top = "0px";
+    this._right = "0px";
+    this._bottom = "0px";
+    this._left = "0px";
     this._backgroundColor = 'rgb(82, 68, 57)';
     this._shadow = false;
 
@@ -15,16 +21,12 @@ class Card extends HTMLElement {
   }
 
   static get observedAttributes() {
-    return ['width', 'height', 'padding', 'margin', 'background-color', 'shadow'];
+    return ['width', 'height', 'padding', 'float' ,'margin', 'position', 'top', 'right', 'bottom', 'left', 'background-color', 'shadow'];
   }
 
-  attributeChangedCallback(name, oldVal, newVal) {
-    this._width = name === 'width' ? newVal : this._width;
-    this._height = name === 'height' ? newVal : this._height;
-    this._padding = name === 'padding' ? newVal : this._padding;
-    this._margin = name === 'margin' ? newVal : this._margin;
-    this._backgroundColor = name === 'background-color' ? newVal : this._backgroundColor;
-    this._shadow = name === 'shadow' ? newVal : this._shadow;
+  attributeChangedCallback(rawName, oldVal, newVal) {
+    const name = rawName.toLowerCase();
+    this[`_${name}`] = newVal !== null ? newVal : this[`_${name}`];
     this.render();
   }
 
@@ -38,6 +40,12 @@ class Card extends HTMLElement {
           height: ${this._height};
           padding: ${this._padding};
           margin: ${this._margin};
+          position: ${this._position};
+          float: ${this._float};
+          top: ${this._top};
+          right: ${this._right};
+          bottom: ${this._bottom};
+          left: ${this._left};
           overflow: hidden;
           background-color: ${this._backgroundColor};
           border-radius: 10px;
