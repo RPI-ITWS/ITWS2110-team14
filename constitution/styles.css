@@ -1,64 +1,23 @@
-.navBar {
-  /*Navigation bar*/
-  background-color: #524439;
-  color: black;
-  font-size: 30px;
-  overflow: hidden;
-  position: absolute;
-  top: 0;
-  width: 100%;
-  text-align: center;
-  padding: 0 10px 10px 0;
-  margin: 0 0 5px 0;
-}
-
-.navBar a {
-  /*navBar color for text/links*/
-  color: #baa89b;
-}
-
-.navBar a:hover {
-  /*Hover color on navBar text*/
-  color: #7dc097;
-}
-
+/* Universal formatting for all non-head/footer content */
 body {
-  /*Universal formatting for all non-head/footer content*/
   overflow-x: hidden;
-  background-color: #dda77b;
+  background-color: white;
   margin: 0 0 0 0;
-    font-family: Calibri, Arial, sans-serif;
+  font-family: Calibri, Arial, sans-serif;
 }
 
-/*text box styling*/
-.dropbtn {
-  background-color: #524439;
-  color: #baa89b;
-  padding: 16px;
-  font-size: 16px;
-  border: none;
+/* The brief description of the given Article, Amendment, etc that also can be toggled */
+.summaryContainer {
+  font-size: 15px;
 }
 
-/*content after you click on the response*/
-.dropdown-content {
-  display: none;
-  position: absolute;
-  background-color: #f1f1f1;
-  min-width: 160px;
-  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-  z-index: 1;
+/* A dropdown that will display team14's analysis of an Article, Amendment, etc */
+.analysisContainer {
+  font-size: 15px;
 }
 
-/*additional content after you click on the response*/
-.dropdown-content a {
-  color: black;
-  padding: 12px 16px;
-  text-decoration: none;
-  display: block;
-}
-
+/* The box that will display the current Article, Amendment, etc as well as contain all the other dropdowns */
 .parentContainer {
-  /* The box that will display the current Article, Amendment, etc as well as contain all the other dropdowns */
   background-color: #524439;
   border-radius: 15%;
   box-shadow: 5px 10px;
@@ -66,74 +25,80 @@ body {
   position: relative;
   font-size: 20px;
   display: inline-block;
-  margin: 8%;
+  margin: 20%;
   height: 250px;
   width: 40%;
 }
 
-.textContainer {
-  /* A dropdown that will display the full original text from the constitution for the given Article, Amendment, etc */
-  font-size: 15px;
-  overflow: auto;
-  background-color: white;
+.navbar {
+  background: linear-gradient(#511f1f, #5e2e2f, #dddcdc, #5e2e2f, #511f1f);
+  overflow: hidden;
+  padding: 0 10px 10px 0;
+  margin: 0 0 5px 0;
+  text-align: center;
+  text-decoration: none;
+  width: 100%;
 }
 
-.summaryContainer {
-  /* The brief description of the given Article, Amendment, etc that also can be toggled */
-  font-size: 15px;
+.navbar a {
+  float: left;
+  font-size: 16px;
+  color: #35426d;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
 }
 
-.analysisContainer {
-  /* A dropdown that will display team14's analysis of an Article, Amendment, etc */
-  font-size: 15px;
+.dropdown {
+  float: left;
+  overflow: hidden;
 }
 
+.dropdown .dropbtn {
+  font-size: 30px;
+  border: none;
+  outline: none;
+  color: black;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+.navbar a:hover,
+.dropdown:hover .dropbtn {
+  background-color: #35426d;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 120px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {
+  background-color: #35426d;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/* Link to Preamble section */
 #preamble {
-  /* Link to Preamble section */
 }
 
+/* Link to history of the constitution section */
 #historyConstitution {
-  /* Link to history of the constitution section */
-}
-
-#hideText {
-  color: black;
-}
-
-#showText {
-  color: black;
-}
-
-#hideText a {
-  color: #7dc097;
-}
-
-#showTexta a {
-  color: #7dc097;
-}
-/* 
-#hideText a:hover {
-  color: #7dc097;
-}
-
-#showTexta a:hover {
-  color: #7dc097;
-} */
-
-.navBarElements {
-  /*Spacing between elements in navBar, as well as basic element formatting*/
-  padding: 2%;
-}
-
-.navBarElements:hover,
-.navBarElements:focus {
-  background-color: black;
-}
-
-#navBarDropElements {
-}
-.navBarDropdown {
-}
-
-.dropdownIndicator {
 }

@@ -12,10 +12,16 @@ $(document).ready(function () {
 
 function navBarDropOptions() {
   //Toggles between showing and hiding dropdown content
-  document.getElementById("navBarDropElements").classList.toggle("show");
+  document
+    .getElementById("navBarDropElements")
+    .addEventListener("mouseover", mouseOver);
 }
 
-window.onclick = function (event) {
+function mouseOver() {
+  document.getElementById("navBarDropElements").dropdowns;
+}
+
+onmouseout = function (event) {
   if (!event.target.matches(".navBarElements")) {
     var dropdowns = document.getElementsByClassName("navBarDropdown");
     var i;
@@ -27,3 +33,8 @@ window.onclick = function (event) {
     }
   }
 };
+
+document.getElementsByClassName("textContainer").style.display = "none";
+document.addEventListener("DOMContentLoaded", function () {
+  document.getElementsByClassName("textContainer").style.display = "block";
+});
