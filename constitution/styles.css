@@ -1,139 +1,63 @@
-.navBar {
-  /*Navigation bar*/
-  background-color: #524439;
-  color: black;
-  font-size: 30px;
-  overflow: hidden;
-  position: absolute;
-  top: 0;
-  width: 100%;
-  text-align: center;
-  padding: 0 10px 10px 0;
-  margin: 0 0 5px 0;
-}
-
-.navBar a {
-  /*navBar color for text/links*/
-  color: #baa89b;
-}
-
-.navBar a:hover {
-  /*Hover color on navBar text*/
-  color: #7dc097;
-}
-
 body {
-  /*Universal formatting for all non-head/footer content*/
-  overflow-x: hidden;
-  background-color: #dda77b;
-  margin: 0 0 0 0;
-    font-family: Calibri, Arial, sans-serif;
 }
 
-/*text box styling*/
-.dropbtn {
-  background-color: #524439;
-  color: #baa89b;
-  padding: 16px;
+.navbar {
+  background-color: black;
+  overflow: hidden;
+}
+
+.navbar a {
+  float: left;
+  font-size: 16px;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+.dropdown .dropbtn {
   font-size: 16px;
   border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
 }
 
-/*content after you click on the response*/
+.navbar a:hover,
+.dropdown:hover .dropbtn {
+  background-color: red;
+}
+
 .dropdown-content {
   display: none;
   position: absolute;
-  background-color: #f1f1f1;
+  background-color: #f9f9f9;
   min-width: 160px;
   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
   z-index: 1;
 }
 
-/*additional content after you click on the response*/
 .dropdown-content a {
+  float: none;
   color: black;
   padding: 12px 16px;
   text-decoration: none;
   display: block;
+  text-align: left;
 }
 
-.parentContainer {
-  /* The box that will display the current Article, Amendment, etc as well as contain all the other dropdowns */
-  background-color: #524439;
-  border-radius: 15%;
-  box-shadow: 5px 10px;
-  padding: 3%;
-  position: relative;
-  font-size: 20px;
-  display: inline-block;
-  margin: 8%;
-  height: 250px;
-  width: 40%;
+.dropdown-content a:hover {
+  background-color: #ddd;
 }
 
-.textContainer {
-  /* A dropdown that will display the full original text from the constitution for the given Article, Amendment, etc */
-  font-size: 15px;
-  overflow: auto;
-  background-color: white;
-}
-
-.summaryContainer {
-  /* The brief description of the given Article, Amendment, etc that also can be toggled */
-  font-size: 15px;
-}
-
-.analysisContainer {
-  /* A dropdown that will display team14's analysis of an Article, Amendment, etc */
-  font-size: 15px;
-}
-
-#preamble {
-  /* Link to Preamble section */
-}
-
-#historyConstitution {
-  /* Link to history of the constitution section */
-}
-
-#hideText {
-  color: black;
-}
-
-#showText {
-  color: black;
-}
-
-#hideText a {
-  color: #7dc097;
-}
-
-#showTexta a {
-  color: #7dc097;
-}
-/* 
-#hideText a:hover {
-  color: #7dc097;
-}
-
-#showTexta a:hover {
-  color: #7dc097;
-} */
-
-.navBarElements {
-  /*Spacing between elements in navBar, as well as basic element formatting*/
-  padding: 2%;
-}
-
-.navBarElements:hover,
-.navBarElements:focus {
-  background-color: black;
-}
-
-#navBarDropElements {
-}
-.navBarDropdown {
-}
-
-.dropdownIndicator {
+.dropdown:hover .dropdown-content {
+  display: block;
 }
