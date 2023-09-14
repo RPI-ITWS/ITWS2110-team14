@@ -23,9 +23,11 @@
 }
 
 body {
+  /*Universal formatting for all non-head/footer content*/
+  overflow-x: hidden;
   background-color: #dda77b;
   margin: 0 0 0 0;
-  overflow-x: hidden;
+    font-family: Calibri, Arial, sans-serif;
 }
 
 /*text box styling*/
