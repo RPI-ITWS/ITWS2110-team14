@@ -60,6 +60,7 @@ class Card extends HTMLElement {
           overflow: hidden;
           background-color: ${this._backgroundColor};
           border-radius: 10px;
+          outline: 1px solid tan;
           transition: box-shadow 0.3s;
         }
 
