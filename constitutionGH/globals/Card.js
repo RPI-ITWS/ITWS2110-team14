@@ -6,7 +6,7 @@ class Card extends HTMLElement {
           mode: "open"
       });
 
-      this._width = "auto";
+      this._width = "700px";
       this._height = "350px";
       this._padding = "16px";
       this._margin = "16px";
