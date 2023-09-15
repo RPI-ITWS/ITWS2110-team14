@@ -1,6 +1,13 @@
 // Shows or hides text (based on current state) for text in constitution, articles, and amendments.html
 $(document).ready(function () {
   
+  $(".preambleText").hide();
+  $("a.hideTextPreamble").on("click", function () {
+      var txt = $(".preambleText").is(':visible') ? 'Read More' : 'Read Less';
+      $("a.hideTextPreamble").text(txt);
+      $(this).next('.preambleText').slideToggle(200);
+  });
+
   $(".article1Text").hide();
   $("a.hideTextA1").on("click", function () {
       var txt = $(".article1Text").is(':visible') ? 'Read More' : 'Read Less';
