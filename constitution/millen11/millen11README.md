@@ -61,6 +61,7 @@ Issues:
     b) Was not able to complete despite w3schools influence as of 09/11/23
 
 4.  Figure out how to hide text on load
+    a.) Alex used JS to fix this
 
 5.  NavBar elements displayed vertically
     a) Multiple mistakes: Submenu elements were moving all navabar elements, changing to a ul/li format without formatting with inline, causes it to naturally follow a vertical display
@@ -71,3 +72,6 @@ Issues:
 7.  Generally, a lot of version control answers between Alex and I.
     Since we were working on the same files with different versions, it was chaotic. However, we figured it out
     and were able to fix/fill in the applications basics.
+
+8.  How to format text within the box
+    a.) Used max-content to give the box's dimensions the proper height and width based on the given text, instead of a random percentage or something of that sort

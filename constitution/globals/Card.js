@@ -2,10 +2,10 @@
 class Card extends HTMLElement {
   constructor() {
     super();
-    this.attachShadow({ mode: 'open' });
+    this.attachShadow({ mode: "open" });
 
-    this._width = '400px';
-    this._height = '350px';
+    this._width = "400px";
+    this._height = "350px";
     this._padding = "16px";
     this._margin = "16px";
     this._position = "static";
@@ -14,14 +14,27 @@ class Card extends HTMLElement {
     this._right = "0px";
     this._bottom = "0px";
     this._left = "0px";
-    this._backgroundColor = 'rgb(82, 68, 57)';
+    this._backgroundColor = "#ffeace";
     this._shadow = true;
 
     this.render();
   }
 
   static get observedAttributes() {
-    return ['width', 'height', 'padding', 'float' ,'margin', 'position', 'top', 'right', 'bottom', 'left', 'background-color', 'shadow'];
+    return [
+      "width",
+      "height",
+      "padding",
+      "float",
+      "margin",
+      "position",
+      "top",
+      "right",
+      "bottom",
+      "left",
+      "background-color",
+      "shadow",
+    ];
   }
 
   attributeChangedCallback(rawName, oldVal, newVal) {
@@ -31,8 +44,7 @@ class Card extends HTMLElement {
   }
 
   render() {
-    this.shadowRoot.innerHTML =
-      `
+    this.shadowRoot.innerHTML = `
       <style>
         :host {
           display: inline-block;
@@ -53,7 +65,9 @@ class Card extends HTMLElement {
 
         /* Show shadow when hovering */
         :host(:hover) {
-          box-shadow: ${this._shadow ? 'rgba(0, 0, 0, 0.5) 0px 4px 8px 0px' : 'none'};
+          box-shadow: ${
+            this._shadow ? "rgba(0, 0, 0, 0.5) 0px 4px 8px 0px" : "none"
+          };
         }
       </style>
       <slot></slot>
@@ -61,4 +75,4 @@ class Card extends HTMLElement {
   }
 }
 
-customElements.define('custom-card', Card);
+customElements.define("custom-card", Card);
