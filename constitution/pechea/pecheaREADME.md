@@ -7,3 +7,5 @@ I used https://www.staffordschools.net/site/handlers/filedownload.ashx?moduleins
 Completed all analysis for Articles and Amendments - waiting on technicals to upload to site.
 
 Uploaded analyses to site and fixed an issue where "read more" would cause the screen to reload to the top of the page.
+
+Our unique cs and js are dropdown cards!    
