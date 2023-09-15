@@ -1,33 +1,33 @@
 #aboutUs {
   /*Formatting for the About Us section*/
-   margin-bottom: 100px;
-   margin-left: 60px;
-   margin-right: 60px;
-   margin-top: 100px;
+  margin-bottom: 100px;
+  margin-left: 60px;
+  margin-right: 60px;
+  margin-top: 100px;
 }
 #achievementsAndExperience {
   /*Formatting for "our" past experience and achievements*/
-   margin-left: 60px;
-   margin-right: 60px;
-   margin-top: 100px;
+  margin-left: 60px;
+  margin-right: 60px;
+  margin-top: 100px;
 }
 .aidanPersonalInformation {
   /* for pechea.html informational text */
-   float: left;
-   margin-right: 700px;
-   margin-top: 85px;
+  float: left;
+  margin-right: 700px;
+  margin-top: 85px;
 }
 body {
   /*Universal formatting for all non-head/footer content*/
-   overflow-x: hidden;
-   background-color: #313338;
-   color: white;
-   font-family: "Franklin Gothic Medium", "Calibri", sans-serif;
-   font-size: 20px;
+  overflow-x: hidden;
+  background-color: #313338;
+  color: white;
+  font-family: "Franklin Gothic Medium", "Calibri", sans-serif;
+  font-size: 20px;
 }
 .centerFooter {
   /*Center's footer*/
-   text-align: center;
+  text-align: center;
 }
 
 .u-email {
@@ -47,202 +47,203 @@ body {
 }
 .floatTextNextToImg {
   /* Lines up text with headshot */
-   padding: 0 10% 0 25%;
+  padding: 0 10% 0 25%;
 }
 #increaseSloganSize {
   /*Increases the slogan size in the About Us section*/
-   font-size: 25px;
+  font-size: 25px;
 }
 #meetTheTeam {
   /*Basic formatting for the member display*/
-   margin-left: 60px;
-   margin-top: 5px;
+  margin-left: 60px;
+  margin-top: 5px;
 }
 /*Formatting for Na'Sir's personal page, all asides floatInfo and subSection are used to navigate throughout page in navBar*/
 #millen11contact {
-   margin-top: 50px;
-   margin-left: 45px;
-   margin-right: 45px;
+  margin-top: 50px;
+  margin-left: 45px;
+  margin-right: 45px;
 }
 #millen11education {
-   margin-top: 50px;
-   margin-left: 45px;
-   margin-right: 45px;
+  margin-top: 50px;
+  margin-left: 45px;
+  margin-right: 45px;
 }
 #millen11experience {
-   margin-top: 50px;
-   margin-left: 45px;
-   margin-right: 45px;
+  margin-top: 50px;
+  margin-left: 45px;
+  margin-right: 45px;
 }
 #millen11floatInfo {
-   padding: 1% 10% 0 38%;
-   color: white;
-   font-size: 25px;
+  padding: 1% 10% 0 38%;
+  color: white;
+  font-size: 25px;
 }
 #millen11floatInfo a {
-   color: white;
+  color: white;
 }
 #millen11floatInfo a:hover {
-   color: red;
+  color: red;
 }
 #millen11headshot {
-   height: 300px;
-   width: 300px;
+  height: 300px;
+  width: 300px;
 }
 #millen11objective {
-   clear: left;
-   margin-top: 50px;
-   margin-left: 45px;
-   margin-right: 45px;
+  clear: left;
+  margin-top: 50px;
+  margin-left: 45px;
+  margin-right: 45px;
 }
 #millen11skills {
-   margin-top: 50px;
-   margin-left: 45px;
-   margin-right: 45px;
+  margin-top: 50px;
+  margin-left: 45px;
+  margin-right: 45px;
 }
 .millen11links {
-   color: white;
+  color: white;
 }
 .millen11links a {
-   color: white;
+  color: white;
 }
 .millen11links:hover {
-   color: red;
+  color: red;
 }
 #millen11spaceBelowNav {
-   margin-top: 100px;
+  margin-top: 100px;
 }
 .millen11subSection {
   /*Formatting each indivudal experience,etc in a given section*/
-   margin: 50px 0px 0px 0px;
+  margin: 50px 0px 0px 0px;
 }
 .millen11schoolLinks {
-   color: white;
+  color: white;
 }
 .millen11schoolLinks a {
-   color: white;
+  color: white;
 }
 .millen11schoolLinks a:hover {
-   color: red;
+  color: red;
 }
 .mockupImage {
-   height: 50%;
-   width: 50%;
+  height: 50%;
+  width: 50%;
 }
 .pecheaDiv {
-   padding: 3%;
+  padding: 3%;
 }
 .navBar {
   /*Navigation bar*/
-   background-color: rgb(29, 28, 28);
-   color: white;
-   font-size: 30px;
-   overflow: hidden;
-   position: absolute;
-   top: 0;
-   width: 100%;
-   text-align: center;
-   padding: 0 10px 10px 0;
-   margin: 0 0 5px 0;
+  background-color: rgb(29, 28, 28);
+  color: white;
+  font-size: 30px;
+  overflow: hidden;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  text-align: center;
+  padding: 0 10px 10px 0;
+  margin: 0 0 5px 0;
 }
 .navBar a {
   /*navBar color for text/links*/
-   color: white;
+  color: white;
 }
 .navBar a:hover {
   /*Hover color on navBar text*/
-   color: red;
+  color: red;
 }
 .roundHeadshots {
   /* Makes headshots on the home page circular */
-   border-radius: 100%;
-   height: 150px;
-   margin-left: 180px;
-   margin-right: 0;
-   float: left;
-   padding: 0;
-   width: 150px;
+  border-radius: 100%;
+  height: 150px;
+  margin-left: 180px;
+  margin-right: 0;
+  float: left;
+  padding: 0;
+  width: 150px;
 }
+
 .roundHeadshotsAidanPersonal {
   /* version of roundHeadshots for pechea.html */
-   border-radius: 50%;
-   padding: 1%;
-   height: 300px;
-   width: 300px;
-   float: left;
+  border-radius: 50%;
+  padding: 1%;
+  height: 300px;
+  width: 300px;
+  float: left;
 }
 /*Formatting for Peter's page*/
 #simonp2aboutme {
-   clear: left;
-   margin-left: 45px;
-   margin-right: 45px;
+  clear: left;
+  margin-left: 45px;
+  margin-right: 45px;
 }
 #simonp2contact {
-   margin-top: 50px;
-   margin-left: 45px;
-   margin-right: 45px;
+  margin-top: 50px;
+  margin-left: 45px;
+  margin-right: 45px;
 }
 #simonp2education {
-   margin-top: 20px;
-   margin-left: 45px;
-   margin-right: 45px;
+  margin-top: 20px;
+  margin-left: 45px;
+  margin-right: 45px;
 }
 #simonp2experience {
-   margin-top: 20px;
-   margin-left: 45px;
-   margin-right: 45px;
+  margin-top: 20px;
+  margin-left: 45px;
+  margin-right: 45px;
 }
 #simonp2floatInfo {
-   padding: 0 10% 0 38%;
+  padding: 0 10% 0 38%;
 }
 #simonp2headshot {
-   height: 300px;
-   width: 300px;
+  height: 300px;
+  width: 300px;
 }
 #simonp2skills {
-   margin-top: 20px;
-   margin-left: 45px;
-   margin-right: 45px;
+  margin-top: 20px;
+  margin-left: 45px;
+  margin-right: 45px;
 }
 #simonp2spaceBelowNav {
-   margin-top: 110px;
+  margin-top: 110px;
 }
 .simonp2subSection {
-   margin: 30px 0px 0px 0px;
+  margin: 30px 0px 0px 0px;
 }
 
 .spaceOutNavContent {
   /*Spacing between elements in navBar*/
-   padding: 3%;
+  padding: 3%;
 }
-#coteaImage{
-   border-radius: 100%;
-   height: 150px;
-   padding: 0;
-   height: 300px;
-   width: 300px;
-   float: left;
-   margin-right: 50px;
+#coteaImage {
+  border-radius: 100%;
+  height: 150px;
+  padding: 0;
+  height: 300px;
+  width: 300px;
+  float: left;
+  margin-right: 50px;
 }
-#coteaContact{
-   margin-top: 110px;
-   margin-left: 150px;
-   margin-bottom: 250px;
+#coteaContact {
+  margin-top: 110px;
+  margin-left: 150px;
+  margin-bottom: 250px;
 }
-.coteaHeaderSpacing{
-   font-size: 40px;
+.coteaHeaderSpacing {
+  font-size: 40px;
 }
-.coteaBigSection{
-   margin-top: 50px;
-   margin-left: 150px;
+.coteaBigSection {
+  margin-top: 50px;
+  margin-left: 150px;
 }
-.coteaDescription{
-   clear: left;
-   margin-right: 150px;
-   margin-left: 50px;
+.coteaDescription {
+  clear: left;
+  margin-right: 150px;
+  margin-left: 50px;
 }
-.coteaSection{
-   margin: 50px 0px 0px 50px;
+.coteaSection {
+  margin: 50px 0px 0px 50px;
 }
 
 /*Formatting for Anish's page*/

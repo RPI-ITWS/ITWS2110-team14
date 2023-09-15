@@ -1,0 +1,114 @@
+/* Universal formatting for all non-head/footer content */
+body {
+  background-color: white;
+  font-family: Calibri, Arial, sans-serif;
+  margin: 0;
+  overflow-x: hidden;
+}
+/* The brief description of the given Article, Amendment, etc that also can be toggled */
+.summaryContainer {
+  font-size: 15px;
+}
+/* A dropdown that will display team14's analysis of an Article, Amendment, etc */
+.analysisContainer {
+  font-size: 15px;
+}
+/* The box that will display the current Article, Amendment, etc as well as contain all the other dropdowns */
+.parentContainer {
+  background-color: #ffeace;
+  border-radius: 15%;
+  box-shadow: 5px 10px;
+  display: inline-block;
+  font-size: 20px;
+  height: max-content;
+  margin: 5% 25% 5% 25%;
+  padding: 3%;
+  position: relative;
+  width: 40%;
+}
+ul .parentContainer {
+  width: max-content;
+}
+
+/* Navigation styles */
+ul.listContent {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  height: max-content;
+  list-style-type: none;
+  margin: 5% 25% 5% 25%;
+  overflow: hidden;
+  padding: 0;
+}
+
+ul.navbar {
+  background: linear-gradient(#511f1f, #5e2e2f, #dddcdc, #5e2e2f, #511f1f);
+  list-style-type: none;
+  margin: 0;
+  overflow: hidden;
+  padding: 0;
+  text-align: center;
+}
+li {
+  float: left;
+}
+li a.dropdown,
+.dropbtn {
+  display: inline-block;
+  color: black;
+  display: inline-block;
+  font-size: 30px;
+  padding: 14px 16px;
+  text-align: center;
+  text-decoration: none;
+}
+li a.dropdown:hover,
+.dropdown:hover .dropbtn {
+  background-color: #35426d;
+}
+li.dropdown {
+  display: inline-block;
+  margin-left: 20%;
+}
+.dropdown-content {
+  background-color: #f9f9f9;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  display: none;
+  min-width: 160px;
+  position: absolute;
+  z-index: 1;
+}
+.dropdown-content a {
+  color: black;
+  display: block;
+  font-size: 20px;
+  padding: 12px 16px;
+  text-align: left;
+  text-decoration: none;
+}
+.dropdown-content a:hover {
+  background-color: #35426d;
+}
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+li a {
+  color: black;
+}
+ul.listContent {
+  list-style-type: none;
+  margin: 5% 25% 5% 25%;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow: hidden;
+  height: max-content;
+}
+.listContent li {
+  padding: 5%;
+}
+.showText {
+  float: right;
+}
