@@ -27,7 +27,7 @@ body {
   display: inline-block;
   margin: 5% 25% 5% 25%;
   height: max-content;
-  width: max-content;
+  /* width: max-content; */
 }
 ul.listContent {
   list-style-type: none;
