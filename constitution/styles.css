@@ -27,7 +27,11 @@ body {
   display: inline-block;
   margin: 5% 25% 5% 25%;
   height: max-content;
-  /* width: max-content; */
+  width: 40%;
+}
+
+ul .parentContainer {
+  width: max-content;
 }
 ul.listContent {
   list-style-type: none;
@@ -65,6 +69,7 @@ li a.dropdown:hover,
 
 li.dropdown {
   display: inline-block;
+  margin-left: 20%;
 }
 
 .dropdown-content {
@@ -86,7 +91,7 @@ li.dropdown {
 }
 
 .dropdown-content a:hover {
-  background-color: #f1f1f1;
+  background-color: #35426d;
 }
 
 .dropdown:hover .dropdown-content {
