@@ -66,3 +66,7 @@ Issues:
 
    6. Centering elements in navbar
       a) Used margin-left: 20% to push it leftwards, worked perfectly
+
+   7. Generally, a lot of version control answers between Alex and I. 
+   Since we were working on the same files with different versions, it was chaotic. However, we figured it out 
+   and were able to fix/fill in the applications basics.
