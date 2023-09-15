@@ -26,11 +26,14 @@ body {
   font-size: 20px;
   display: inline-block;
   margin: 20%;
-  height: 250px;
-  width: 40%;
 }
-
-ul {
+ul.listContent{
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+ul.navbar {
   list-style-type: none;
   margin: 0;
   padding: 0;
@@ -83,6 +86,10 @@ li.dropdown {
 
 .dropdown:hover .dropdown-content {
   display: block;
+}
+
+.showText{
+  float:right;
 }
 /* Link to Preamble section */
 #preamble {
