@@ -25,7 +25,7 @@ body {
   position: relative;
   font-size: 20px;
   display: inline-block;
-  margin: 20%;
+  margin: 20px;
 }
 ul.listContent{
   list-style-type: none;
@@ -45,7 +45,7 @@ li {
   float: left;
 }
 
-li a, .dropbtn {
+li a#dropdown, .dropbtn {
   display: inline-block;
   color: black;
   text-align: center;
@@ -54,7 +54,7 @@ li a, .dropbtn {
   font-size: 30px;
 }
 
-li a:hover, .dropdown:hover .dropbtn {
+li a#dropdown:hover, .dropdown:hover .dropbtn {
   
   background-color: #35426d;
 }
@@ -87,6 +87,15 @@ li.dropdown {
 .dropdown:hover .dropdown-content {
   display: block;
 }
+li a {
+  font-size: 20px;
+  /* text-decoration: none; */
+  color: black;
+  text-align: center;
+  padding: 14px 0 16px 0;
+
+}
+
 
 .showText{
   float:right;

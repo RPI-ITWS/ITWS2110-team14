@@ -1,10 +1,22 @@
 // Shows or hides text (based on current state) for text in constitution, articles, and amendments.html
 $(document).ready(function () {
-  $("a.hideText").click(function () {
-    $(".textContainer p").hide(400);
+  // $("a.hideText").click(function () {
+  //   $(".textContainer p").hide(400);
+  // });
+  // $("a.showText").click(function () {
+  //   $(".textContainer p").show(400);
+  // });
+  $(".article1Text").hide();
+  $("a.hideTextA1").on("click", function () {
+      var txt = $(".article1Text").is(':visible') ? 'Read More' : 'Read Less';
+      $("a.hideTextA1").text(txt);
+      $(this).next('.article1Text').slideToggle(200);
   });
-  $("a.showText").click(function () {
-    $(".textContainer p").show(400);
+  $(".article2Text").hide();
+  $("a.hideTextA2").on("click", function () {
+      var txt = $(".article2Text").is(':visible') ? 'Read More' : 'Read Less';
+      $("a.hideTextA2").text(txt);
+      $(this).next('.article2Text').slideToggle(200);
   });
 });
 
