@@ -1,7 +1,7 @@
 /* Universal formatting for all non-head/footer content */
 body {
   overflow-x: hidden;
-  background-color: #ffeace;
+  background-color: white;
   margin: 0 0 0 0;
   font-family: Calibri, Arial, sans-serif;
 }
