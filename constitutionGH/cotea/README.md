@@ -14,6 +14,10 @@ proud of the javascript that I wrote. It was very repetitive and I am sure there
 to do that. It had just gotten late and I didnt't feel like changing something that wasn't
 functionally broken. Though it does look horendous.
 
+Also to help me get unstuck I used a bunch of different little code snippets from w3schools.com
+I don't know how to formally cite it, but I did take some things from their tutorials.
+
 For grading on the creativity, I don't really know what to say here, but I do think the color scheme that
 we have is nice. It was an american theme to it that isnt too crazy. Also Anish's implementaion of the
 custom cards was a nice touch. Those gave the website a bit more of a polish in the end.
+
