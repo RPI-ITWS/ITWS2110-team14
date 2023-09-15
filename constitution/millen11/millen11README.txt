@@ -63,3 +63,6 @@ Issues:
 
    5. NavBar elements displayed vertically
       a) Multiple mistakes: Submenu elements were moving all navabar elements, changing to a ul/li format without formatting with inline, causes it to naturally follow a vertical display
+
+   6. Centering elements in navbar
+      a) Used margin-left: 20% to push it leftwards, worked perfectly

@@ -35,22 +35,20 @@ body {
   overflow: hidden;
   padding: 0 10px 10px 0;
   margin: 0 0 5px 0;
-  text-align: center;
   text-decoration: none;
   width: 100%;
 }
 
 .navbar a {
-  float: left;
-  font-size: 16px;
   color: #35426d;
-  text-align: center;
+  font-size: 16px;
   padding: 14px 16px;
   text-decoration: none;
 }
 
 .dropdown {
   float: left;
+  margin-left: 20%;
   overflow: hidden;
 }
 
@@ -71,20 +69,20 @@ body {
 }
 
 .dropdown-content {
+  background-color: #f9f9f9;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
   display: none;
   position: absolute;
-  background-color: #f9f9f9;
   min-width: 120px;
-  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
   z-index: 1;
 }
 
 .dropdown-content a {
-  float: none;
   color: black;
+  display: block;
+  float: none;
   padding: 12px 16px;
   text-decoration: none;
-  display: block;
 }
 
 .dropdown-content a:hover {
