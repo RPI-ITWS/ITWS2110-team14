@@ -7,6 +7,7 @@ $(document).ready(function () {
       $("a.hideTextPreamble").text(txt);
       $(this).next('.preambleText').slideToggle(200);
   });
+  
 
   $(".article1Text").hide();
   $("a.hideTextA1").on("click", function () {

@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script type="text/javascript" src="resources/jquery-3.7.1.min.js"></script>
     <script type="text/javascript" src="resources/script.js"></script>
+    <script src="globals/Card.js"></script>
 
     <title>The Constitution</title>
     <link rel="icon" type="image/x-icon" href="/lab1/images/RPM-logo.png" />
@@ -35,7 +36,7 @@
           </div>
         </li>
         <li class="dropdown">
-          <a href="#" class="dropbtn">Amendments</a>
+          <a href="amendments.html" class="dropbtn">Amendments</a>
           <div class="dropdown-content">
             <a href="amendments.html#amendment1">Amendment 1</a>
             <a href="amendments.html#amendment2">Amendment 2</a>
@@ -51,17 +52,37 @@
         </li>
       </ul>
     </div>
+    <ul class="listContent">
+      <li>
+        <custom-card>
+          <h1 id="history">History</h1>
+          <div class="historyText">
+            The Constitution was written in the summer of 1787 in Philadelphia, Pennsylvania, by delegates from 12 states, 
+            in order to replace the Articles of Confederation with a new form of government. It created a federal system 
+            with a national government composed of 3 separated powers, and included both reserved and concurrent powers of states. 
+            It also included a system of checks and balances, and a process for amending the Constitution. The Constitution was 
+            ratified by 9 out of 13 states on June 21, 1788. The Constitution is the oldest and shortest written Constitution of 
+            any major government in the world.
+          </div>
+        </custom-card>
+      </li>
+      <li>
+        <custom-card>
+          <h1 id="preamble">The Preamble</h1>
+          <strong>Summary:</strong> Paste Text Here<br /><br />
+          <a href="#" class="hideTextPreamble">Read More</a>
+            <div class="preambleText">
+              <br /><strong>Analysis:</strong> Paste Text Here
 
-    <div class="parentContainer">
-      <h1 id="preamble">The Preamble</h1>
-      <a href="#" class="hideTextPreamble">Read More</a>
-        <div class="preambleText">
-          We, the people of the United States, in order to form a more perfect Union, establish justice, 
-          insure domestic tranquility, provide for the common defense, promote the general welfare, 
-          and secure the blessings of liberty to ourselves and our posterity, do ordain and establish 
-          this Constitution for the United States of America.
-      </div>
-    </div>
+              <br /><br /><strong>Preamble:</strong>We, the people of the United States, in order to form a more perfect Union, establish justice, 
+              insure domestic tranquility, provide for the common defense, promote the general welfare, 
+              and secure the blessings of liberty to ourselves and our posterity, do ordain and establish 
+              this Constitution for the United States of America.
+          </div>
+        </custom-card>
+      </li>
+    </ul>
+    
   </body>
 </html>
 
