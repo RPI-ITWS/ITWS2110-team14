@@ -1,0 +1,66 @@
+/* navbar-styles.css */
+
+.navbar-text {
+  margin: 0 auto;
+}
+
+.navbar {
+  display: flex;
+  padding: 10px;
+}
+
+.navbar-left {
+  font-family: 'Outfit', sans-serif;
+  font-weight: bold;
+}
+
+.navbar-left a.navbar-brand.navbar-text {
+  color: rgba(0, 0, 0, 0.9);
+}
+
+.navbar-right {
+  font-family: 'Roboto', sans-serif;
+  font-weight: bold;
+}
+
+.navbar-right a.navbar-brand.navbar-text {
+  color: rgba(0, 0, 0, 0.9);
+}
+
+.dropdown-menu {
+  transform: translate(-80px);
+}
+
+.navbar-center {
+  font-family: 'Roboto', sans-serif;
+  position: absolute;
+  display: flex;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.navbar-center-component {
+  margin: 50px;
+}
+
+/* Alter CSS based on page width */
+@media (max-width: 1200px) {
+  @media (max-width: 650px) {
+    .navbar-center {
+      position: static;
+      transform: none;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+
+    .navbar-center-component {
+      margin: 5px;
+    }
+  }
+
+  .navbar-center-component {
+    margin: 25px;
+  }
+}
