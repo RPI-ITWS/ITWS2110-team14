@@ -20,10 +20,10 @@ Page template:
     <link
       rel="icon"
       type="image/x-icon"
-      href="/RPM/globals/images/RPM-logo.png"
+      href="/iit/RPM/globals/images/RPM-logo.png"
     />
     <script
-      src="/RPM/globals/components/navbar/navbar.js"
+      src="/iit/RPM/globals/components/navbar/navbar.js"
       type="text/javascript"
       defer
     ></script>
