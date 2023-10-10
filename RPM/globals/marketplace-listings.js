@@ -127,6 +127,19 @@ class Marketplace_Listings extends HTMLElement {
  </style>
  <slot></slot>
 `;
+    shadow.appendChild(style);
+    console.log(style.isConnected);
+
+    shadow.appendChild(priceContainer);
+    priceContainer.appendChild(priceText);
+
+    shadow.appendChild(productContainer);
+    productContainer.appendChild(productText);
+    productContainer.appendChild(productImageContainer);
+
+    shadow.appendChild(productImageContainer);
+    productImageContainer.appendChild(productImage);
+    productImageContainer.appendChild(productImageURL);
   }
 }
 
