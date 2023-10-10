@@ -7,7 +7,7 @@ class NavBar extends HTMLElement {
 
   connectedCallback() {
     // Import navbar-inner.html content
-    fetch('globals/navbar/navbar-inner.html')
+    fetch('./../globals/navbar/navbar-inner.html')
       .then(response => response.text())
       .then(content => {
         this.innerHTML = `
