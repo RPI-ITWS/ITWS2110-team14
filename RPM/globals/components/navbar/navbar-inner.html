@@ -1,0 +1,67 @@
+<!-- navbar-inner.html -->
+
+<head> </head>
+<body>
+  <link
+    rel="stylesheet"
+    href="/RPM/globals/components/navbar/navbar-styles.css"
+  />
+  <nav class="shadow-sm navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container-fluid">
+      <div class="navbar-left">
+        <a class="navbar-brand navbar-text" href="/RPM/">RPM</a>
+      </div>
+      <div class="navbar-center">
+        <div class="navbar-center-component">
+          <a class="navbar-brand navbar-text" href="/RPM/pages/listings/"
+            >Listings</a
+          >
+        </div>
+        <div class="navbar-center-component">
+          <a class="navbar-brand navbar-text" href="/RPM/pages/post/"
+            >Post a Listing</a
+          >
+        </div>
+        <div class="navbar-center-component">
+          <a class="navbar-brand navbar-text" href="/RPM/pages/about/"
+            >About Us</a
+          >
+        </div>
+      </div>
+      <div class="navbar-right">
+        <!-- Hide this component until logged in -->
+        <div class="dropdown">
+          <a
+            class="navbar-brand navbar-text dropdown-toggle"
+            href="#"
+            role="button"
+            id="userDropdown"
+            data-bs-toggle="dropdown"
+            aria-expanded="false"
+          >
+            User <i class="bi bi-caret-down-fill"></i>
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="userDropdown">
+            <li
+              ><a class="dropdown-item" href="/RPM/pages/user/profile/"
+                >Profile</a
+              ></li
+            >
+            <li
+              ><a class="dropdown-item" href="/RPM/pages/user/settings/"
+                >Settings</a
+              ></li
+            >
+            <li><hr class="dropdown-divider" /></li>
+            <li
+              ><a class="dropdown-item" href="/RPM/pages/user/logout/"
+                >Logout</a
+              ></li
+            >
+          </ul>
+        </div>
+        <!-- End hide -->
+      </div>
+    </div>
+  </nav>
+</body>
