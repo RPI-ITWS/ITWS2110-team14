@@ -4,9 +4,10 @@
         {
             "listingID": 0,
             "rcsID": "pechea",
-            "listingTitle": "placeholder",
-            "price": 10.00,
-            "description": "placeholder",
+            "listingTitle": "Toaster",
+            "condition": "New",
+            "price": 18.25,
+            "description": "Lets you toast stuff. Forbidden bathbomb.",
             "imgURL": "sampleURL",
             "active": true
         },
@@ -14,9 +15,10 @@
         {
             "listingID": 1,
             "rcsID": "simonp2",
-            "listingTitle": "placeholder",
-            "price": 10.00,
-            "description": "placeholder",
+            "listingTitle": "Air Fryer",
+            "condition": "Used",
+            "price": 4.00,
+            "description": "Clearly, you do not own this air fryer.",
             "imgURL": "sampleURL",
             "active": true
         },
@@ -24,9 +26,10 @@
         {
             "listingID": 2,
             "rcsID": "millen11",
-            "listingTitle": "placeholder",
-            "price": 10.00,
-            "description": "placeholder",
+            "listingTitle": "Calculus 1 Tutoring",
+            "condition": "Other",
+            "price": 13.00,
+            "description": "I will tutor you for Calc 1. Price is per hour.",
             "imgURL": "sampleURL",
             "active": true
         },
@@ -34,9 +37,10 @@
         {
             "listingID": 3,
             "rcsID": "patela16",
-            "listingTitle": "placeholder",
-            "price": 10.00,
-            "description": "placeholder",
+            "listingTitle": "Skateboard",
+            "condition": "Damaged",
+            "price": 12.50,
+            "description": "A well loved skateboard, needs some fixing and I don't have time to do that so I am selling it.",
             "imgURL": "sampleURL",
             "active": true
         }
