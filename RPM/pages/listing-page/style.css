@@ -1,0 +1,31 @@
+h1 {
+    margin: 10px;
+}
+
+h3 {
+    margin: 10px;
+}
+
+p {
+    margin: 10px;
+}
+
+div.parentDiv {
+    display: flex;
+    justify-content: left;
+}
+
+button.buyButton {
+    border-radius: 5px;
+    margin: 10px;
+    font-size: large;
+}
+
+.listingImage {
+    border-radius: 25px;
+    justify-self: left;
+    justify-content: left;
+    width: 500px;
+    height: 500px;
+    margin: 10px;
+}
