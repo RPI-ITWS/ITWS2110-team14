@@ -2,7 +2,7 @@
     "listings": [
         
         {
-            "listingID": 1,
+            "listingID": 0,
             "rcsID": "pechea",
             "listingTitle": "placeholder",
             "price": 10.00,
@@ -12,7 +12,7 @@
         },
 
         {
-            "listingID": 2,
+            "listingID": 1,
             "rcsID": "simonp2",
             "listingTitle": "placeholder",
             "price": 10.00,
@@ -22,7 +22,7 @@
         },
 
         {
-            "listingID": 3,
+            "listingID": 2,
             "rcsID": "millen11",
             "listingTitle": "placeholder",
             "price": 10.00,
@@ -32,7 +32,7 @@
         },
 
         {
-            "listingID": 4,
+            "listingID": 3,
             "rcsID": "patela16",
             "listingTitle": "placeholder",
             "price": 10.00,
@@ -48,28 +48,28 @@
             "rcsID": "pechea",
             "firstName": "Aidan",
             "lastName": "Pechet",
-            "postedListings": [1]
+            "postedListings": [0]
         },
 
         {
             "rcsID": "simonp2",
             "firstName": "Peter",
             "lastName": "Simone",
-            "postedListings": [2]
+            "postedListings": [1]
         },
 
         {
             "rcsID": "millen11",
             "firstName": "Na'Sir",
             "lastName": "Miller",
-            "postedListings": [3]
+            "postedListings": [2]
         },
 
         {
             "rcsID": "patela16",
             "firstName": "Anish",
             "lastName": "Patel",
-            "postedListings": [4]
+            "postedListings": [3]
         }
     ]
 }
