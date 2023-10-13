@@ -10,9 +10,15 @@ p {
     margin: 10px;
 }
 
-div.parent1 {
+div.parentDiv {
     display: flex;
     justify-content: left;
+}
+
+button.buyButton {
+    border-radius: 5px;
+    margin: 10px;
+    font-size: large;
 }
 
 .listingImage {
