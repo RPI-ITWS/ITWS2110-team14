@@ -1,0 +1,25 @@
+h1 {
+    margin: 10px;
+}
+
+h3 {
+    margin: 10px;
+}
+
+p {
+    margin: 10px;
+}
+
+div.parent1 {
+    display: flex;
+    justify-content: left;
+}
+
+.listingImage {
+    border-radius: 25px;
+    justify-self: left;
+    justify-content: left;
+    width: 500px;
+    height: 500px;
+    margin: 10px;
+}
