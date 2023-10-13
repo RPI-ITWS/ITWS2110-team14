@@ -2,6 +2,8 @@
 This code will define the HTML necessary to display a listing on the marketplace/home page
  */
 
+src = "jquery-3.6.1.min.js"
+
 class Marketplace_Listings extends HTMLElement {
   constructor() {
     super();
