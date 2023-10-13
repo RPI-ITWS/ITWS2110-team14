@@ -1,0 +1,75 @@
+{
+    "listings": [
+        
+        {
+            "listingID": 1,
+            "rcsID": "pechea",
+            "listingTitle": "placeholder",
+            "price": 10.00,
+            "description": "placeholder",
+            "imgURL": "sampleURL",
+            "active": true
+        },
+
+        {
+            "listingID": 2,
+            "rcsID": "simonp2",
+            "listingTitle": "placeholder",
+            "price": 10.00,
+            "description": "placeholder",
+            "imgURL": "sampleURL",
+            "active": true
+        },
+
+        {
+            "listingID": 3,
+            "rcsID": "millen11",
+            "listingTitle": "placeholder",
+            "price": 10.00,
+            "description": "placeholder",
+            "imgURL": "sampleURL",
+            "active": true
+        },
+
+        {
+            "listingID": 4,
+            "rcsID": "patela16",
+            "listingTitle": "placeholder",
+            "price": 10.00,
+            "description": "placeholder",
+            "imgURL": "sampleURL",
+            "active": true
+        }
+        
+    ],
+
+    "users": [
+        {
+            "rcsID": "pechea",
+            "firstName": "Aidan",
+            "lastName": "Pechet",
+            "postedListings": [1]
+        },
+
+        {
+            "rcsID": "simonp2",
+            "firstName": "Peter",
+            "lastName": "Simone",
+            "postedListings": [2]
+        },
+
+        {
+            "rcsID": "millen11",
+            "firstName": "Na'Sir",
+            "lastName": "Miller",
+            "postedListings": [3]
+        },
+
+        {
+            "rcsID": "patela16",
+            "firstName": "Anish",
+            "lastName": "Patel",
+            "postedListings": [4]
+        }
+    ]
+}
