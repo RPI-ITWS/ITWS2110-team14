@@ -1,4 +1,4 @@
-import { Marketplace_Listings } from "./marketplace-lisitings.js";
+import { Listing } from "../components/Listing/Listing.js";
 
 $(document).ready(function () {
   addListingsToMarketplace(getData());
@@ -22,7 +22,11 @@ function getData() {
 }
 
 function addListingsToMarketplace(currentData) {
-  let lisitingsTable = currentData[0];
+  let listingsTable = currentData[0];
   let userTable = currentData[1];
-  for (let i = 0; )
+  let listing;
+  for (listing in listingsTable) {
+    if (listingsTable.hasOwnProperty(listing)) {
+    }
+  }
 }
