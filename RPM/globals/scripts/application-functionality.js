@@ -22,11 +22,30 @@ function getData() {
 }
 
 function addListingsToMarketplace(currentData) {
+  //Add listing object to marketplace
   let listingsTable = currentData[0];
-  let userTable = currentData[1];
   let listing;
+  let pageCount = 1;
+  let listingCount = 1;
+  const listingLimit = 60;
   for (listing in listingsTable) {
     if (listingsTable.hasOwnProperty(listing)) {
+      if (listing["active"]) {
+        let imgPath = listing["imgURL"];
+        let price = listing["price"];
+        let listingTitle = listing["listingTitle"];
+
+        if (listingCount == listingLimit) {
+          //Maximum amount of listings have been reached on a page, add items to the next page
+          listingCount = 0;
+          pageCount += 1;
+        }
+
+        $("#marketplace-listings" + pageCount + "-" + listingCount).append(
+          Listing(price, listingTitle, imgPath)
+        );
+        listingCount += 1;
+      }
     }
   }
 }
