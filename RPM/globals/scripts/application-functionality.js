@@ -1,3 +1,7 @@
+/*
+Fetches data from JSON, dynamically add listing objects to marketplace
+*/
+
 import { Listing } from "../components/listing/listing.js";
 
 $(document).ready(function () {
