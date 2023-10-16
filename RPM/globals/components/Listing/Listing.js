@@ -1,6 +1,6 @@
 /*
 This code will define the HTML necessary to display a listing on the marketplace/home page
- */
+*/
 
 src = "jquery-3.6.1.min.js";
 
@@ -8,9 +8,9 @@ class Listing extends HTMLElement {
   constructor(listingTitle, listingID, priceText, imgURL) {
     super();
 
-    this._maxWidth = "381px"; //Numbers from Facebook Marketplace
-    this._minWidth = "242px"; //Numbers from Facebook Marketplace
-    this._height = "225px"; //Arbitrary
+    this._maxWidth = "381px"; // Numbers from Facebook Marketplace
+    this._minWidth = "242px"; // Numbers from Facebook Marketplace
+    this._height = "225px"; // Arbitrary
     this._padding = "5px";
     this._margin = "5px";
     this._position = "static";
@@ -28,14 +28,14 @@ class Listing extends HTMLElement {
       mode: "open",
     });
 
-    //Holds all of elements
+    // Holds all of elements
     const parentContainer = document.createElement("div");
     parentContainer.setAttribute("class", "parentContainer");
     parentContainer.addEventListener("click", function () {
       const listingPage = "../pages/listing-page/index.html";
       window.location.href = listingPage;
     });
-    //Image of product
+    // Image of product
     const productImageContainer = document.createElement("div");
     productImageContainer.setAttribute("class", "productImageContainer");
     let productImageURL;
@@ -43,26 +43,26 @@ class Listing extends HTMLElement {
       productImageURL = "../img/defaultProductImage.jpg";
     }
 
-    //Add the image of the product to the respective container
+    // Add the image of the product to the respective container
     const productImage = document.createElement("img");
     productImage.src = imgPath;
     productImageContainer.appendChild(productImage);
 
-    //Price
+    // Price
     const priceContainer = document.createElement("span");
     priceContainer.setAttribute("class", "priceContainer");
 
     // const priceText = this.getAttribute("data-text");
     priceContainer.textContent = "$" + priceText; //From database
 
-    //Product
+    // Product
     const productContainer = document.createElement("span");
     productContainer.setAttribute("class", "productContainer");
 
     // const productText = this.getAttribute("data-text");
     productContainer.textContent = listingTitle; //From database
 
-    //Styling of class attributes
+    // Styling of class attributes
     const style = document.createElement("style");
     console.log("Style is connected " + style.isConnected);
 
