@@ -31,11 +31,11 @@ window.addEventListener('load', function() {
       return;
     }
     const userInfoElement = document.querySelector('#userInfo');
-    const listingsElement = document.querySelector('#listings')
+    const marketplaceElement = document.querySelector('#marketplace')
     const postElement = document.querySelector('#post')
     if (userInfoElement) {
       userInfoElement.style.display = 'block';
-      listingsElement.style.display = 'block';
+      marketplaceElement.style.display = 'block';
       postElement.style.display = 'block';
       clearInterval(intervalID);
     }
