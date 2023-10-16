@@ -137,16 +137,12 @@ span.ripple {
 .moving-rectangle {
   position: absolute;
   border-radius: 25px;
-  opacity: 0;
   animation-name: moveRectangle;
   animation-timing-function: linear;
   animation-iteration-count: 1;
 }
 
 @keyframes moveRectangle {
-  5% {
-    opacity: 0;
-  }
   10% {
     opacity: 1;
   }
