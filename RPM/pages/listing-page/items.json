@@ -7,7 +7,7 @@
       "condition": "New",
       "price": 18.25,
       "description": "Lets you toast stuff. Forbidden bathbomb.",
-      "imgURL": "sampleURL",
+      "imgURL": "/RPM/globals/images/toaster.png",
       "active": true
     },
 
@@ -18,7 +18,7 @@
       "condition": "Used",
       "price": 4.0,
       "description": "Clearly, you do not own this air fryer.",
-      "imgURL": "sampleURL",
+      "imgURL": "/RPM/globals/images/airfryer.png",
       "active": true
     },
 
@@ -29,7 +29,7 @@
       "condition": "Other",
       "price": 13.0,
       "description": "I will tutor you for Calc 1. Price is per hour.",
-      "imgURL": "sampleURL",
+      "imgURL": "/RPM/globals/images/calculus.png",
       "active": true
     },
 
@@ -40,7 +40,7 @@
       "condition": "Damaged",
       "price": 12.5,
       "description": "A well loved skateboard, needs some fixing and I don't have time to do that so I am selling it.",
-      "imgURL": "sampleURL",
+      "imgURL": "../../globals/images/skateboard.png",
       "active": true
     }
   ],
