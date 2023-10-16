@@ -43,7 +43,7 @@ loginButton.addEventListener('mouseenter', () => {
   leftHands.style.transform = 'rotate(10deg)';
   leftHands.style.left = '17%';
   rightHand1.style.transform = 'rotate(-10deg)';
-  rightHand1.style.left = '59%';
+  rightHand1.style.left = '56%';
 });
 
 loginButton.addEventListener('mouseleave', () => {
@@ -89,7 +89,7 @@ for (let i = 0; i < 200; i++) {
   createRectangle(Math.random() * 250 - 50, true);
 }
 
-setInterval(() => createRectangle(-50), 100);
+setInterval(() => createRectangle(-50, false), 70);
 
 // On page load
 window.addEventListener('load', function() {

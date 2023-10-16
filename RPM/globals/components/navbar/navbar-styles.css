@@ -47,12 +47,8 @@
 /* Alter CSS based on page width */
 @media (max-width: 1200px) {
   @media (max-width: 650px) {
-    .navbar-center {
-      position: static;
-      transform: none;
-      flex-direction: column;
-      align-items: center;
-      text-align: center;
+    #about {
+      display: none;
     }
 
     .navbar-center-component {

@@ -31,19 +31,23 @@ window.addEventListener('load', function() {
       return;
     }
     const userInfoElement = document.querySelector('#userInfo');
+    const listingsElement = document.querySelector('#listings')
+    const postElement = document.querySelector('#post')
     if (userInfoElement) {
       userInfoElement.style.display = 'block';
+      listingsElement.style.display = 'block';
+      postElement.style.display = 'block';
       clearInterval(intervalID);
     }
     else {
       checkCount++;
-      if (checkCount >= 60) {
+      if (checkCount >= 300) {
         console.error("Element #userInfo not found after 30 seconds.");
         clearInterval(intervalID);
       }
     }
   }
-  const intervalID = setInterval(showUserInfo, 500);
+  const intervalID = setInterval(showUserInfo, 100);
 });
 
 customElements.define('navbar-component', NavBar);
