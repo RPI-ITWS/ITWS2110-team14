@@ -3,3 +3,29 @@
 body {
     background-color: rgba(255, 221, 221, 1);
 }
+
+h1 {
+    margin: 10px;
+}
+
+div.parentDiv {
+    
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+img.listingImage {
+    border-radius: 25px;
+    justify-self: center;
+    justify-content: center;
+    width: 500px;
+    height: 500px;
+    margin: 10px;
+}
+
+button.uploadImage {
+    border-radius: 5px;
+    margin: 10px;
+    font-size: large;
+}
