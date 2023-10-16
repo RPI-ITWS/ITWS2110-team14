@@ -70,11 +70,6 @@ body {
     font-size: 2rem;
   }
   
-  .navbar {
-    background-color: transparent !important;
-    box-shadow: none !important;
-  }
-  
   .animated-bg {
     position: fixed;
     top: 0;
