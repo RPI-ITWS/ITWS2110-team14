@@ -1,4 +1,4 @@
-import { Listing } from "../components/Listing/Listing.js";
+import { Listing } from "../components/listing/listing.js";
 
 $(document).ready(function () {
   addListingsToMarketplace(getData());
