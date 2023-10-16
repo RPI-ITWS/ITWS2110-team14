@@ -6,6 +6,7 @@ const rightHand2 = document.getElementById('rightHand2');
 const leftHands = document.getElementById('leftHands');
 const rightHand1 = document.getElementById('rightHand1');
 const bgContainer = document.querySelector(".animated-bg");
+const userInfo = document.getElementById('userInfo');
 
 // Background animation
 function createRectangle(left, initial = false) {

@@ -4,6 +4,9 @@
 Button ripple effect:  
 https://css-tricks.com/how-to-recreate-the-ripple-effect-of-material-design-buttons/
 
+Javascript timers:  
+https://www.w3schools.com/jsref/met_win_setinterval.asp
+
 Page template:  
 ```html
 <!-- index.html -->
