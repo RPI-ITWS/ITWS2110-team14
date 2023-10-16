@@ -1,6 +1,10 @@
 # ITWS2110-team14
 
-Page template:
+#### Helpful information
+Button ripple effect:  
+https://css-tricks.com/how-to-recreate-the-ripple-effect-of-material-design-buttons/
+
+Page template:  
 ```html
 <!-- index.html -->
 
