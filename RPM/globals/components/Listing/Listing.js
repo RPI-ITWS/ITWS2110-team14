@@ -5,7 +5,7 @@ This code will define the HTML necessary to display a listing on the marketplace
 src = "jquery-3.6.1.min.js";
 
 class Listing extends HTMLElement {
-  constructor(priceText, listingTitle, imgPath) {
+  constructor(listingTitle, listingID, priceText, imgURL) {
     super();
 
     this._maxWidth = "381px"; //Numbers from Facebook Marketplace
@@ -31,11 +31,13 @@ class Listing extends HTMLElement {
     //Holds all of elements
     const parentContainer = document.createElement("div");
     parentContainer.setAttribute("class", "parentContainer");
-
+    parentContainer.addEventListener("click", function () {
+      const listingPage = "../pages/listing-page/index.html";
+      window.location.href = listingPage;
+    });
     //Image of product
     const productImageContainer = document.createElement("div");
     productImageContainer.setAttribute("class", "productImageContainer");
-
     let productImageURL;
     if (imgPath == "") {
       productImageURL = "../img/defaultProductImage.jpg";
@@ -81,6 +83,10 @@ class Listing extends HTMLElement {
          font-weight: bold;
       }
     `;
+  }
+
+  getListingID(listingID) {
+    return listingID;
   }
 
   static get observedAttributes() {

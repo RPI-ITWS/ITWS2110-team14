@@ -2,6 +2,7 @@ import { Listing } from "../components/Listing/Listing.js";
 
 $(document).ready(function () {
   addListingsToMarketplace(getData());
+  loadListingData(directToListing(getData)[0], directToListing(getData)[1]);
 });
 
 function getData() {
@@ -23,29 +24,59 @@ function getData() {
 
 function addListingsToMarketplace(currentData) {
   //Add listing object to marketplace
-  let listingsTable = currentData[0];
+  let listingsTable = currentData["listings"];
   let listing;
-  let pageCount = 1;
-  let listingCount = 1;
-  const listingLimit = 60;
+  // let listingCount = 1;
+  // const listingRowLimit = 6;
   for (listing in listingsTable) {
     if (listingsTable.hasOwnProperty(listing)) {
       if (listing["active"]) {
-        let imgPath = listing["imgURL"];
+        let imgURL = listing["imgURL"];
         let price = listing["price"];
+        let listingID = listing["listingID"];
         let listingTitle = listing["listingTitle"];
 
-        if (listingCount == listingLimit) {
-          //Maximum amount of listings have been reached on a page, add items to the next page
-          listingCount = 0;
-          pageCount += 1;
-        }
-
-        $("#marketplace-listings" + pageCount + "-" + listingCount).append(
-          Listing(price, listingTitle, imgPath)
+        $("#marketplace-listings").append(
+          Listing(listingTitle, listingID, price, imgURL)
         );
-        listingCount += 1;
+        // listingCount += 1;
       }
     }
   }
+}
+
+function directToListing(currentData) {
+  const params = new URLSearchParams(window.location.search);
+  const id = params.get("listingID");
+  let clickedListing = lisitingID;
+  let listing = currentData["listings"][clickedListing];
+  let rcsID = listing["rcsID"];
+  let user;
+
+  for (u in currentData["users"]) {
+    if (currentData["users"].hasOwnProperty(u)) {
+      if (u["rcsID"] === rcsID) {
+        user = u["firstName"] + " " + u["lastName"];
+        break;
+      }
+    }
+  }
+
+  let output = [listing, user];
+  return output;
+}
+
+function loadListingData(listing, user) {
+  let imgURL = listing["imgURL"];
+  let price = listing["price"];
+  let listingTitle = listing["listingTitle"];
+  let seller = user;
+  let description = listing["description"];
+
+  $("#pageTitle").append(listingTitle);
+  $("#listingImage").attr("src", imgURL);
+  $("#listingTitle").append(listingTitle);
+  $("#seller").append(seller);
+  $("#price").append(price);
+  $("#listingInfo").append(description);
 }

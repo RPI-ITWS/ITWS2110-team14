@@ -25,9 +25,9 @@
     ></script>
 
     <!--Local Imports-->
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="styles.css" />
 
-    <title>RPM - Item Name </title>
+    <title id="pageTitle">RPM -</title>
   </head>
   <body>
     <!--Bootstrap JS Import-->
@@ -38,45 +38,33 @@
     ></script>
     <navbar-component></navbar-component>
 
-    
+    <div class="parentDiv">
+      <div id="leftDiv">
+        <img
+          src="/RPM/globals/images/listing-placeholder.png"
+          class="listingImage"
+          id="listingImage"
+        />
+      </div>
 
-    <div class="parentDiv"> 
+      <div id="rightDiv">
+        <h1 id="listingTitle"></h1>
 
-        <div id = "leftDiv">
-            <img src="/RPM/globals/images/listing-placeholder.png" class="listingImage" id="listingImage">
+        <h3 id="seller">Posted by</h3>
 
-        </div>
+        <h3 id="price"></h3>
 
-        <div id="rightDiv">
-            <h1 id="listingTitle"> Item Name </h1>
+        <button
+          type="button"
+          class="buyButton"
+          id="contactButton"
+          onclick="alert('This button doesn\'t work right now. Try again once we code it!')"
+        >
+          Contact Seller
+        </button>
 
-            <h3 id="seller">
-                Posted by John Doe
-            </h3>
-
-            <h3 id="price">
-                $00.00
-            </h3>
-
-            <button type="button" class="buyButton" id="contactButton" onclick="alert('This button doesn\'t work right now. Try again once we code it!')"> Contact Seller </button>
-
-            <p id="listingInfo">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore 
-                magna aliqua. Gravida rutrum quisque non tellus orci. Eget magna fermentum iaculis eu non diam phasellus 
-                vestibulum lorem. Sit amet nisl suscipit adipiscing. Arcu dictum varius duis at consectetur lorem donec. 
-                Ipsum dolor sit amet consectetur adipiscing. Mi tempus imperdiet nulla malesuada pellentesque elit eget gravida 
-                cum. Pellentesque dignissim enim sit amet venenatis urna. Iaculis eu non diam phasellus vestibulum lorem sed. 
-                Feugiat scelerisque varius morbi enim nunc faucibus a pellentesque. Odio eu feugiat pretium nibh. Dolor sit amet 
-                consectetur adipiscing.
-            </p>
-
-        </div>
-
+        <p id="listingInfo"></p>
+      </div>
     </div>
-
-    
-
-    
-
   </body>
 </html>
