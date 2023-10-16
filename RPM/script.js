@@ -20,6 +20,9 @@ function createRectangle(left, initial = false) {
   rect.style.height = `${Math.random() * 5 + 20}px`;
   rect.style.animationDuration = `${Math.random() * 10 + 10}s`;
   rect.style.opacity = `0`;
+  if (!initial) {
+    rect.style.opacity = `1`;
+  }
 
   bgContainer.appendChild(rect);
   rect.addEventListener("animationend", () => {
@@ -27,13 +30,17 @@ function createRectangle(left, initial = false) {
   });
 }
 
-// Shadow on card hover
-card.addEventListener('mouseenter', () => {
-  card.style.boxShadow = '0px 6px 20px rgba(0, 0, 0, 0.2)';
-});
-
-card.addEventListener('mouseleave', () => {
-  card.style.boxShadow = 'none';
+// Reset background animation when page focused
+document.addEventListener('visibilitychange', function() {
+  if (!document.hidden) {
+    console.log("Test");
+    while (bgContainer.firstChild) {
+      bgContainer.removeChild(bgContainer.firstChild);
+    }
+    for (let i = 0; i < 200; i++) {
+      createRectangle(Math.random() * 250 - 50, false);
+    }
+  }
 });
 
 // Animation on button hover
@@ -75,21 +82,40 @@ function createRippleOnButton(func, targetButton) {
   });
 }
 
-document.getElementById('loginButton').addEventListener('click', function (func) {
-  createRippleOnButton(func, this);
-});
-
 // Login action
 loginButton.addEventListener('click', () => {
   console.log("Login clicked")
 });
 
-// Continuous actions
+/* Continuous actions */
 for (let i = 0; i < 200; i++) {
   createRectangle(Math.random() * 250 - 50, true);
 }
 
-setInterval(() => createRectangle(-50, false), 70);
+let lastTime = 0;
+const interval = 70;
+function createRectangles() {
+  const currentTime = Date.now();
+  if (currentTime - lastTime >= interval) {
+    createRectangle(-50, false);
+    lastTime = currentTime;
+  }
+  requestAnimationFrame(createRectangles);
+}
+createRectangles();
+
+document.getElementById('loginButton').addEventListener('click', function (func) {
+  createRippleOnButton(func, this);
+});
+
+// Shadow on card hover
+card.addEventListener('mouseenter', () => {
+  card.style.boxShadow = '0px 6px 20px rgba(0, 0, 0, 0.2)';
+});
+
+card.addEventListener('mouseleave', () => {
+  card.style.boxShadow = 'none';
+});
 
 // On page load
 window.addEventListener('load', function() {
@@ -100,5 +126,5 @@ window.addEventListener('load', function() {
 });
 
 window.addEventListener('wheel', function(e) {
-    e.preventDefault();
+  e.preventDefault();
 }, { passive: false });

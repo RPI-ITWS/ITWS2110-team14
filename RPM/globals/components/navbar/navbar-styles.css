@@ -1,12 +1,13 @@
 /* navbar-styles.css */
 
-.navbar-text {
-  margin: 0 auto;
-}
-
 .navbar {
   display: flex;
   padding: 10px;
+  z-index: 100;
+}
+
+.navbar-text {
+  margin: 0 auto;
 }
 
 .navbar-left {
