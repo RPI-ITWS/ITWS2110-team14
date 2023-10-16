@@ -5,7 +5,7 @@ This code will define the HTML necessary to display a listing on the marketplace
 src = "jquery-3.6.1.min.js";
 
 class Listing extends HTMLElement {
-  constructor() {
+  constructor(priceText, listingTitle, imgPath) {
     super();
 
     this._maxWidth = "381px"; //Numbers from Facebook Marketplace
@@ -37,30 +37,28 @@ class Listing extends HTMLElement {
     productImageContainer.setAttribute("class", "productImageContainer");
 
     let productImageURL;
-    if (this.hasAttribute("img")) {
-      productImageURL = this.getAttribute("img");
-    } else {
+    if (imgPath == "") {
       productImageURL = "../img/defaultProductImage.jpg";
     }
 
     //Add the image of the product to the respective container
     const productImage = document.createElement("img");
-    productImage.src = productImageURL;
+    productImage.src = imgPath;
     productImageContainer.appendChild(productImage);
 
     //Price
     const priceContainer = document.createElement("span");
     priceContainer.setAttribute("class", "priceContainer");
 
-    const priceText = this.getAttribute("data-text");
+    // const priceText = this.getAttribute("data-text");
     priceContainer.textContent = "$" + priceText; //From database
 
     //Product
     const productContainer = document.createElement("span");
     productContainer.setAttribute("class", "productContainer");
 
-    const productText = this.getAttribute("data-text");
-    productContainer.textContent = productText; //From database
+    // const productText = this.getAttribute("data-text");
+    productContainer.textContent = listingTitle; //From database
 
     //Styling of class attributes
     const style = document.createElement("style");
@@ -132,16 +130,16 @@ class Listing extends HTMLElement {
     shadow.appendChild(style);
     console.log(style.isConnected);
 
-    shadow.appendChild(priceContainer);
     priceContainer.appendChild(priceText);
+    shadow.appendChild(priceContainer);
 
-    shadow.appendChild(productContainer);
-    productContainer.appendChild(productText);
+    productContainer.appendChild(listingTitle);
     productContainer.appendChild(productImageContainer);
+    shadow.appendChild(productContainer);
 
-    shadow.appendChild(productImageContainer);
     productImageContainer.appendChild(productImage);
-    productImageContainer.appendChild(productImageURL);
+    productImageContainer.appendChild(imgPath);
+    shadow.appendChild(productImageContainer);
   }
 }
 
