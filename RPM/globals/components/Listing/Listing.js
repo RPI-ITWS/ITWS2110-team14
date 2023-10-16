@@ -85,6 +85,10 @@ class Listing extends HTMLElement {
     `;
   }
 
+  getListingID(listingID) {
+    return listingID;
+  }
+
   static get observedAttributes() {
     return [
       "maxWidth",

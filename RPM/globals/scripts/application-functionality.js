@@ -45,7 +45,9 @@ function addListingsToMarketplace(currentData) {
   }
 }
 
-function directToListing(currentData, lisitingID) {
+function directToListing(currentData) {
+  const params = new URLSearchParams(window.location.search);
+  const id = params.get("listingID");
   let clickedListing = lisitingID;
   let listing = currentData["listings"][clickedListing];
   let rcsID = listing["rcsID"];
