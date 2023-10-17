@@ -1,1 +1,61 @@
 /* styles.css */
+#aboutUs {
+  /*Formatting for the About Us section*/
+  margin: 40px 20px 60px 20px;
+}
+
+#achievementsAndExperience {
+  /*Formatting for "our" past experience and achievements*/
+  margin-left: 20px;
+  margin-right: 60px;
+  margin-top: 60px;
+  margin-bottom: 100px;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+.inline-content {
+  display: inline;
+}
+
+.centerText {
+  /* Lines up text with headshot */
+  padding-top: 40px;
+}
+
+.setTextLeft {
+  padding-left: 20px;
+}
+
+#increaseSloganSize {
+  /*Increases the slogan size in the About Us section*/
+  font-size: 25px;
+}
+#meetTheTeam {
+  /*Basic formatting for the member display*/
+  margin-left: 20px;
+  margin-top: 5px;
+}
+
+.mockupImage {
+  height: 50%;
+  width: 50%;
+}
+
+.roundHeadshots {
+  /* Makes headshots on the home page circular */
+  border-radius: 100%;
+  height: 150px;
+  margin-left: 60px;
+  margin-right: 0;
+  float: left;
+  padding: 0;
+  width: 150px;
+}
+
+.spaceOutNavContent {
+  /*Spacing between elements in navBar*/
+  padding: 3%;
+}
