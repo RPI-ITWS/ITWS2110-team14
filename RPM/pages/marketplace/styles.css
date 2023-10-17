@@ -1,0 +1,107 @@
+/* styles.css */
+
+body {
+  background-color: #d3d6db;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+#content {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  flex-wrap: wrap;
+  margin: 20px auto 0;
+  width: 1320px;
+  overflow: hidden;
+}
+
+.listings {
+  background-color: #3a4750;
+  flex: 1;
+  display: flex;
+  flex-wrap: wrap;
+  overflow: scroll;
+}
+
+.listing {
+  width: 330px;
+  height: 400px;
+  align-items: row;
+}
+
+.image {
+  display: flex;
+  width: 330px;
+  height: 330px;
+  justify-content: center;
+  align-items: center;
+}
+
+.image-content {
+  display: flex;
+  background-color: white;
+  width: 300px;
+  height: 300px;
+  border-radius: 10px;
+  align-items: center;
+  overflow: hidden;
+}
+
+.image img {
+  vertical-align: middle;
+  width: auto;
+  height: auto;
+  max-width: 300px;
+  max-height: 300px;
+  border-radius: 8;
+}
+
+.price {
+  overflow: scroll;
+  color: #d3d6db;
+  padding: 0px 15px 0px 15px;
+  width: 330px;
+  height: 30px;
+}
+
+.description {
+  overflow: scroll;
+  color: #d3d6db;
+  padding: 0px 15px 0px 15px;
+  font-size: 13px;
+  width: 330px;
+  height: 40px;
+}
+
+.price h4, .description p {
+  margin: 0;
+}
+
+@media (max-width: 1380px) {
+  #content {
+    width: 990px;
+  }
+}
+
+@media (max-width: 1030px) {
+  #content {
+    width: 660px;
+  }
+}
+
+@media (max-width: 700px) {
+  #content {
+    width: 330px;
+  }
+}

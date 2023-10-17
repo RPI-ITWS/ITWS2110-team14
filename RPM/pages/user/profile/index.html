@@ -1,0 +1,73 @@
+<!-- index.html -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!--Global Imports-->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="/RPM/globals/images/RPM-logo.png"
+    />
+    <script
+      src="/RPM/globals/components/navbar/navbar.js"
+      type="text/javascript"
+      defer
+    ></script>
+
+    <!--Local Imports-->
+    <link rel="stylesheet" href="styles.css" />
+    <title>RPM - Profile</title>
+  </head>
+  <body>
+    <div class="animated-bg"></div>
+    <navbar-component></navbar-component>
+    <!--Bootstrap JS Import-->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+
+    <div class="container">
+      <div class="card" id="card" style="overflow: hidden">
+        <div class="box" style="flex: 0 0 49%">
+          <div class="box" style="width: 100%; height: 100%; display: flex">
+            <div
+              class="box"
+              style="
+                margin: 0 auto;
+                display: flex;
+                align-items: center;
+                text-align: center;
+              "
+            >
+              <div class="content">
+                <h6 id="name">Peter Simone</h6>
+                <h6>Graduating Class: 2026</h6>
+                <h6>Lives: Off Campus</h6>
+                <h7>Listings: 1</h7>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="divider">
+          <div class="vertical-divider"></div>
+        </div>
+        <div class="box" style="flex: 0 0 49%">
+          <img src="simonp2headshot.jpg" id="ProfilePhoto" />
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

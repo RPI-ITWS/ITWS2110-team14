@@ -1,0 +1,74 @@
+{
+  "listings": {
+    "0": {
+      "rcsID": "pechea",
+      "listingTitle": "Toaster",
+      "condition": "New",
+      "price": 18.25,
+      "description": "Lets you toast stuff. Forbidden bathbomb.",
+      "imgURL": "/RPM/globals/images/toaster.png",
+      "active": true,
+      "clicks": 0
+    },
+    "1": {
+      "rcsID": "simonp2",
+      "listingTitle": "Air Fryer",
+      "condition": "Used",
+      "price": 4.0,
+      "description": "Clearly, you do not own this air fryer.",
+      "imgURL": "/RPM/globals/images/airfryer.png",
+      "active": true,
+      "clicks": 0
+    },
+    "2": {
+      "rcsID": "millen11",
+      "listingTitle": "Calculus 1 Tutoring",
+      "condition": "Other",
+      "price": 13.0,
+      "description": "I will tutor you for Calc 1. Price is per hour.",
+      "imgURL": "/RPM/globals/images/calculus.png",
+      "active": true,
+      "clicks": 0
+    },
+    "3": {
+      "rcsID": "patela16",
+      "listingTitle": "Skateboard",
+      "condition": "Damaged",
+      "price": 12.5,
+      "description": "A well loved skateboard, needs some fixing and I don't have time to do that so I am selling it.",
+      "imgURL": "/RPM/globals/images/skateboard.png",
+      "active": true,
+      "clicks": 0
+    }
+  },
+
+  "users": [
+    {
+      "rcsID": "pechea",
+      "firstName": "Aidan",
+      "lastName": "Pechet",
+      "postedListings": [0]
+    },
+
+    {
+      "rcsID": "simonp2",
+      "firstName": "Peter",
+      "lastName": "Simone",
+      "postedListings": [1]
+    },
+
+    {
+      "rcsID": "millen11",
+      "firstName": "Na'Sir",
+      "lastName": "Miller",
+      "postedListings": [2]
+    },
+
+    {
+      "rcsID": "patela16",
+      "firstName": "Anish",
+      "lastName": "Patel",
+      "postedListings": [3]
+    }
+  ]
+}

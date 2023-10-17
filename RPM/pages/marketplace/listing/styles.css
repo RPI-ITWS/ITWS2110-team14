@@ -1,0 +1,77 @@
+body {
+  background-color: #d3d6db;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+h1 {
+  margin: 10px;
+}
+
+h3 {
+  margin: 10px;
+}
+
+h3.condition {
+  margin: 10px;
+  font-size: larger;
+}
+
+p {
+  margin: 10px;
+}
+
+div.parentDiv {
+  display: flex;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+}
+
+#leftDiv {
+  margin: 25px;
+}
+
+#rightDiv {
+  margin: 25px;
+}
+
+button.buyButton {
+  border-radius: 5px;
+  margin: 10px;
+  font-size: large;
+}
+
+.listingImage {
+  display: flex;
+  border-radius: 10px;
+  justify-self: left;
+  justify-content: left;
+  width: 500px;
+  height: 500px;
+  margin: 10px;
+  background-color: white;
+  align-items: center;
+  overflow: hidden;
+}
+
+.image {
+  display: flex;
+  background-color: white;
+  width: 500px;
+  height: 500px;
+  border-radius: 10px;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.image img {
+  vertical-align: middle;
+  width: auto;
+  height: auto;
+  max-width: 500px;
+  max-height: 500px;
+  border-radius: 8;
+}
