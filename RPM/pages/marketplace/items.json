@@ -1,7 +1,6 @@
 {
-  "listings": [
-    {
-      "listingID": 0,
+  "listings": {
+    "0": {
       "rcsID": "pechea",
       "listingTitle": "Toaster",
       "condition": "New",
@@ -11,9 +10,7 @@
       "active": true,
       "clicks": 0
     },
-
-    {
-      "listingID": 1,
+    "1": {
       "rcsID": "simonp2",
       "listingTitle": "Air Fryer",
       "condition": "Used",
@@ -23,9 +20,7 @@
       "active": true,
       "clicks": 0
     },
-
-    {
-      "listingID": 2,
+    "2": {
       "rcsID": "millen11",
       "listingTitle": "Calculus 1 Tutoring",
       "condition": "Other",
@@ -35,19 +30,17 @@
       "active": true,
       "clicks": 0
     },
-
-    {
-      "listingID": 3,
+    "3": {
       "rcsID": "patela16",
       "listingTitle": "Skateboard",
       "condition": "Damaged",
       "price": 12.5,
       "description": "A well loved skateboard, needs some fixing and I don't have time to do that so I am selling it.",
-      "imgURL": "../../globals/images/skateboard.png",
+      "imgURL": "/RPM/globals/images/skateboard.png",
       "active": true,
       "clicks": 0
     }
-  ],
+  },
 
   "users": [
     {
