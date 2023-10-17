@@ -84,7 +84,10 @@ function createRippleOnButton(func, targetButton) {
 
 // Login action
 loginButton.addEventListener('click', () => {
-  console.log("Login clicked")
+  setTimeout(function() {
+    console.log("Login clicked, redirecting")
+    window.location.href = "/RPM/pages/marketplace/";
+  }, 1000);
 });
 
 /* Continuous actions */
