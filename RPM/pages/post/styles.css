@@ -1,0 +1,40 @@
+/* styles.css */
+
+body {
+    background-color: #d3d6db;
+}
+
+h1 {
+    margin: 10px;
+}
+
+h3 {
+    margin: 10px;
+    padding: 10px;
+    background-color: white;
+    border-radius: 10px;
+    width: 30%;
+    text-align: center;
+}
+
+div.parentDiv {
+    
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+img.listingImage {
+    border-radius: 25px;
+    justify-self: center;
+    justify-content: center;
+    width: 500px;
+    height: 500px;
+    margin: 10px;
+}
+
+button.uploadImage {
+    border-radius: 5px;
+    margin: 10px;
+    font-size: large;
+}
