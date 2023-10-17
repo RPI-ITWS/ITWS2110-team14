@@ -7,6 +7,12 @@ https://css-tricks.com/how-to-recreate-the-ripple-effect-of-material-design-butt
 Javascript timers:  
 https://www.w3schools.com/jsref/met_win_setinterval.asp
 
+Window - localStorage property:  
+https://developer.mozilla.org/en-US/docs/Web/API/Window/localStorage
+
+Window - sessionStorage property:  
+https://developer.mozilla.org/en-US/docs/Web/API/Window/sessionStorage
+
 Page template:  
 ```html
 <!-- index.html -->
