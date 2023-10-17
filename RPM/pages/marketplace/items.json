@@ -8,7 +8,8 @@
       "price": 18.25,
       "description": "Lets you toast stuff. Forbidden bathbomb.",
       "imgURL": "/RPM/globals/images/toaster.png",
-      "active": true
+      "active": true,
+      "clicks": 0
     },
 
     {
@@ -19,7 +20,8 @@
       "price": 4.0,
       "description": "Clearly, you do not own this air fryer.",
       "imgURL": "/RPM/globals/images/airfryer.png",
-      "active": true
+      "active": true,
+      "clicks": 0
     },
 
     {
@@ -30,7 +32,8 @@
       "price": 13.0,
       "description": "I will tutor you for Calc 1. Price is per hour.",
       "imgURL": "/RPM/globals/images/calculus.png",
-      "active": true
+      "active": true,
+      "clicks": 0
     },
 
     {
@@ -41,7 +44,8 @@
       "price": 12.5,
       "description": "A well loved skateboard, needs some fixing and I don't have time to do that so I am selling it.",
       "imgURL": "../../globals/images/skateboard.png",
-      "active": true
+      "active": true,
+      "clicks": 0
     }
   ],
 
