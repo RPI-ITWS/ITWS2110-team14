@@ -68,7 +68,7 @@ a:hover {
 }
 
 .price {
-  overflow: scroll;
+  overflow: hidden;
   color: #d3d6db;
   padding: 0px 15px 0px 15px;
   width: 330px;
