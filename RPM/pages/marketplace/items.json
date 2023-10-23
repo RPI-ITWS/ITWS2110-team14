@@ -1,73 +1,73 @@
 {
   "listings": {
     "0": {
-      "rcsID": "pechea",
-      "listingTitle": "Toaster",
-      "condition": "New",
-      "price": 18.25,
-      "description": "Lets you toast stuff. Forbidden bathbomb.",
+      "RCS_ID": "pechea",
+      "LISTING_TITLE": "Toaster",
+      "CONDITION": "New",
+      "PRICE": 18.25,
+      "ITEM_DESCRIPTION": "Lets you toast stuff. Forbidden bathbomb.",
       "imgURL": "/RPM/globals/images/toaster.png",
-      "active": true,
-      "clicks": 0
+      "ACTIVE": true,
+      "CLICKS": 0
     },
     "1": {
-      "rcsID": "simonp2",
-      "listingTitle": "Air Fryer",
-      "condition": "Used",
-      "price": 4.0,
-      "description": "Clearly, you do not own this air fryer.",
+      "RCS_ID": "simonp2",
+      "LISTING_TITLE": "Air Fryer",
+      "CONDITION": "Used",
+      "PRICE": 4.0,
+      "ITEM_DESCRIPTION": "Clearly, you do not own this air fryer.",
       "imgURL": "/RPM/globals/images/airfryer.png",
-      "active": true,
-      "clicks": 0
+      "ACTIVE": true,
+      "CLICKS": 0
     },
     "2": {
-      "rcsID": "millen11",
-      "listingTitle": "Calculus 1 Tutoring",
-      "condition": "Other",
-      "price": 13.0,
-      "description": "I will tutor you for Calc 1. Price is per hour.",
+      "RCS_ID": "millen11",
+      "LISTING_TITLE": "Calculus 1 Tutoring",
+      "CONDITION": "Other",
+      "PRICE": 13.0,
+      "ITEM_DESCRIPTION": "I will tutor you for Calc 1. Price is per hour.",
       "imgURL": "/RPM/globals/images/calculus.png",
-      "active": true,
-      "clicks": 0
+      "ACTIVE": true,
+      "CLICKS": 0
     },
     "3": {
-      "rcsID": "patela16",
-      "listingTitle": "Skateboard",
-      "condition": "Damaged",
-      "price": 12.5,
-      "description": "A well loved skateboard, needs some fixing and I don't have time to do that so I am selling it.",
+      "RCS_ID": "patela16",
+      "LISTING_TITLE": "Skateboard",
+      "CONDITION": "Damaged",
+      "PRICE": 12.5,
+      "ITEM_DESCRIPTION": "A well loved skateboard, needs some fixing and I don't have time to do that so I am selling it.",
       "imgURL": "/RPM/globals/images/skateboard.png",
-      "active": true,
-      "clicks": 0
+      "ACTIVE": true,
+      "CLICKS": 0
     }
   },
 
   "users": [
     {
-      "rcsID": "pechea",
-      "firstName": "Aidan",
-      "lastName": "Pechet",
+      "RCS_ID": "pechea",
+      "FIRST_NAME": "Aidan",
+      "LAST_NAME": "Pechet",
       "postedListings": [0]
     },
 
     {
-      "rcsID": "simonp2",
-      "firstName": "Peter",
-      "lastName": "Simone",
+      "RCS_ID": "simonp2",
+      "FIRST_NAME": "Peter",
+      "LAST_NAME": "Simone",
       "postedListings": [1]
     },
 
     {
-      "rcsID": "millen11",
-      "firstName": "Na'Sir",
-      "lastName": "Miller",
+      "RCS_ID": "millen11",
+      "FIRST_NAME": "Na'Sir",
+      "LAST_NAME": "Miller",
       "postedListings": [2]
     },
 
     {
-      "rcsID": "patela16",
-      "firstName": "Anish",
-      "lastName": "Patel",
+      "RCS_ID": "patela16",
+      "FIRST_NAME": "Anish",
+      "LAST_NAME": "Patel",
       "postedListings": [3]
     }
   ]
