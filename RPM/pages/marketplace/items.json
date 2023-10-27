@@ -20,16 +20,7 @@
       "ACTIVE": true,
       "CLICKS": 0
     },
-    "2": {
-      "RCS_ID": "millen11",
-      "LISTING_TITLE": "Calculus 1 Tutoring",
-      "CONDITION": "Other",
-      "PRICE": 13.0,
-      "ITEM_DESCRIPTION": "I will tutor you for Calc 1. Price is per hour.",
-      "imgURL": "/RPM/globals/images/calculus.png",
-      "ACTIVE": true,
-      "CLICKS": 0
-    },
+    
     "3": {
       "RCS_ID": "patela16",
       "LISTING_TITLE": "Skateboard",
