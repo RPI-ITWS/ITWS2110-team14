@@ -1,0 +1,36 @@
+/* styles.css */
+
+body {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  margin: 0;
+  overflow: auto;
+}
+
+.navbar {
+  display: flex;
+  height: 50px;
+  width: 100%;
+  background: #fff;
+  border-bottom: 1px solid #cdcdcd;
+}
+
+.content {
+  display: flex;
+  height: 100%;
+}
+
+.class-content {
+  width: 210px;
+  background-color: #333;
+}
+
+.course-content {
+  flex: 1;
+  border-top: 6px solid #eee;
+}
+
+.content-data {
+  /* */
+}
