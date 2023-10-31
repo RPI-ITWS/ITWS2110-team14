@@ -1,0 +1,85 @@
+{
+  "Websys_course": [
+    {
+      "Lectures":
+      {
+        "Lecture1":
+        {
+          "title": "Introduction to Web Systems",
+          "description": "This lecture introduces the course and the basic concepts of web systems.",
+          "link": "https://docs.google.com/presentation/d/108X6S-Xjn_RWOtriaLqWZhVgV6sYk4KXIpAobzW2HbI/edit#slide=id.p"
+        },
+        "Lecture2":
+        {
+          "title": "9/8 Git/Basics of Web Systems",
+          "description": "",
+          "link": ""
+        },
+        "Lecture3":
+        {
+          "title": "",
+          "description": "",
+          "link": ""
+        },
+        "Lecture4":
+        {
+          "title": "",
+          "description": "",
+          "link": ""
+        },
+        "Lecture5":
+        {
+          "title": "",
+          "description": "",
+          "link": ""
+        },
+        "Lecture6":
+        {
+          "title": "",
+          "description": "",
+          "link": ""
+        }
+      },
+      "Labs":
+      {
+        "Lab1":
+        {
+          "title": "9/1 Lab 1: Group/Individual Portfolio Page",
+          "description": "Creating a page with resumes for your group",
+          "link": "https://docs.google.com/document/d/1TVsVEJKSUBs4KEwSUe6QFsp-t_a8h4s1toh9jjKjHfw/edit?usp=sharing"
+        },
+        "Lab2":
+        {
+          "title": "",
+          "description": "",
+          "link": ""
+        },
+        "Lab3":
+        {
+          "title": "",
+          "description": "",
+          "link": ""
+        },
+        "Lab4":
+        {
+          "title": "",
+          "description": "",
+          "link": ""
+        },
+        "Lab5":
+        {
+          "title": "",
+          "description": "",
+          "link": ""
+        },
+        "Lab6":
+        {
+          "title": "",
+          "description": "",
+          "link": ""
+        }
+      }
+      
+    }
+  ]
+}
