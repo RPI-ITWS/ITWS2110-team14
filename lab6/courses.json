@@ -35,9 +35,10 @@
         },
         "Lecture6":
         {
-          "title": "",
-          "description": "",
-          "link": ""
+          "title": "Generative AI",
+          "description": "This lecture is on the limitations of generative AI and the benefits of them.",
+          "link": ["https://www.bloorresearch.com/2023/09/generative-ai-case-studies-and-limitations/", 
+          "https://www.harvardonline.harvard.edu/blog/benefits-limitations-generative-ai"]
         }
       },
       "Labs":
@@ -63,7 +64,7 @@
         "Lab4":
         {
           "title": "10/6 Lab 4: Generative AI",
-          "description": "Recreating the ITWS website using only regenerative AI",
+          "description": "Recreating the ITWS website using only generative AI",
           "link": "https://docs.google.com/document/d/1SoU_8JJEjfdOLIclXF4TeXEFFYbXKTH9IWUG2gHSazY/edit?usp=sharing"
         },
         "Lab5":
