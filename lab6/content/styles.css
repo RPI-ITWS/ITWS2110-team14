@@ -26,6 +26,10 @@ body {
   background-color: #333;
 }
 
+#items-lectures, #items-labs {
+  visibility: collapse;
+}
+
 .course-content {
   flex: 1;
   border-top: 6px solid #eee;
@@ -34,6 +38,11 @@ body {
 .class-items {
   list-style-type: none;
   color: #eee;
+}
+
+.class-items li a {
+  color: white;
+  text-decoration: none;
 }
 
 .content-data {
