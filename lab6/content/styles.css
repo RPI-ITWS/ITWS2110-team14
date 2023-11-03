@@ -1,5 +1,9 @@
 /* styles.css */
 
+* {
+  font: 400 "Open Sans", sans-serif;
+}
+
 body {
   display: flex;
   flex-direction: column;
@@ -33,6 +37,7 @@ body {
 .course-content {
   flex: 1;
   border-top: 6px solid #eee;
+  padding: 32px;
 }
 
 .class-items {
@@ -43,8 +48,20 @@ body {
 .class-items li a {
   color: white;
   text-decoration: none;
+  text-decoration-thickness: 0.5px;
 }
 
-.content-data {
+.class-items li a:hover {
+  color: #ecd0f1;
+  text-decoration-line: underline;
+}
+
+.divider {
+  margin: 0 auto;
+  list-style-type: none;
+  width: 90%;
+}
+
+#content-data {
   /* */
 }

@@ -1,7 +1,7 @@
 // script.js
 
 window.addEventListener('load', function() {
-  fetch("../courses.json")
+  fetch("/lab6/globals/data/courses.json")
   .then(response => {
     if (!response.ok) {
       throw Error(response.statusText);
@@ -51,9 +51,15 @@ window.addEventListener('load', function() {
 });
 
 function lectureClicked(lecture) {
-  console.log("Clicked on lecture: " + lecture.title);
+  let content = document.getElementById("content-data");
+  content.innerHTML = "<h2>" + lecture.title + "</h2>";
+  content.innerHTML += lecture.description;
+
+  let links = content.links;
 }
 
 function labClicked(lab) {
-  console.log("Clicked on lab: " + lab.title);
+  let content = document.getElementById("content-data");
+  content.innerHTML = "<h2>" + lab.title + "</h2>";
+  content.innerHTML += lab.description;
 }

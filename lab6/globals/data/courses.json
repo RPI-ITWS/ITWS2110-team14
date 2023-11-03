@@ -12,20 +12,20 @@
         "Lecture2":
         {
           "title": "9/8 Choose your own adventure",
-          "description": "Basics of Web Sys or Git/Github lecture",
+          "description": "Basics of Web Sys or Git/Github lecture.",
           "link": ["https://docs.google.com/presentation/d/1jZV3MJSI0rRpbwSsD3cIHG81N-p9wMFpAsG9MXZK30A/edit?usp=sharing", 
           "https://docs.google.com/presentation/d/1AAqHOY4yykSkNBdf_KzP5WfjE6lkkm9MJ_8ZOXBiOd4/edit?usp=sharing"]
         },
         "Lecture3":
         {
           "title": "9/12: Markup languages",
-          "description": "Lecture on basic markup languages",
+          "description": "Lecture on basic markup languages.",
           "link": ["https://drive.google.com/file/d/1R3rh_VvkP7LpuCp4T17P8wZEoETcXOLh/view?usp=sharing"]
         },
         "Lecture4":
         {
           "title": "9/15: CSS",
-          "description": "Intro to CSS and front end styling",
+          "description": "Intro to CSS and front end styling.",
           "link": ["https://docs.google.com/presentation/d/13l9w_KRL1IEO2GLHJj4P4IJ6PY7_lB2q/edit?usp=sharing&ouid=101431771635793895949&rtpof=true&sd=true",
           "https://docs.google.com/presentation/d/1X9aAnFKEc3PYCNgS46zyn32CgX9oCD5UjPqwzPDii-M/edit?usp=sharing"]
         },
@@ -40,7 +40,7 @@
         "Lecture6":
         {
           "title":"9/26: Security, part 1",
-          "description": "Intro to security and the basics of different red and blue team tactics",
+          "description": "Intro to security and the basics of different red and blue team tactics.",
           "link": ["https://google-gruyere.appspot.com/",
           "https://owasp.org/www-project-top-ten/",
           "https://owasp.org/Top10/",
@@ -73,37 +73,37 @@
         "Lab1":
         {
           "title": "9/1 Lab 1: Group/Individual Portfolio Page",
-          "description": "Creating a page with resumes for your group",
+          "description": "Creating a page with resumes for your group.",
           "link": ["https://docs.google.com/document/d/1TVsVEJKSUBs4KEwSUe6QFsp-t_a8h4s1toh9jjKjHfw/edit?usp=sharing"]
         },
         "Lab2":
         {
           "title": "9/8 Lab 2: Contitution Webpage",
-          "description": "Create a website about the United States Constituition with responces",
+          "description": "Create a website about the United States Constituition with responces.",
           "link": ["https://docs.google.com/document/d/1A3B7FTbxIw71oOCAiBsfEHdHcXeef1gjrXsG-VI6e-U/edit?usp=sharing"]
         },
         "Lab3":
         {
           "title": "9/22 Lab 3: JSON, AJAX, APIs",
-          "description": "Creating a website using the OpenWeatherMap API and an additional API",
+          "description": "Creating a website using the OpenWeatherMap API and an additional API.",
           "link": ["https://docs.google.com/document/d/1-D4VYKxBo2OnHR4Pyg9kPkoQajd3vsBgHUzRvdlo6Xw/edit?usp=sharing"]
         },
         "Lab4":
         {
           "title": "10/6 Lab 4: Generative AI",
-          "description": "Recreating the ITWS website using only generative AI",
+          "description": "Recreating the ITWS website using only generative AI.",
           "link": ["https://docs.google.com/document/d/1SoU_8JJEjfdOLIclXF4TeXEFFYbXKTH9IWUG2gHSazY/edit?usp=sharing"]
         },
         "Lab5":
         {
           "title": "10/24 Lab 5: Front End Optimization",
-          "description": "Make 7 Optimizations to Professor Callahan's FreeBee Site",
+          "description": "Make 7 Optimizations to Professor Callahan's FreeBee Site.",
           "link": ["https://docs.google.com/document/d/1u3gqViUz15LTJ-6F0aucM_EP9gzus1L09BgqOMy8nvA/edit?usp=sharing"]
         },
         "Lab6":
         {
           "title": "10/31 Lab 6: PHP and mySQL",
-          "description": "Recreating the spookiest website of all, LMS",
+          "description": "Recreating the spookiest website of all, LMS.",
           "link": ["https://docs.google.com/document/d/1oC6BOAmPbR0p6j_DWXWK_FInNgT8JaiUAwMWEnQf4Vw/edit?usp=sharing"]
         }
       }
