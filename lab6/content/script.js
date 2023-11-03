@@ -1,6 +1,6 @@
 // script.js
 
-function fill_class_content() {
+window.addEventListener('load', function() {
     fetch("../courses.json")
     .then(response => {
         if (!response.ok) {
@@ -15,11 +15,16 @@ function fill_class_content() {
         let lectures_json = courses["Websys_course"]["Lectures"];
         let labs_json = courses["Websys_course"]["Labs"];
 
-        for (let num = 1; num < Object.keys(lectures_json); num++) {
-            
-        }
+        console.log("test 1");
+        lectures_json.forEach(element => { // error on this line
+            console.log("test 2");
+            console.log(element);
+            let new_element = document.createElement("li");
+            new_element.innerHTML = element["title"];
+            lectures_list.appendChild(new_element);
+        });
 
-        let new_element = document.createElement("li");
+        
         
     });
-}
+});
