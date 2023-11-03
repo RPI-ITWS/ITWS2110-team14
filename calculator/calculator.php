@@ -27,8 +27,41 @@ class Addition extends Operation {
   }
 }
 
-
 // Add subclasses for Subtraction, Multiplication and Division here
+
+class Subtraction extends Operation {
+  public function operate() {
+    return $this->operand_1 - $this->operand_2;
+  }
+  public function getEquation() {
+    return $this->operand_1 . ' - ' . $this->operand_2 . ' = ' . $this->operate();
+  }
+}
+
+class Multiplication extends Operation {
+  public function operate() {
+    return $this->operand_1 * $this->operand_2;
+  }
+  public function getEquation() {
+    return $this->operand_1 . ' * ' . $this->operand_2 . ' = ' . $this->operate();
+  }
+}
+
+class Division extends Operation {
+  public function operate() {
+    // check for divide by 0 error
+    if ($o2 == 0) {
+      throw new Exception('Can not divide by zero.');
+    }
+    return $this->operand_1 / $this->operand_2;
+  }
+  public function getEquation() {
+    return $this->operand_1 . ' / ' . $this->operand_2 . ' = ' . $this->operate();
+  }
+}
+
+
+
 
 
 // Some debugs - uncomment these to see what is happening...
@@ -65,6 +98,17 @@ class Addition extends Operation {
 
 // Put code for subtraction, multiplication, and division here
 
+    if (isset($_POST['sub']) && $_POST['sub'] == 'Subtract') {
+      $op = new Subtraction($o1, $o2);
+    }
+
+    if (isset($_POST['mult']) && $_POST['mult'] == 'Multiply') {
+      $op = new Multiplication($o1, $o2);
+    }
+
+    if (isset($_POST['divi']) && $_POST['divi'] == 'Divide') {
+      $op = new Division($o1, $o2);
+    }
 
   }
   catch (Exception $e) {
