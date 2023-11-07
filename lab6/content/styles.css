@@ -30,7 +30,7 @@ body {
   background-color: #333;
 }
 
-#items-lectures, #items-labs {
+#items-lectures, #items-labs, #content-data {
   visibility: collapse;
 }
 
@@ -60,8 +60,5 @@ body {
   margin: 0 auto;
   list-style-type: none;
   width: 90%;
-}
-
-#content-data {
-  /* */
+  display: none;
 }
