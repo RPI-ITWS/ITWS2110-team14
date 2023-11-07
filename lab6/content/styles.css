@@ -14,6 +14,7 @@ body {
 
 .navbar {
   display: flex;
+  position: sticky;
   height: 50px;
   width: 100%;
   background: #fff;
@@ -28,6 +29,11 @@ body {
 .class-content {
   width: 210px;
   background-color: #333;
+}
+
+#refresh {
+  float: right;
+  margin: 8px;
 }
 
 #items-lectures, #items-labs, #content-data {
