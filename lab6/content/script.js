@@ -20,7 +20,7 @@ window.addEventListener('load', function() {
 
     createListItems(labs_json, labs_list, "Lab", labClicked);
     labs_list.style.visibility = "visible";
-    
+
     document.getElementById("content-data").style.visibility = 'visible';
     document.getElementById("content-divider").style.display = 'block';
   });
@@ -46,7 +46,7 @@ function createListItems(itemJson, itemList, itemPrefix, clickHandler) {
     let new_element = document.createElement("li");
     let link = document.createElement("a");
 
-    link.href = '#';
+    link.href = 'javascript:void(0);';
     link.textContent = itemPrefix + " " + i;
     link.addEventListener("click", (function(key) {
       return function() {
