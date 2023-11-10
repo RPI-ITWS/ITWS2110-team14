@@ -7,6 +7,7 @@ CREATE TABLE IF NOT EXISTS courses (
 ALTER TABLE courses
   ADD COLUMN section INT(2),
   ADD COLUMN yyyy INT(4);
+
 INSERT INTO courses(crn, prefix, num, title)
   VALUES (63146, "ITWS", 2010, "Web-Systems Development"),
         (63847, "CSCI", 2500, "Computer Organization"),

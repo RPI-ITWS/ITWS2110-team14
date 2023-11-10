@@ -3,8 +3,9 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="icon" type="image/x-icon" href="/lab6/globals/images/lms.png" />
+    <link rel="icon" type="image/x-icon" href="../globals/images/lms.png" />
     <link rel="stylesheet" href="styles.css" />
+    <script src="script.js"></script>
     <title>Course Content - &#60;Course&#62;</title>
   </head>
   <body>
@@ -13,10 +14,17 @@
       <div class="class-content">
         <span
           ><img
-            src="/lab6/globals/images/refresh.png"
+            src="../globals/images/refresh.png"
             alt="Refresh"
             id="refresh"
         /></span>
+        <form action="archive.php" method="post">
+            <input type="submit" value="Archive Data">
+        </form>
+        <form action="delete_tables.php" method="post">
+            <input type="submit" value="Delete Archive Tables">
+        </form>
+
         <ul class="class-items" id="items-lectures">
           <h2>Lectures</h2>
         </ul>
@@ -53,6 +61,6 @@
         </div>
       </div>
     </div>
-    <script src="script.js"></script>
+    
   </body>
 </html>
