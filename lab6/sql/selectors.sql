@@ -1,6 +1,6 @@
 SELECT * FROM students ORDER BY rin ASC, lastname ASC, rcsid ASC, firstname ASC;
 
-SELECT students.rin, CONCAT(students.firstname, ' ', students.lastname) AS studentname, CONCAT(students.street, ', ', students.city
+SELECT DISTINCT students.rin, CONCAT(students.firstname, ' ', students.lastname) AS studentname, CONCAT(students.street, ', ', students.city
   , ', ', students.stateabbr, ', ', students.zip) FROM students JOIN grades ON students.rin = grades.rin
   WHERE grades.grade > 90;
 
