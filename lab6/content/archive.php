@@ -71,7 +71,7 @@
 
         $pdo->query($sql);
     }
-    header("Location: index.html");
+    header("Location: ../index.html");
 
   } catch (PDOException $e) {
     // Handle database connection or query errors

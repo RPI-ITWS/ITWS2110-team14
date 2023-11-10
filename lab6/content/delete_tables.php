@@ -22,7 +22,7 @@
     // Optionally, recreate the archive tables if needed
 
     // Redirect back to the main page or display a success message
-    header("Location: index.html");
+    header("Location: ../index.html");
     exit();
   } catch (PDOException $e) {
       // Handle database connection or query errors
