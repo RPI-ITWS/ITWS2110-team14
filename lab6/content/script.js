@@ -1,7 +1,7 @@
 // script.js
 
 window.addEventListener('load', function() {
-  fetch("getData.php")
+  fetch("content/getData.php")
   .then(response => {
     if (!response.ok) {
       throw Error(response.statusText);
