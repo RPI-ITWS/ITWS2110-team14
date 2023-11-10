@@ -12,6 +12,6 @@ SELECT courses.crn, courses.title, AVG(grades.grade) AS averagegrade FROM course
   GROUP BY courses.crn, courses.title;
 
 
-SELECT courses.crn, ourses.title, COUNT(DISTINCT students.rin) AS totalstudents FROM courses
+SELECT courses.crn, courses.title, COUNT(DISTINCT students.rin) AS totalstudents FROM courses
   JOIN grades ON courses.crn = grades.crn JOIN students ON grades.rin = students.rin
   GROUP BY courses.crn, courses.title;
