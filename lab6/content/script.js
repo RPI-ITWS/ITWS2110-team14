@@ -1,6 +1,10 @@
 // script.js
 
 window.addEventListener('load', function() {
+  readDisplay();
+});
+
+function readDisplay(){
   fetch("content/getData.php")
   .then(response => {
     if (!response.ok) {
@@ -30,7 +34,7 @@ window.addEventListener('load', function() {
     document.getElementById("content-data").style.visibility = 'visible';
     document.getElementById("content-divider").style.display = 'block';
   });
-});
+};
 
 function lectureClicked(lecture) {
   let content = document.getElementById("content-data");
