@@ -9,11 +9,17 @@ window.addEventListener('load', function() {
     return response.json();
   })
   .then(courses => {
+    console.log(typeof courses);
+    console.log(courses);
     let lectures_list = document.getElementById("items-lectures");
     let labs_list = document.getElementById("items-labs");
 
     let lectures_json = courses["Websys_course"]["Websys_course"][0]["Lectures"];
     let labs_json = courses["Websys_course"]["Websys_course"][0]["Labs"];
+    
+    console.log(lectures_json);
+    console.log(labs_json);
+
 
     createListItems(lectures_json, lectures_list, "Lecture", lectureClicked);
     lectures_list.style.visibility = "visible";
