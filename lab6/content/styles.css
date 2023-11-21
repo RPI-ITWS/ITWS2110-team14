@@ -1,0 +1,70 @@
+/* styles.css */
+
+* {
+  font: 400 "Open Sans", sans-serif;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  margin: 0;
+  overflow: auto;
+}
+
+.navbar {
+  display: flex;
+  position: sticky;
+  height: 50px;
+  width: 100%;
+  background: #fff;
+  border-bottom: 1px solid #cdcdcd;
+}
+
+.content {
+  display: flex;
+  height: 100%;
+}
+
+.class-content {
+  width: 210px;
+  background-color: #333;
+}
+
+#refresh {
+  float: right;
+  margin: 8px;
+}
+
+#items-lectures, #items-labs, #content-data {
+  visibility: collapse;
+}
+
+.course-content {
+  flex: 1;
+  border-top: 6px solid #eee;
+  padding: 32px;
+}
+
+.class-items {
+  list-style-type: none;
+  color: #eee;
+}
+
+.class-items li a {
+  color: white;
+  text-decoration: none;
+  text-decoration-thickness: 0.5px;
+}
+
+.class-items li a:hover {
+  color: #ecd0f1;
+  text-decoration-line: underline;
+}
+
+.divider {
+  margin: 0 auto;
+  list-style-type: none;
+  width: 90%;
+  display: none;
+}

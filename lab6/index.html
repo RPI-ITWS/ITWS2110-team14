@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/x-icon" href="globals/images/lms.png" />
+    <link rel="stylesheet" href="content/styles.css" />
+    <script src="content/script.js"></script>
+    <title>Course Content - &#60;Course&#62;</title>
+  </head>
+  <body>
+    <div class="navbar"></div>
+    <div class="content">
+      <div class="class-content">
+        <span
+          ><img
+            src="globals/images/refresh.png"
+            alt="Refresh"
+            id="refresh"
+            onclick="readDisplay();"
+        /></span>
+        <form action="content/archive.php" method="post">
+            <input type="submit" value="Archive Data">
+        </form>
+        <form action="content/delete_tables.php" method="post">
+            <input type="submit" value="Delete Archive Tables">
+        </form>
+
+        <ul class="class-items" id="items-lectures">
+          <h2>Lectures</h2>
+        </ul>
+        <li id="content-divider" class="clearfix divider"><hr /> </li>
+        <ul class="class-items" id="items-labs" style="width: 80%">
+          <h2>Labs</h2>
+        </ul>
+      </div>
+      <div class="course-content">
+        <div id="content-data">
+          <h1>Blackboard</h1>
+          <!--
+          <h1>Web Systems Development</h1>
+          <h2>2309_ITWS_2110_02</h2>
+          -->
+          <p
+            ><i>Please select a lecture or lab from the sidebar to begin.</i></p
+          >
+          <hr />
+          <p><b>Instructions:</b></p>
+          <ul>
+            <li
+              >To view a lecture, click on the lecture title in the sidebar.</li
+            >
+            <li
+              >To participate in a lab, select the corresponding lab number.</li
+            >
+          </ul>
+          <p
+            >Each lecture and lab contains valuable resources and information
+            tailored to enhance your learning experience. If you have any
+            questions or encounter any issues, please contact support.</p
+          >
+        </div>
+      </div>
+    </div>
+    
+  </body>
+</html>
