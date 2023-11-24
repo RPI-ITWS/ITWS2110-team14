@@ -84,7 +84,8 @@ a:hover {
   height: 40px;
 }
 
-.price h4, .description p {
+.price h4,
+.description p {
   margin: 0;
 }
 
