@@ -13,9 +13,14 @@ h3 {
   margin: 10px;
 }
 
-h3.condition {
+h3.iteminfo {
   margin: 10px;
   font-size: larger;
+}
+
+h3.postdate {
+  margin: 10px;
+  font-size: large;
 }
 
 p {
