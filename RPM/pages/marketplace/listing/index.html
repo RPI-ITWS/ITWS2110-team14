@@ -27,6 +27,8 @@
     <!--Local Imports-->
     <link rel="stylesheet" href="styles.css" />
 
+    <script defer src="popup.js"></script>
+
     <title id="pageTitle">RPM - Listing</title>
   </head>
   <body>
@@ -49,17 +51,46 @@
         <h3 class="condition" id="condition"></h3>
         <h3 id="price"></h3>
         <button
+          data-popup-target="#sellerinfo"
           type="button"
           class="buyButton"
           id="contactButton"
-          onclick="alert('This button doesn\'t work right now. Try again once we code it!')"
         >
           Contact Seller
         </button>
+        
         <p id="listingInfo"></p>
       </div>
     </div>
 
+    <div class="popup" id="sellerinfo"> 
+
+      <div class="popup-header">
+        <div class="popup-title"> Seller Information </div>
+        <button data-close-button class="close-popup"> &times; </button>
+      </div>
+
+      <div class="popup-body">
+        <div class="popup-left"> 
+
+        </div>
+        <div id="popup-body-right">
+          <img src="listing-placeholder.png" class="seller-image">
+
+        </div>
+        <div id="popup-body-left"> 
+          <h3 id="sellername"> Placeholder</h3>
+          <p id="contactinfo"> 123-456-7890 </p>
+        </div>
+      </div>
+
+    </div>
+
+    <div id="popup-overlay">
+
+    </div>
+
     <script src="script.js"></script>
+    
   </body>
 </html>
