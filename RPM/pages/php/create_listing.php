@@ -28,7 +28,8 @@
       $listingColor = $_POST["listingColor"];
       $rcs_id = NULL;
       $clicks = 0;
-      $listingDate = NULL;
+      date_default_timezone_set('America/New_York'); //Ensuring the date is all in the same timezone (NY)
+      $listingDate = date('Y-m-d');
 
 
       //Connecting to db and adding the form data
