@@ -1,6 +1,7 @@
 # ITWS2110-team14
 
 #### Helpful information
+
 Button ripple effect:  
 https://css-tricks.com/how-to-recreate-the-ripple-effect-of-material-design-buttons/
 
@@ -13,7 +14,11 @@ https://developer.mozilla.org/en-US/docs/Web/API/Window/localStorage
 Window - sessionStorage property:  
 https://developer.mozilla.org/en-US/docs/Web/API/Window/sessionStorage
 
-Page template:  
+BootStrap form for Post-a-Listing:
+https://getbootstrap.com/docs/4.0/components/forms/?
+
+Page template:
+
 ```html
 <!-- index.html -->
 

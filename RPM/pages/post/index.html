@@ -39,35 +39,107 @@
     <navbar-component></navbar-component>
 
     <div class="parentDiv">
-
       <h1>Post a Listing</h1>
 
-      <h3> Item Name Here </h3>
+      <form action="../php/create_listing.php" method="POST" novalidate>
+        <!-- Listing Title -->
+        <div class="form-group formPadding">
+          <label for="listingTitle">Title</label>
+          <input
+            type="text"
+            class="form-control"
+            id="listingTitle"
+            name="listingTitle"
+            value=""
+            required
+          />
+        </div>
 
-      <img
-            src="/RPM/globals/images/listing-placeholder.png"
-            class="listingImage"
+        <!-- Item Price -->
+        <div class="form-group formPadding">
+          <label for="listingPrice">Price</label>
+          <input
+            type="text"
+            class="form-control"
+            id="listingPrice"
+            name="listingPrice"
+            value=""
+            required
+          />
+        </div>
+
+        <!-- Item Color -->
+        <div class="form-group formPadding">
+          <label for="listingColor">Color</label>
+          <input
+            type="text"
+            class="form-control"
+            id="listingColor"
+            name="listingColor"
+            value=""
+            required
+          />
+        </div>
+
+        <!-- Item Quality -->
+        <div class="form-group formPadding">
+          <label for="listingCondition">Condition</label>
+          <select
+            class="form-select"
+            id="listingCondition"
+            name="listingCondition"
+            value=""
+            required
+          >
+            <option selected disabled value="">Choose...</option>
+            <option>New</option>
+            <option>Great</option>
+            <option>Good</option>
+            <option>Fair</option>
+            <option>Damaged</option>
+          </select>
+        </div>
+
+        <!-- Listing Description -->
+        <div class="form-group formPadding">
+          <label for="listingDescription">Description</label>
+          <textarea
+            class="form-control"
+            id="listingDescription"
+            rows="3"
+            name="listinDescription"
+            value=""
+            required
+          ></textarea>
+        </div>
+
+        <!-- Image of Item -->
+        <div class="form-group formPadding">
+          <label for="listingImage">Insert an Image</label>
+          <input
+            type="file"
+            class="form-control-file"
             id="listingImage"
-            
-            alt="Image of your item!"
-      >
-
-      <button
-          type="button"
-          class="uploadImage"
-          id="uploadImageButton"
-          onclick="alert('This button doesn\'t work right now. Try again once we code it!')"
-      >
-          Upload Your Image
-      </button>
-
-      <h3> Item Price </h3>
-
-      <h3> Item Quality </h3>
-
-      <h3> Item Description </h3>
-
+            name="listingImage"
+            value=""
+            required
+          />
+        </div>
+        <div id="submitButton">
+          <input
+            type="submit"
+            class="form-control btn btn-primary"
+            value="Submit"
+            name="submit"
+          />
+        </div>
+      </form>
     </div>
-
   </body>
 </html>
+<!-- <img -->
+<!-- src="/RPM/globals/images/listing-placeholder.png" -->
+<!-- class="listingImage" -->
+<!-- id="listingImage" -->
+<!-- alt="Image of your item!" -->
+<!-- /> -->
