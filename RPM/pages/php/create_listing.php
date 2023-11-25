@@ -11,6 +11,8 @@
     $username = 'root';
     $password = 'M4k3t14!';
 
+    session_start();
+
     // $pdo = new PDO($dsn, $username, $password);
 
     // //Connection to the database and its tables
@@ -19,14 +21,14 @@
 
     // $data = $stmt-> fetch(PDO::FETCH_ASSOC);
 
-    if (isset($_POST["submit"])) { //Getting data from form
+    if (isset($_POST["submit"]) && isset($_SESSION["rcs_id"])) { //Getting data from form
       $listingTitle = $_POST["listingTitle"];
       $listingPrice = $_POST["listingPrice"];
       $listingCondition = $_POST["listingCondition"];
       $listingDescription = $_POST["listingDescription"];
       $listingImage = $_POST["listingImage"];
       $listingColor = $_POST["listingColor"];
-      $rcs_id = NULL;
+      $rcs_id = $_SESSION["rcs_id"];
       $clicks = 0;
       date_default_timezone_set('America/New_York'); //Ensuring the date is all in the same timezone (NY)
       $listingDate = date('Y-m-d');
