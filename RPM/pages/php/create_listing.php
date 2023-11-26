@@ -30,6 +30,7 @@
       $listingColor = $_POST["listingColor"];
       $rcs_id = $_SESSION["rcs_id"];
       $clicks = 0;
+      $acitve = TRUE;
       date_default_timezone_set('America/New_York'); //Ensuring the date is all in the same timezone (NY)
       $listingDate = date('Y-m-d');
 
@@ -41,8 +42,9 @@
           die(mysqli_connect_error());
         }
         else {
-          $insertData = "INSERT INTO LISTINGS (rcs_id, active, color, item_condition, clicks, item_description, listing_title, posting_date, price) VALUES ('$rcs_id', '$active', '$listingColor', '$listingCondition', '$clicks', '$listingDescription', '$listingTitle', '$listingDate', '$listingPrice')";
-          if (mysqli_query($dbIsConnected, $insertData)) {
+          $insertListing = "INSERT INTO listings (rcs_id, item_condition, item_description, listing_title, posting_date, price, active, color, clicks) VALUES ('$rcs_id', '$listingCondition', '$listingDescription', '$listingTitle', '$listingDate', '$listingPrice', '$active', '$listingColor', '$clicks')";
+          // $updateUsersListings = 
+          if (mysqli_query($dbIsConnected, $insertListing)) {
             echo "Listing Created";
             header("Location: ../pages/marketplace/index.html"); //Redirect user back to main page
             exit();
@@ -59,6 +61,6 @@
   // }
   // catch (PDOException $e) {
      // Handle database connection or query errors
-    echo json_encode(['error' => 'Failed to retrieve content. ' . $e->getMessage()]);
+    // echo json_encode(['error' => 'Failed to retrieve content. ' . $e->getMessage()]);
   // }
 ?>
