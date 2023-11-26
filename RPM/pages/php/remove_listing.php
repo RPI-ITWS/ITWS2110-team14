@@ -1,26 +1,35 @@
-<?php 
-// Connect to the database
-  error_reporting(E_ALL);
-  ini_set('display_errors', 1);
+<?php
+/*The following code removes a listing from the marketplace by changing its active status to FALSE*/
+//DB Credentials
+$host = "localhost";
+$dbName = "rpm";
+$username = 'root';
+$password = 'M4k3t14!';
 
-  try {
-    //RPM database credentials
-    $dsn = 'mysql:host=localhost;dbname=rpm';
-    $username = 'root';
-    $password = 'M4k3t14!';
+session_start();
 
-    $pdo = new PDO($dsn, $username, $password);
-
-    //Connection to the database and its tables
-    $selectData = "SELECT JSON_OBJECT('listings', rpm_data.json) FROM RPM_data WHERE title = 'listings'";
-    $stmt = $pdo -> query($selectData);
-
-    $data = $stmt-> fetch(PDO::FETCH_ASSOC);
-
-
+if (isset($_POST["submit"]) && isset($_SESSION["rcs_id"])) { //Get repsonse from remove listing button
+  $updatedStatus = FALSE;
+  $rcs_id = $_SESSION["rcs_id"];
+  $listing_id = $_POST["listing_id"];
+  $dbIsConnected = mysqli_connect($host, $username, $password, $dbName);
+  if (!empty($listingTitle)) {
+    if (!$dbIsConnected) { //Was not able to establish connection to rpm
+      die(mysqli_connect_error());
+    } 
+    else { //Connection has been established to rpm
+      $updateStatus = "UPDATE listings SET active = '$updatedStatus' WHERE listing_id = '$listing_id'";
+      if (mysqli_query($dbIsConnected, $updateStatus)) { //SQL Statement was successfully executed
+        echo "Listing removed";
+        header("Location: ../pages/marketplace/index.html");
+        exit();
+      }
+      else { //Error occurred while executing query
+        echo "Could not remove listing. Try again!";
+      }
+    }
   }
-  catch (PDOException $e) {
-     // Handle database connection or query errors
-    echo json_encode(['error' => 'Failed to retrieve content. ' . $e->getMessage()]);
+  else {
+    echo "Could not find listing!";
   }
-?>
+}
