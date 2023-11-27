@@ -13,9 +13,14 @@ h3 {
   margin: 10px;
 }
 
-h3.condition {
+h3.iteminfo {
   margin: 10px;
   font-size: larger;
+}
+
+h3.postdate {
+  margin: 10px;
+  font-size: large;
 }
 
 p {
@@ -45,7 +50,7 @@ button.buyButton {
 
 .listingImage {
   display: flex;
-  border-radius: 10px;
+  border-radius: 5px;
   justify-self: left;
   justify-content: left;
   width: 500px;
@@ -61,7 +66,7 @@ button.buyButton {
   background-color: white;
   width: 500px;
   height: 500px;
-  border-radius: 10px;
+  border-radius: 5px;
   justify-content: center;
   align-items: center;
   overflow: hidden;
@@ -73,5 +78,76 @@ button.buyButton {
   height: auto;
   max-width: 500px;
   max-height: 500px;
-  border-radius: 8;
+  border-radius: 5px;
+}
+
+.popup {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0);
+  transition: 200ms ease-in-out;
+  border: 1px solid black;
+  border-radius: 10px;
+  z-index: 10;
+  background-color: white;
+  width: 500px;
+  max-width: 80%;
+}
+
+.popup.active {
+  transform: translate(-50%, -50%) scale(1);
+}
+
+.popup-header {
+  padding: 10px 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid black;
+}
+
+.popup-header .popup-title {
+  font-size: 1.25rem;
+  font-weight: bold;
+
+}
+
+.popup-header .close-popup {
+  cursor: pointer;
+  border: none;
+  outline: none;
+  background: none;
+  font-size: 1.25rem;
+  font-weight: bold;
+}
+
+.popup-body {
+  padding: 10px 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#popup-overlay {
+  position: fixed;
+  opacity: 0;
+  transition: 200ms ease-in-out;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, .50);
+  pointer-events: none;
+}
+
+#popup-overlay.active {
+  opacity: 1;
+  pointer-events: all;
+}
+
+.seller-image {
+  border-radius: 100%;
+  width: 180px;
+  height: 180px;
 }
