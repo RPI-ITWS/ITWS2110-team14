@@ -1,40 +1,41 @@
 /* styles.css */
 
 body {
-    background-color: #d3d6db;
+  background-color: #d3d6db;
 }
 
 h1 {
-    margin: 10px;
+  margin: 10px;
+  padding-bottom: 40px;
 }
 
 h3 {
-    margin: 10px;
-    padding: 10px;
-    background-color: white;
-    border-radius: 10px;
-    width: 30%;
-    text-align: center;
+  margin: 10px;
+  padding: 10px;
+  background-color: white;
+  border-radius: 10px;
+  width: 30%;
+  text-align: center;
+}
+
+.formPadding {
+  padding-bottom: 25px;
 }
 
 div.parentDiv {
-    
-    display: flex;
-    align-items: center;
-    flex-direction: column;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  font-size: 30px;
 }
 
-img.listingImage {
-    border-radius: 25px;
-    justify-self: center;
-    justify-content: center;
-    width: 500px;
-    height: 500px;
-    margin: 10px;
+option {
+  font-size: 20px;
 }
 
-button.uploadImage {
-    border-radius: 5px;
-    margin: 10px;
-    font-size: large;
+#submitButton {
+  padding-top: 10px;
+}
+textarea {
+  font-size: 20px;
 }
