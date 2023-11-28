@@ -89,7 +89,7 @@ loginButton.addEventListener('click', () => {
   }, 1000);
 });
 
-/* Continuous actions */
+// Continuous actions
 for (let i = 0; i < 200; i++) {
   createRectangle(Math.random() * 250 - 50, true);
 }
