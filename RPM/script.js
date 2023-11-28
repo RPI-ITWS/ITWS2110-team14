@@ -33,7 +33,6 @@ function createRectangle(left, initial = false) {
 // Reset background animation when page focused
 document.addEventListener('visibilitychange', function() {
   if (!document.hidden) {
-    console.log("Test");
     while (bgContainer.firstChild) {
       bgContainer.removeChild(bgContainer.firstChild);
     }
