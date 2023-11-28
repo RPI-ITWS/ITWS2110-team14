@@ -26,6 +26,10 @@ a:hover {
   overflow: hidden;
 }
 
+.search {
+  padding: 15px;
+}
+
 .listings {
   background-color: #3a4750;
   flex: 1;
