@@ -10,7 +10,7 @@ document.addEventListener("DOMContentLoaded", function() {
         const listing = data.listings[id];
 
         // Only process active listings
-        if (listing.active) {
+        if (listing.ACTIVE) {
           const listingDiv = document.createElement('div');
           listingDiv.className = 'listing';
           console.log(id);
@@ -22,11 +22,11 @@ document.addEventListener("DOMContentLoaded", function() {
             <a href="${listingURL}" class="listing-link">
               <div class="image">
                 <div class="image-content">
-                  <img src="${listing.imgURL}" alt="${listing.listingTitle}">
+                  <img src="${listing.imgURL}" alt="${listing.LISTING_TITLE}">
                 </div>
               </div>
-              <div class="price"><h4>${listing.listingTitle} - $${listing.price.toFixed(2)}</h4></div>
-              <div class="description"><p>${listing.description}</p></div>
+              <div class="price"><h4>${listing.LISTING_TITLE} - $${listing.PRICE.toFixed(2)}</h4></div>
+              <div class="description"><p>${listing.ITEM_DESCRIPTION}</p></div>
             </a>
           `;
 
