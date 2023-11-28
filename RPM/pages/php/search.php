@@ -6,6 +6,9 @@ $dbName = "rpm";
 $username = 'root';
 $password = 'M4k3t14!';
 
+//Connect to DB
+$con = new PDO("mysql:host=$host;dbname=$dbName", $username, $password);
+
 $searchResult = "";
 
 if (isset($_POST["save"])) { //Get repsonse from search bar
