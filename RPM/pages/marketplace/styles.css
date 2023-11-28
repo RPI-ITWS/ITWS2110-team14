@@ -67,6 +67,11 @@ a:hover {
   border-radius: 8;
 }
 
+.padding {
+  padding-top: 10%;
+  padding-left: 50px;
+}
+
 .price {
   overflow: hidden;
   color: #d3d6db;
@@ -105,4 +110,9 @@ a:hover {
   #content {
     width: 330px;
   }
+}
+
+.removeScroll {
+  overflow-x: hidden;
+  overflow-y: hidden;
 }
