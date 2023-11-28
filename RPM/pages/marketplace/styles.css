@@ -116,3 +116,26 @@ a:hover {
   overflow-x: hidden;
   overflow-y: hidden;
 }
+
+ul.categories {
+  padding-top: 10px;
+  list-style: square;
+  padding-left: 20px;
+}
+
+li.categories {
+  color: black;
+  
+}
+
+li.categories:hover {
+  color: #4670fc;
+}
+
+a.categories {
+  color: black;
+}
+
+a.categories:hover {
+  color: #4670fc;
+}
