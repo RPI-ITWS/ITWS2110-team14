@@ -3,7 +3,7 @@
 
   $dsn = 'mysql:host=localhost;dbname=rpm';
   $username = 'root';
-  $password = '28991212';
+  $password = 'M4k3t14!';
 
 
   $pdo = new PDO($dsn, $username, $password);
