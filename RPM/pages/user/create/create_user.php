@@ -41,14 +41,24 @@
 
       // Connecting to db and adding the form data
       if (!empty($rcs_id) && !empty($first_name) && !empty($last_name) &&!empty($location)  && !empty($password) && !empty($phone_number) && !empty($major) && !empty($graduation_year)&& !empty($date_joined)) {
-        
+        $stmt = $pdo->prepare("SELECT * FROM users WHERE rcs_id = :rcs_id");
+        $stmt->execute(array(':rcs_id' => $rcs_id));
+
+        // Fetch the result
+        $result = $stmt->fetch();
+
+        // If the SELECT query returned any rows, then the RCS ID is already in use
+        if ($result) {
+            echo "The RCS ID is already in use.";
+        } else {
+        $hashed_password = password_hash($password, PASSWORD_DEFAULT);
         $stmt = $pdo->prepare("INSERT INTO users (rcs_id, first_name, last_name,  user_password, phone_number, major, graduation_year, date_joined, user_location) 
         VALUES (:rcs_id, :first_name, :last_name, :user_password, :phone_number, :major, :graduation_year, :date_joined, :user_location)");
         $stmt->execute(array(
           ':rcs_id' => $rcs_id,
           ':first_name' => $first_name,
           ':last_name' => $last_name,
-          ':user_password' => $password,
+          ':user_password' => $hashed_password,
           ':phone_number' => $phone_number,
           ':major' => $major,
           ':graduation_year' => $graduation_year,
@@ -58,6 +68,7 @@
           echo "User Created";
           header("Location: ../../marketplace/index.html"); //Redirect user back to main page
           exit();
+        }
       }
     }
       else {
