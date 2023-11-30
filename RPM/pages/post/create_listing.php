@@ -16,7 +16,7 @@
 
   if (isset($_POST["submit"]) && isset($_SESSION["rcs_id"])) { //Getting data from form
     // validate the image
-    if ($_FILES['listingImage']['error'] == UPLOAD_ERR_OK) {
+    if (isset($_FILES['listingImage']) && $_FILES['listingImage']['error'] == UPLOAD_ERR_OK) {
       $finfo = new finfo(FILEINFO_MIME_TYPE);
       $mime = $finfo->file($_FILES['listingImage']['tmp_name']);
 
