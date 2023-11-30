@@ -41,7 +41,7 @@
     <div class="parentDiv">
       <h1>Post a Listing</h1>
 
-      <form action="create_listing.php" method="POST" novalidate>
+      <form action="create_listing.php" method="POST" enctype="multipart/form-data" novalidate>
         <!-- Listing Title -->
         <div class="form-group formPadding">
           <label for="listingTitle">Title</label>
@@ -115,7 +115,7 @@
 
         <!-- Image of Item -->
         <div class="form-group formPadding">
-          <label for="listingImage">Insert an Image</label>
+          <label for="listingImage">Insert an Image (PNG, 5MB)</label>
           <input
             type="file"
             class="form-control-file"
