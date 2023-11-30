@@ -15,3 +15,6 @@ ADD image_path VARCHAR(255);
 
 ALTER TABLE listings
 MODIFY price FLOAT(10, 2);
+
+ALTER TABLE listings
+ADD active BOOLEAN DEFAULT TRUE;
