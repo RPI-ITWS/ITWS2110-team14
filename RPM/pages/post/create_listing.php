@@ -57,7 +57,7 @@
     }
     
     
-    //Getting data from form
+    //Getting data from form 
     $listingTitle = $_POST["listingTitle"];
     $listingPrice = round(floatval($_POST["listingPrice"]), 2);
     $listingCondition = $_POST["listingCondition"];
