@@ -19,7 +19,7 @@
       href="/RPM/globals/images/RPM-logo.png"
     />
     <script
-      src="/RPM/globals/components/navbar/navbar.js"
+      src="/ITWS2110-cotea/RPM/globals/components/navbar/navbar.js"
       type="text/javascript"
       defer
     ></script>
@@ -38,6 +38,52 @@
     ></script>
     <navbar-component></navbar-component>
 
-    <h1>Login - Redirecting</h1>
+    <!-- Create a form to login a user -->
+    <form action="login_user.php" method="POST" novalidate>
+      <!-- Username -->
+      <div class="form-group formPadding">
+        <label for="rcs_id">RCS ID</label>
+        <input
+          type="text"
+          class="form-control"
+          id="rcs_id"
+          name="rcs_id"
+          value=""
+          required
+        />
+      </div>
+
+      <!-- Password -->
+      <div class="form-group formPadding">
+        <label for="password">Password</label>
+        <input
+          type="password"
+          class="form-control"
+          id="password"
+          name="password"
+          value=""
+          required
+        />
+      </div>
+
+      <!-- Submit -->
+      <div class="form-group formPadding">
+        <button type="submit" class="btn btn-primary" name="save">
+          Login
+        </button>
+      </div>
+    </form>
+    <a href = "../create/index.html">No account? Create One!</a>
+
+    <!-- check to see if the user is present in the db -->
+    <script>
+      window.onload = function() {
+          const urlParams = new URLSearchParams(window.location.search);
+          const error = urlParams.get('error');
+          if (error) {
+              alert(error);
+          }
+      }
+    </script> 
   </body>
 </html>
