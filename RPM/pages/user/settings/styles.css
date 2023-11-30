@@ -3,3 +3,40 @@
 body {
   background-color: #d3d6db;
 }
+
+h1 {
+  margin: 10px;
+  padding-bottom: 40px;
+}
+
+h3 {
+  margin: 10px;
+  padding: 10px;
+  background-color: white;
+  border-radius: 10px;
+  width: 30%;
+  text-align: center;
+}
+
+.formPadding {
+  padding-bottom: 25px;
+}
+
+div.parentDiv {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  font-size: 30px;
+}
+
+option {
+  font-size: 20px;
+}
+
+#submitButton {
+  padding-top: 10px;
+  margin-bottom: 20px;
+}
+textarea {
+  font-size: 20px;
+}

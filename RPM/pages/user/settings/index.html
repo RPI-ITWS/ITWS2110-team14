@@ -36,6 +36,114 @@
     ></script>
     <navbar-component></navbar-component>
 
-    <h1>Settings</h1>
+    <div class="parentDiv">
+      <h1>Profile Settings</h1>
+
+      <form action="../php/update_profile.php" method="POST" novalidate>
+        <!-- Profile Name -->
+        <div class="form-group formPadding">
+          <label for="profileName">Name</label>
+          <input
+            type="text"
+            class="form-control"
+            id="profileName"
+            name="profileName"
+            value=""
+            required
+          />
+        </div>
+
+        <!-- Phone Number -->
+        <div class="form-group formPadding">
+          <label for="phoneNumber">Phone Number</label>
+          <input
+            type="text"
+            class="form-control"
+            id="phoneNumber"
+            name="phoneNumber"
+            value=""
+            required
+          />
+        </div>
+
+        <!-- Current Living Arrangements -->
+        <div class="form-group formPadding">
+          <label for="livingSpace">Current Living Arrangements</label>
+          <select
+            class="form-select"
+            id="livingSpace"
+            name="livingSpace"
+            value=""
+            required
+          >
+            <option selected disabled value="">Choose...</option>
+            <option>Barton Hall</option>
+            <option>BARH</option>
+            <option>Blitman Residence Commons</option>
+            <option>Bray Hall</option>
+            <option>Bryckwyck Apartments</option>
+            <option>Cary Hall</option>
+            <option>City Station</option>
+            <option>Colonie Apartments</option>
+            <option>Crockett Hall</option>
+            <option>Davison Hall</option>
+            <option>E-Complex</option>
+            <option>Hall Hall</option>
+            <option>Nason Hall</option>
+            <option>North Hall</option>
+            <option>Nugent Hall</option>
+            <option>Polytechnic Apartments</option>
+            <option>Quadrangle</option>
+            <option>RAHP A</option>
+            <option>RAHP B</option>
+            <option>Sharp Hall</option>
+            <option>Stacwyck Apartments</option>
+            <option>Warren Hall</option>
+            <option>Off-Campus</option>
+          </select>
+        </div>
+
+        <!-- Listing Description -->
+        <div class="form-group formPadding">
+          <label for="gradClass">Graduating Class</label>
+          <textarea
+            class="form-control"
+            id="gradClass"
+            rows="1"
+            name="gradClass"
+            value=""
+            required
+          ></textarea>
+        </div>
+
+        <!-- Image for Profile -->
+        <div class="form-group formPadding">
+          <label for="profileImage">Insert a Profile Picture</label>
+          <input
+            type="file"
+            class="form-control-file"
+            id="profileImage"
+            name="profileImage"
+            value=""
+            required
+          />
+        </div>
+        <div id="updatebutton">
+          <input
+            type="update"
+            class="form-control btn btn-primary"
+            value="Update"
+            name="update"
+          />
+        </div>
+      </form>
+    </div>
   </body>
 </html>
+<!-- <img -->
+<!-- src="/RPM/globals/images/listing-placeholder.png" -->
+<!-- class="listingImage" -->
+<!-- id="listingImage" -->
+<!-- alt="Image of your item!" -->
+<!-- /> -->
+
