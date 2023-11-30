@@ -50,6 +50,7 @@
         // If the SELECT query returned any rows, then the RCS ID is already in use
         if ($result) {
             echo "The RCS ID is already in use.";
+            header("Location: ../login/index.html?error=User already exists");
         } else {
         $hashed_password = password_hash($password, PASSWORD_DEFAULT);
         $stmt = $pdo->prepare("INSERT INTO users (rcs_id, first_name, last_name,  user_password, phone_number, major, graduation_year, date_joined, user_location) 
