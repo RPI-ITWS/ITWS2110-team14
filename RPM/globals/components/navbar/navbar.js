@@ -67,13 +67,13 @@ window.addEventListener('load', function() {
         'aria-expanded="false">'+ data.rcs_id +
         '<i class="bi bi-caret-down-fill"></i></a>' + 
         '<ul class="dropdown-menu" aria-labelledby="userDropdown">'+
-        ' <li><a class="dropdown-item" href="/ITWS2110-cotea/RPM/pages/user/profile/"'+
+        ' <li><a class="dropdown-item" href="/RPM/pages/user/profile/"'+
         ' >Profile</a' +
         ' ></li>'+
-        '<li><a class="dropdown-item" href="/ITWS2110-cotea/RPM/pages/user/settings/"'+
+        '<li><a class="dropdown-item" href="/RPM/pages/user/settings/"'+
         '>Settings</a></li>'+
         '<li><hr class="dropdown-divider" /></li>' +
-        '<li><a class="dropdown-item" href="/ITWS2110-cotea/RPM/pages/user/logout/"' +
+        '<li><a class="dropdown-item" href="/RPM/pages/user/logout/logout_user.php"' +
         '>Logout</a></li></ul> ';
     } else {
       // The user is not logged in
