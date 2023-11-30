@@ -1,16 +1,17 @@
 // script.js
 
 document.addEventListener("DOMContentLoaded", function() {
-  fetch('items.json')
+  fetch('get_listings.php')
     .then(response => response.json())
     .then(data => {
+      console.log(data);
       const listingsElement = document.querySelector('.listings');
 
-      for (let id in data.listings) {
-        const listing = data.listings[id];
+      for (let id in data) {
+        const listing = data[id];
 
         // Only process active listings
-        if (listing.ACTIVE) {
+        if (listing.active) {
           const listingDiv = document.createElement('div');
           listingDiv.className = 'listing';
           console.log(id);
@@ -22,11 +23,11 @@ document.addEventListener("DOMContentLoaded", function() {
             <a href="${listingURL}" class="listing-link">
               <div class="image">
                 <div class="image-content">
-                  <img src="${listing.imgURL}" alt="${listing.LISTING_TITLE}">
+                  <img src="${listing.image_path}" alt="${listing.listing_title}">
                 </div>
               </div>
-              <div class="price"><h4>${listing.LISTING_TITLE} - $${listing.PRICE.toFixed(2)}</h4></div>
-              <div class="description"><p>${listing.ITEM_DESCRIPTION}</p></div>
+              <div class="price"><h4>${listing.listing_title} - $${listing.price.toFixed(2)}</h4></div>
+              <div class="description"><p>${listing.item_description}</p></div>
             </a>
           `;
 
