@@ -41,7 +41,7 @@
     <div class="parentDiv">
       <h1>Post a Listing</h1>
 
-      <form action="create_listing.php" method="POST" novalidate>
+      <form action="create_listing.php" method="POST" enctype="multipart/form-data" novalidate>
         <!-- Listing Title -->
         <div class="form-group formPadding">
           <label for="listingTitle">Title</label>
@@ -101,21 +101,22 @@
         </div>
 
         <!-- Listing Description -->
+        
         <div class="form-group formPadding">
           <label for="listingDescription">Description</label>
-          <textarea
+          <input
+            type="text"
             class="form-control"
             id="listingDescription"
-            rows="3"
-            name="listinDescription"
+            name="listingDescription"
             value=""
             required
-          ></textarea>
+          />
         </div>
 
         <!-- Image of Item -->
         <div class="form-group formPadding">
-          <label for="listingImage">Insert an Image</label>
+          <label for="listingImage">Insert an Image (PNG, 5MB)</label>
           <input
             type="file"
             class="form-control-file"
@@ -135,6 +136,18 @@
         </div>
       </form>
     </div>
+    <script>
+      window.onload = function() {
+          const urlParams = new URLSearchParams(window.location.search);
+          const error = urlParams.get('error');
+          if (error) {
+              alert(error);
+          }
+          if(urlParams.get('success')) {
+              alert('Listing successfully created!');
+          }
+      }
+    </script>
   </body>
 </html>
 <!-- <img -->

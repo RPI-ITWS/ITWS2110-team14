@@ -6,7 +6,12 @@ CREATE TABLE listings (
   listing_title VARCHAR(100) NOT NULL,
   posting_date DATE NOT NULL,
   price DECIMAL(10,2) NOT NULL,
-  active BOOLEAN NOT NULL,
   color VARCHAR (30) NOT NULL,
-  clicks INT UNSIGNED
+  CONSTRAINT FK_rcs_id FOREIGN KEY (rcs_id) REFERENCES users(rcs_id)
 );
+
+ALTER TABLE listings
+ADD image_path VARCHAR(255);
+
+ALTER TABLE listings
+MODIFY price FLOAT(10, 2);
