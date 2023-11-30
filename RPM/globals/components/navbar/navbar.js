@@ -48,6 +48,41 @@ window.addEventListener('load', function() {
     }
   }
   const intervalID = setInterval(showUserInfo, 100);
+
+  fetch('/RPM/globals/components/navbar/check_login.php')
+  .then(response => response.json())
+  .then(data => {
+    console.log("Logged in as " + data.rcs_id);
+    console.log("Logged in: " + data.loggedin);
+    if (data.loggedin) {
+      
+      // The user is logged in
+      // Display the logged-in version of the navbar
+      document.getElementById("userInfo").innerHTML = 
+        '<a class="navbar-brand navbar-text dropdown-toggle"'+
+        'href="#"'+
+        'role="button"' +
+        'id="userDropdown"'+
+        'data-bs-toggle="dropdown"'+
+        'aria-expanded="false">'+ data.rcs_id +
+        '<i class="bi bi-caret-down-fill"></i></a>' + 
+        '<ul class="dropdown-menu" aria-labelledby="userDropdown">'+
+        ' <li><a class="dropdown-item" href="/ITWS2110-cotea/RPM/pages/user/profile/"'+
+        ' >Profile</a' +
+        ' ></li>'+
+        '<li><a class="dropdown-item" href="/ITWS2110-cotea/RPM/pages/user/settings/"'+
+        '>Settings</a></li>'+
+        '<li><hr class="dropdown-divider" /></li>' +
+        '<li><a class="dropdown-item" href="/ITWS2110-cotea/RPM/pages/user/logout/"' +
+        '>Logout</a></li></ul> ';
+    } else {
+      // The user is not logged in
+      // Display the logged-out version of the navbar
+      document.getElementById("userInfo").innerHTML = '<a'+
+        ' href="/RPM/pages/user/login">'+
+        'Login</a>';
+    }
+  });
 });
 
 customElements.define('navbar-component', NavBar);
