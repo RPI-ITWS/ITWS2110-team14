@@ -6,6 +6,7 @@
   session_start();
   include_once("../../database/connect.php");
   
+  
 
     // //Connection to the database and its tables
     // $selectData = "SELECT JSON_OBJECT('listings', rpm_data.json) FROM RPM_data WHERE title = 'listings'";
