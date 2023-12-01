@@ -2,8 +2,31 @@
 
 /* styles.css */
 
+/* styles.css */
+
 body {
   background-color: #d3d6db;
+  font-size: 35px;
+}
+
+.bottomPadding {
+  padding-bottom: 30;
+}
+
+#centerButton {
+  padding-left: 35%;
+}
+
+#shiftLeft {
+  padding-left: 50%;
+}
+
+.reduceInputWidth {
+  width: 350px;
+}
+
+#loginSize {
+  font-size: 25px;
 }
 
 h1 {
@@ -18,10 +41,6 @@ h3 {
   border-radius: 10px;
   width: 30%;
   text-align: center;
-}
-
-.formPadding {
-  padding-bottom: 25px;
 }
 
 div.parentDiv {

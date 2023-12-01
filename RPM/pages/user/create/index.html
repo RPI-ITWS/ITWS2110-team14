@@ -32,9 +32,9 @@
     <navbar-component></navbar-component>
 
     <!-- Create a form to create a user -->
-    <form action="create_user.php" method="POST" novalidate>
+    <form action="create_user.php" id = "shiftLeft" method="POST" novalidate>
       <!-- first name -->
-      <div class="form-group formPadding">
+      <div class="form-group bottomPadding reduceInputWidth">
         <label for="firstName">First Name</label>
         <input
           type="text"
@@ -46,7 +46,7 @@
         />
       </div>
       <!-- last name -->
-      <div class="form-group formPadding">
+      <div class="form-group bottomPadding reduceInputWidth">
         <label for="lastName">Last Name</label>
         <input
           type="text"
@@ -58,7 +58,7 @@
         />
       </div>
       <!-- email -->
-      <div class="form-group formPadding">
+      <div class="form-group bottomPadding reduceInputWidth">
         <label for="rcs_id">RCS ID</label>
         <input
           type="text"
@@ -70,7 +70,7 @@
         />
       </div>
       <!-- password -->
-      <div class="form-group formPadding">
+      <div class="form-group bottomPadding reduceInputWidth">
         <label for="password">Password</label>
         <input
           type="password"
@@ -82,7 +82,7 @@
         />
       </div>
       <!-- phone number -->
-      <div class="form-group formPadding">
+      <div class="form-group bottomPadding reduceInputWidth">
         <label for="phoneNumber">Phone Number</label>
         <input
           type="text"
@@ -93,7 +93,7 @@
           required
         />
       <!-- Grad Year Dropdown -->
-      <div class="form-group formPadding">
+      <div class="form-group bottomPadding reduceInputWidth">
         <label for="gradYear">Graduating Year</label>
         <select
           class="form-select"
@@ -103,7 +103,7 @@
           required
         >
           <option selected disabled value="">Choose...</option>
-          <option>Gradutate</option>
+          <option>Graduate</option>
           <option>2024</option>
           <option>2025</option>
           <option>2026</option>
@@ -112,7 +112,7 @@
       </div>
 
       <!-- On Campus or Off Campus -->
-      <div class="form-group formPadding">
+      <div class="form-group bottomPadding">
         <label for="campus">On Campus or Off Campus</label>
         <select
           class="form-select"
@@ -127,7 +127,7 @@
         </select>
       </div>
       <!-- major -->
-      <div class="form-group formPadding">
+      <div class="form-group bottomPadding">
         <label for="major">Major</label>
         <input
           type="text"
@@ -140,14 +140,14 @@
       </div>
 
       <!-- Submit Button -->
-      <div class="form-group formPadding">
+      <div class="form-group bottomPadding" id = "centerButton">
         <button type="submit" class="btn btn-primary" name="save">
           Sign Up
         </button>
       </div>
     </form>
 
-    <a href = "../login/index.html">Already have an account? Login!</a>
+  <p id = "loginSize">Already have an account? <a href = "../login/index.html">Login!</a></p>
 
   </body>
 </html>

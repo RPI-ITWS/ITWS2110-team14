@@ -2,4 +2,39 @@
 
 body {
   background-color: #d3d6db;
+  font-size: 30px;
+}
+
+.bottomPadding {
+  padding-bottom: 20px;
+}
+
+.centerItem {
+  padding-left: 45%;
+}
+
+#card {
+  /* https://bootsnipp.com/snippets/92gmX */
+  background-color: white;
+  height: 500px;
+  top: -50px;
+  width: 50%;
+  right: calc(50% - 50px);
+  transition: 0.3s ease-in-out;
+  z-index: 0;
+  box-shadow: 0 0 15px 9px #00000096;
+}
+
+.inputSize {
+  height: 50px;
+  width: 300px;
+}
+
+#registerSize {
+  font-size: 20px;
+}
+
+::placeholder {
+  color: #e3e8f0;
+  font-size: 20px;
 }
