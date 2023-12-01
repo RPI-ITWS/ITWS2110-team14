@@ -2,4 +2,27 @@
 
 body {
   background-color: #d3d6db;
+  font-size: 30px;
+}
+
+.bottomPadding {
+  padding-bottom: 20px;
+}
+
+#centerButton {
+  padding-left: 50%;
+}
+
+#parentContainer {
+  background-color: white;
+  padding-left: 50%;
+  width: 600px;
+}
+
+.reduceInputWidth {
+  width: 250px;
+}
+
+#registerSize {
+  font-size: 25px;
 }
