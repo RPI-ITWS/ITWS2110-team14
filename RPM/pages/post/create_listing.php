@@ -28,8 +28,8 @@
         $maxSize = 5000000; // Maximum file size in bytes (5MB)
 
         if ($size <= $maxSize) {
-            // The file size is acceptable
-            // Move the uploaded file to the images directory
+          // The file size is acceptable
+          // Move the uploaded file to the images directory
           $targetDir = "../marketplace/images/";
           $targetFile = $targetDir . basename($_FILES['listingImage']['name']);
           if (move_uploaded_file($_FILES['listingImage']['tmp_name'], $targetFile)) {
@@ -58,12 +58,13 @@
     
     
     //Getting data from form 
-    $listingTitle = $_POST["listingTitle"];
-    $listingPrice = round(floatval($_POST["listingPrice"]), 2);
-    $listingCondition = $_POST["listingCondition"];
-    $listingDescription = $_POST["listingDescription"];
-    
-    $listingColor = $_POST["listingColor"];
+    // htmlspecialchars(, ENT_QUOTES, 'UTF-8');
+
+    $listingTitle = htmlspecialchars($_POST["listingTitle"], ENT_QUOTES, 'UTF-8');
+    $listingPrice = htmlspecialchars(round(floatval($_POST["listingPrice"]), 2), ENT_QUOTES, 'UTF-8');
+    $listingCondition = htmlspecialchars($_POST["listingCondition"], ENT_QUOTES, 'UTF-8');
+    $listingDescription = htmlspecialchars($_POST["listingDescription"], ENT_QUOTES, 'UTF-8');
+    $listingColor = htmlspecialchars($_POST["listingColor"], ENT_QUOTES, 'UTF-8');
     $rcs_id = $_SESSION["rcs_id"];
     date_default_timezone_set('America/New_York'); //Ensuring the date is all in the same timezone (NY)
     $listingDate = date('Y-m-d');
