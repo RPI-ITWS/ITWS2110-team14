@@ -39,44 +39,44 @@
     <navbar-component></navbar-component>
 
     <!-- Create a form to login a user -->
-    <div id = "parentContainer">
+    <div id="card">
       <form action="login_user.php" method="POST" novalidate>
         <!-- Username -->
-        <div class="form-group bottomPadding">
-          <!-- <label for="rcs_id">RCS ID</label> -->
-          <label class="form-label" for="rcs_id">RCS ID</label>
+        <div class="form-group bottomPadding centerItem">
           <input
             type="text"
-            class="form-control reduceInputWidth"
+            class="form-control inputSize"
             id="rcs_id"
             name="rcs_id"
             value=""
+            placeholder="RCS ID"
             required
           />
         </div>
 
         <!-- Password -->
-        <div class="form-group bottomPadding">
-          <!-- <label for="password">Password</label> -->
-          <label class="form-label" for="password">Password</label></input>
+        <div class="form-group bottomPadding centerItem">
           <input
             type="password"
-            class="form-control reduceInputWidth"
+            class="form-control inputSize"
             id="password"
             name="password"
             value=""
+            placeholder="Password"
             required
-          >
+          />
         </div>
 
         <!-- Submit -->
-        <div class="form-group bottomPadding">
-          <button type="submit" class="btn btn-primary centerButton" name="save">
+        <div class="form-group bottomPadding centerItem">
+          <button type="submit" class="btn btn-primary" name="save">
             Login
           </button>
         </div>
 
-        <p id = "registerSize">No account?<a href="../create/index.html"> Register</a></p>
+        <p id="registerSize" class="centerItem">
+          No account? <a href="../create/index.html">Register</a>
+        </p>
       </form>
     </div>
 

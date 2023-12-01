@@ -9,20 +9,32 @@ body {
   padding-bottom: 20px;
 }
 
-#centerButton {
-  padding-left: 50%;
+.centerItem {
+  padding-left: 45%;
 }
 
-#parentContainer {
+#card {
+  /* https://bootsnipp.com/snippets/92gmX */
   background-color: white;
-  padding-left: 50%;
-  width: 600px;
+  height: 500px;
+  top: -50px;
+  width: 50%;
+  right: calc(50% - 50px);
+  transition: 0.3s ease-in-out;
+  z-index: 0;
+  box-shadow: 0 0 15px 9px #00000096;
 }
 
-.reduceInputWidth {
-  width: 250px;
+.inputSize {
+  height: 50px;
+  width: 300px;
 }
 
 #registerSize {
-  font-size: 25px;
+  font-size: 20px;
+}
+
+::placeholder {
+  color: #e3e8f0;
+  font-size: 20px;
 }
