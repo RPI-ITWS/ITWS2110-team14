@@ -31,6 +31,6 @@ document.addEventListener("DOMContentLoaded", function() {
     })
   .catch(error => {
     console.error("Error fetching the JSON:", error);
-    window.location.href = "/RPM/pages/marketplace/";
+    // window.location.href = "/RPM/pages/marketplace/";
   });
 });
