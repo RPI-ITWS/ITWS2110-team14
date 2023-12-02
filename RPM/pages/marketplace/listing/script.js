@@ -18,16 +18,16 @@ document.addEventListener("DOMContentLoaded", function() {
   })
   .then(response => response.json())
   .then(data => {
-    console.log(data)
-    const listingData = data.listings[id];
-    
-    console.log(listingData);
+    console.log(data);
+    let listingData = data;
 
-    document.querySelector('.image img').src = listingData.imgURL;
-    document.getElementById('listingTitle').textContent = listingData.LISTING_TITLE;
-    document.getElementById('condition').textContent = listingData.CONDITION;
-    document.getElementById('price').textContent = "$" + listingData.PRICE.toFixed(2);
-    document.getElementById('listingInfo').textContent = listingData.ITEM_DESCRIPTION;
+    document.querySelector('.image img').src = listingData.image_path;
+    document.getElementById('listingTitle').textContent = listingData.listing_title;
+    document.getElementById('condition').textContent = listingData.item_condition;
+    document.getElementById('price').textContent = "$" + listingData.price.toFixed(2);
+    document.getElementById('listingInfo').textContent = listingData.item_description;
+    document.getElementById('seller').textContent = listingData.rcs_id;
+
     })
   .catch(error => {
     console.error("Error fetching the JSON:", error);
