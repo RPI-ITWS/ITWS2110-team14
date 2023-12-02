@@ -27,7 +27,12 @@ window.addEventListener("load", function () {
   }
 
   function showUserInfo() {
-    if (pathName === "/RPM/" && "/RPM/pages/about/") {
+    if (
+      pathName === "/RPM/" &&
+      "/RPM/pages/about/" &&
+      "/RPM/pages/user/login/" &&
+      "/RPM/pages/user/create/"
+    ) {
       return;
     }
     const userInfoElement = document.querySelector("#userInfo");
