@@ -14,8 +14,8 @@ document.addEventListener("DOMContentLoaded", function() {
         if (listing.active) {
           const listingDiv = document.createElement('div');
           listingDiv.className = 'listing';
-          console.log(id);
-          listingDiv.setAttribute('data-id', id);
+          console.log(listing.listing_id);
+          listingDiv.setAttribute('data-id', listing.listing_id);
           
           const listingURL = `/RPM/pages/marketplace/listing/`;
 
@@ -33,7 +33,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
           // Store id so the page knows which item clicked
           listingDiv.addEventListener('click', function() {
-            localStorage.setItem('selectedListingId', id);
+            localStorage.setItem('selectedListingId', listing.listing_id);
           });
 
           listingsElement.appendChild(listingDiv);
