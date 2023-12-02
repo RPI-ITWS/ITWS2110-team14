@@ -62,7 +62,7 @@ if (isset($_POST["submit"]) && isset($_SESSION["rcs_id"])) { //Getting data from
   $listingPrice = htmlspecialchars(round(floatval($_POST["listingPrice"]), 2), ENT_QUOTES, 'UTF-8');
   $listingCondition = htmlspecialchars($_POST["listingCondition"], ENT_QUOTES, 'UTF-8');
   $listingDescription = htmlspecialchars($_POST["listingDescription"], ENT_QUOTES, 'UTF-8');
-  $listingColor = htmlspecialchars($_POST["listingColor"], ENT_QUOTES, 'UTF-8');
+  $listingCategory = htmlspecialchars($_POST["listingCategory"], ENT_QUOTES, 'UTF-8');
   $rcs_id = $_SESSION["rcs_id"];
   date_default_timezone_set('America/New_York'); //Ensuring the date is all in the same timezone (NY)
   $listingDate = date('Y-m-d');
@@ -71,7 +71,7 @@ if (isset($_POST["submit"]) && isset($_SESSION["rcs_id"])) { //Getting data from
   echo $listingTitle . " " . $listingPrice . " " . $listingCondition . " " . $listingDescription . " " . $listingImage . " " . $listingColor . " " . $rcs_id . " " . $listingDate;
 
   //Inserting data into the database
-  $insertData = $pdo->prepare("INSERT INTO listings (rcs_id, item_condition, item_description, listing_title, posting_date, price, color, image_path) 
+  $insertData = $pdo->prepare("INSERT INTO listings (rcs_id, item_condition, item_description, listing_title, posting_date, price, category, image_path) 
     VALUES (:rcs_id, :listingCondition, :listingDescription, :listingTitle, :listingDate, :listingPrice, :listingColor, :listingImage)");
   $insertData->execute(array(
     ':rcs_id' => $rcs_id,
@@ -80,7 +80,7 @@ if (isset($_POST["submit"]) && isset($_SESSION["rcs_id"])) { //Getting data from
     ':listingTitle' => $listingTitle,
     ':listingDate' => $listingDate,
     ':listingPrice' => $listingPrice,
-    ':listingColor' => $listingColor,
+    ':listingCategory' => $listingCategory,
     ':listingImage' => $listingImage
   ));
 
