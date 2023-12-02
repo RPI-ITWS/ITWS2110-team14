@@ -41,7 +41,12 @@
     <div class="parentDiv">
       <h1>Post a Listing</h1>
 
-      <form action="create_listing.php" method="POST" enctype="multipart/form-data" novalidate>
+      <form
+        action="create_listing.php"
+        method="POST"
+        enctype="multipart/form-data"
+        novalidate
+      >
         <!-- Listing Title -->
         <div class="form-group formPadding">
           <label for="listingTitle">Title</label>
@@ -68,14 +73,14 @@
           />
         </div>
 
-        <!-- Item Color -->
+        <!-- Item Category -->
         <div class="form-group formPadding">
-          <label for="listingColor">Color</label>
+          <label for="listingCategory">Category</label>
           <input
             type="text"
             class="form-control"
-            id="listingColor"
-            name="listingColor"
+            id="listingCategory"
+            name="listingCategory"
             value=""
             required
           />
@@ -101,7 +106,7 @@
         </div>
 
         <!-- Listing Description -->
-        
+
         <div class="form-group formPadding">
           <label for="listingDescription">Description</label>
           <input
@@ -137,16 +142,16 @@
       </form>
     </div>
     <script>
-      window.onload = function() {
-          const urlParams = new URLSearchParams(window.location.search);
-          const error = urlParams.get('error');
-          if (error) {
-              alert(error);
-          }
-          if(urlParams.get('success')) {
-              alert('Listing successfully created!');
-          }
-      }
+      window.onload = function () {
+        const urlParams = new URLSearchParams(window.location.search);
+        const error = urlParams.get("error");
+        if (error) {
+          alert(error);
+        }
+        if (urlParams.get("success")) {
+          alert("Listing successfully created!");
+        }
+      };
     </script>
   </body>
 </html>
