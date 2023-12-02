@@ -54,8 +54,9 @@ body {
   height: 42px;
 }
 
-#registerSize {
+#register {
   font-size: 20px;
+  padding-left: 40px;
 }
 
 #rcs_id {
