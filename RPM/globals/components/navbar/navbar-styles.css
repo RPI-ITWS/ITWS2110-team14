@@ -31,7 +31,9 @@
 .dropdown-menu {
   transform: translate(-80px);
 }
-
+.dropdown-menu a {
+  color: rgba(0, 0, 0, 0.9);
+}
 .navbar-center {
   font-family: 'Roboto', sans-serif;
   position: absolute;
