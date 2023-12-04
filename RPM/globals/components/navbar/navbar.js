@@ -60,7 +60,7 @@ window.addEventListener("load", function () {
   }
   const intervalID = setInterval(showUserInfo, 100);
 
-  fetch("/RPM/globals/components/navbar/check_login.php")
+  fetch("/RPM/database/check_login.php")
     .then((response) => response.json())
     .then((data) => {
       console.log("Logged in as " + data.rcs_id);
