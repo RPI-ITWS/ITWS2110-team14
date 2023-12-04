@@ -20,7 +20,7 @@ document.addEventListener("DOMContentLoaded", function() {
   .then(data => {
     console.log(data);
     let listingData = data;
-
+    console.log("rcs_id:", listingData.rcs_id);
     fetch('get_seller.php', {
       method: 'POST',
       headers: {
