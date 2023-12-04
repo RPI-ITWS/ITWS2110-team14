@@ -10,6 +10,7 @@ class NavBar extends HTMLElement {
     fetch("/RPM/globals/components/navbar/navbar-inner.html")
       .then((response) => response.text())
       .then((content) => {
+        console.log(content);
         this.innerHTML = `
           ${content}
         `;
