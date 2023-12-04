@@ -65,31 +65,34 @@ function fetchListings(category) {
             event.preventDefault(); // Prevent the browser from following the link
             event.stopPropagation(); // Prevent the click event from bubbling up to the listingDiv
             
-            const xhr = new XMLHttpRequest();
-            xhr.open('POST', 'remove_listing.php', true);
-            xhr.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded');
-            xhr.send('listing_id=' + encodeURIComponent(listing.listing_id));
+            fetch('remove_listing.php', {
+              method: 'POST',
+              headers: {
+                'Content-Type': 'application/x-www-form-urlencoded',
+              },
+              body: 'listing_id=' + encodeURIComponent(listing.listing_id),
+            })
+            .then(response => {
+              if (!response.ok) {
+                throw new Error('Network response was not ok');
+              }
+              return response.json();
+            })
+            .then(data => {
+              if (data.success) {
+                // If the request was successful, remove the listingDiv from the DOM
+                listingsElement.removeChild(listingDiv);
 
-            xhr.onload = function() {
-              if (xhr.status === 200) {
-                // Parse the JSON response
-                const response = JSON.parse(xhr.responseText);
-
-                if (response.success) {
-                  // If the request was successful, remove the listingDiv from the DOM
-                  listingsElement.removeChild(listingDiv);
-
-                  // Display a success message
-                  alert(response.message);
-                } else {
-                  // Handle the error
-                  console.error(response.message);
-      }
+                // Display a success message
+                alert(data.message);
               } else {
                 // Handle the error
-                console.error('An error occurred: ' + xhr.status);
+                console.error(data.message);
               }
-            };
+            })
+            .catch(error => {
+              console.error('An error occurred: ', error);
+            });
           });
 
           listingsElement.appendChild(listingDiv);
