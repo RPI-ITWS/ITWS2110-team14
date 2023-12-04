@@ -27,7 +27,7 @@ a:hover {
 }
 
 .listing {
-  width: 300px;
+  width: 30%;
   height: 400px;
 
   align-items: row;
@@ -35,8 +35,8 @@ a:hover {
 
 .image {
   display: flex;
-  width: 300px;
-  height: 300px;
+  width: 330px;
+  height: 330px;
   justify-content: center;
   align-items: center;
 }
