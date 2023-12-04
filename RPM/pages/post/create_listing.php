@@ -73,11 +73,11 @@ if (isset($_POST["submit"]) && isset($_SESSION["rcs_id"])) { //Getting data from
   $listingDate = date('Y-m-d');
 
   //print data to check if working
-  echo $listingTitle . " " . $listingPrice . " " . $listingCondition . " " . $listingDescription . " " . $listingImage . " " . $listingColor . " " . $rcs_id . " " . $listingDate;
+  // echo $listingTitle . " " . $listingPrice . " " . $listingCondition . " " . $listingDescription . " " . $listingImage . " " . $listingColor . " " . $rcs_id . " " . $listingDate;
 
   //Inserting data into the database
   $insertData = $pdo->prepare("INSERT INTO listings (rcs_id, item_condition, item_description, listing_title, posting_date, price, category, image_path) 
-    VALUES (:rcs_id, :listingCondition, :listingDescription, :listingTitle, :listingDate, :listingPrice, :listingColor, :listingImage)");
+    VALUES (:rcs_id, :listingCondition, :listingDescription, :listingTitle, :listingDate, :listingPrice, :listingCategory, :listingImage)");
   $insertData->execute(array(
     ':rcs_id' => $rcs_id,
     ':listingCondition' => $listingCondition,
