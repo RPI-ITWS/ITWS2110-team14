@@ -41,7 +41,16 @@
             $listingImage = $targetFile;
           } else {
             // header to index page with error
-            header("Location: index.html?error=Sorry, there was an error uploading your file.");
+            // Check if directory exists and is writable
+            if (!is_dir($targetDir) || !is_writable($targetDir)) {
+                die("Directory does not exist or is not writable: " . $targetDir);
+            }
+            // Check file size against upload_max_filesize directive
+            if ($_FILES['profileImage']['size'] > ini_get('upload_max_filesize')) {
+                die("File size exceeds maximum allowed size");
+            }
+            die("Unknown error occurred");
+            // header("Location: index.html?error=Sorry, there was an error uploading your file.");
           }
         } else {
           // The file is too large
