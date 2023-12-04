@@ -16,21 +16,6 @@ a:hover {
   text-decoration: none;
 }
 
-#content {
-  display: flex;
-  flex-direction: row;
-  flex: 1;
-  flex-wrap: wrap;
-  margin: 20px auto 0;
-  width: 1320px;
-  overflow: hidden;
-}
-
-.search {
-  padding: 15px;
-  
-}
-
 .listings {
   background-color: #3a4750;
   flex: 1;
@@ -125,7 +110,7 @@ a:hover {
   overflow-y: hidden;
 }
 .container {
-  max-width: 98%; /* Adjust this to your liking */
+  max-width: 100%; 
 }
 
 ul.categories {
