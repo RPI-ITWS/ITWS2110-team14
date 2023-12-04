@@ -70,6 +70,15 @@ window.addEventListener('load', function() {
   if (card) {
     card.style.opacity = "1";
   }
+  this.fetch('get_profile.php')
+  .then(response => response.json())
+  .then(data => {
+    console.log(data);
+  })
+  .catch(error => {
+    console.error('Error:', error);
+  });
+
 });
 
 window.addEventListener('wheel', function(e) {
