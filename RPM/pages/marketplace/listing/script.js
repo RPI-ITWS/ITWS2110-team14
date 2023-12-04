@@ -25,13 +25,13 @@ document.addEventListener("DOMContentLoaded", function() {
       headers: {
         'Content-Type': 'application/x-www-form-urlencoded',
       },
-      body: `rcs_id=${encodeURIComponent(listingData.seller_id)}`,
+      body: `rcs_id=${encodeURIComponent(listingData.rcs_id)}`,
     })
     .then(response => response.json())
     .then(userData => {
       console.log(userData);
       document.getElementById('sellername').textContent = userData.firstName + userData.rcs_id;
-      })
+    })
     .catch(error => {
       console.error("Error fetching the JSON:", error);
       // window.location.href = "/RPM/pages/marketplace/";
