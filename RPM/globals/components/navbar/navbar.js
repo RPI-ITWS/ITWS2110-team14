@@ -35,7 +35,7 @@ window.addEventListener("load", function () {
     });
     if (
       pathName === "/RPM/" ||
-     ( pathName === "/RPM/pages/about/" && loggedIn) ||
+     (pathName === "/RPM/pages/about/" && loggedIn) ||
       pathName === "/RPM/pages/user/login/" ||
       pathName === "/RPM/pages/user/create/"
     ) {
