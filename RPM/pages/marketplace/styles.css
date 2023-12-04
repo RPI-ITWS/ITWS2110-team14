@@ -122,7 +122,9 @@ a:hover {
   overflow-x: hidden;
   overflow-y: hidden;
 }
-
+.container {
+  max-width: 95%; /* Adjust this to your liking */
+}
 
 ul.categories {
   padding-top: 10px;
