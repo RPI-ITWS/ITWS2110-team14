@@ -78,54 +78,54 @@
     $image_path = $listingImage;
 
     //print data to check if working
-    echo $first_name . "<br>";
-    echo $last_name . "<br>";
-    echo $phone_number . "<br>";
-    echo $user_location . "<br>";
-    echo $image_path . "<br>";
+    // echo $first_name . "<br>";
+    // echo $last_name . "<br>";
+    // echo $phone_number . "<br>";
+    // echo $user_location . "<br>";
+    // echo $image_path . "<br>";
     //Inserting data into the database
     
-    // // Retrieve the current user data
-    //   // Assuming you have a session variable 'user_id' for the current user
-    //   $stmt = $pdo->prepare("SELECT * FROM users WHERE rcs_id = :id");
-    //   $stmt->execute(array(':id' => $_SESSION['rcs_id']));
-    //   $currentUser = $stmt->fetch(PDO::FETCH_ASSOC);
+    // Retrieve the current user data
+      // Assuming you have a session variable 'user_id' for the current user
+      $stmt = $pdo->prepare("SELECT * FROM users WHERE rcs_id = :id");
+      $stmt->execute(array(':id' => $_SESSION['rcs_id']));
+      $currentUser = $stmt->fetch(PDO::FETCH_ASSOC);
 
-    //   // Compare the form data with the current user data
-    //   // Prepare an SQL UPDATE statement if the data differs
-    //   $sql = "UPDATE users SET ";
-    //   $params = array();
-    //   if ($firstName != $currentUser['first_name']) {
-    //     $sql .= "first_name = :firstName, ";
-    //     $params[':firstName'] = $firstName;
-    //   }
-    //   if ($lastName != $currentUser['last_name']) {
-    //     $sql .= "last_name = :lastName, ";
-    //     $params[':lastName'] = $lastName;
-    //   }
-    //   if ($phoneNumber != $currentUser['phone_number']) {
-    //     $sql .= "phone_number = :phoneNumber, ";
-    //     $params[':phoneNumber'] = $phoneNumber;
-    //   }
-    //   if ($livingSpace != $currentUser['user_location']) {
-    //     $sql .= "user_location = :livingSpace, ";
-    //     $params[':livingSpace'] = $livingSpace;
-    //   }
-    //   if($listingImage != $currentUser['image_path']){
-    //     $sql .= "image_path = :profileImage, ";
-    //     $params[':profileImage'] = $listingImage;
-    //   }
+      // Compare the form data with the current user data
+      // Prepare an SQL UPDATE statement if the data differs
+      $sql = "UPDATE users SET ";
+      $params = array();
+      if ($firstName != $currentUser['first_name']) {
+        $sql .= "first_name = :firstName, ";
+        $params[':firstName'] = $first_name;
+      }
+      if ($lastName != $currentUser['last_name']) {
+        $sql .= "last_name = :lastName, ";
+        $params[':lastName'] = $last_name;
+      }
+      if ($phoneNumber != $currentUser['phone_number']) {
+        $sql .= "phone_number = :phoneNumber, ";
+        $params[':phoneNumber'] = $phone_number;
+      }
+      if ($user_location != $currentUser['user_location']) {
+        $sql .= "user_location = :livingSpace, ";
+        $params[':livingSpace'] = $user_location;
+      }
+      if($image_path != $currentUser['image_path']){
+        $sql .= "image_path = :profileImage, ";
+        $params[':profileImage'] = $image_path;
+      }
 
-    //   // Remove the trailing comma and add the WHERE clause
-    //   $sql = rtrim($sql, ', ') . " WHERE rcs_id = :id";
-    //   $params[':id'] = $_SESSION['rcs_id'];
+      // Remove the trailing comma and add the WHERE clause
+      $sql = rtrim($sql, ', ') . " WHERE rcs_id = :id";
+      $params[':id'] = $_SESSION['rcs_id'];
 
-    //   // Execute the SQL statement
-    //   $stmt = $pdo->prepare($sql);
-    //   $stmt->execute($params);
+      // Execute the SQL statement
+      $stmt = $pdo->prepare($sql);
+      $stmt->execute($params);
 
 
-    // header("Location: index.html?success=Profile updated");
+    header("Location: index.html?success=Profile updated");
   }
 
 ?>
