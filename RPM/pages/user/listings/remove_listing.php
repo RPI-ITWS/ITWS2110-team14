@@ -5,7 +5,7 @@
   error_reporting(E_ALL);
   ini_set('display_errors', 1);
   session_start();
-  include_once("../../database/connect.php");
+  include_once("../../../database/connect.php");
 
   try {
     if (isset($_SESSION["rcs_id"])) { //Get response from remove listing button
