@@ -5,8 +5,6 @@
   session_start();
   include_once("../../../database/connect.php");
   include_once("../../../database/check_login.php");
-  echo "POST request: ";
-  print_r($_POST);
 
   if(isset($_POST['rcs_id'])) {
     $stmt = $pdo->prepare("SELECT * FROM users WHERE rcs_id = :rcs_id");
