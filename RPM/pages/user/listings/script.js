@@ -70,9 +70,9 @@ function fetchListings(category) {
             fetch('remove_listing.php', {
               method: 'POST',
               headers: {
-                'Content-Type': 'application/x-www-form-urlencoded',
+                'Content-Type': 'application/json',
               },
-              body: 'listing_id=' + encodeURIComponent(listing.listing_id),
+              body: JSON.stringify({ listing_id: listing.listing_id }),
             })
             .then(response => {
               if (!response.ok) {

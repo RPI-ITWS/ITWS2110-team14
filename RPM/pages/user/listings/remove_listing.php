@@ -9,7 +9,7 @@
   include_once("../../../database/connect.php");
 
   try {
-    parse_str(file_get_contents("php://input"), $_POST);
+    $_POST = json_decode(file_get_contents("php://input"), true);
     if (isset($_POST["listing_id"])) {
       $listing_id = $_POST["listing_id"];
     } else {
