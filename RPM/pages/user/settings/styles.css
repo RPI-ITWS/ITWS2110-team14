@@ -19,7 +19,7 @@ h3 {
 }
 
 #centerButton {
-  padding-left: 225px;
+  padding-left: 235px;
 }
 
 .paddingBottom {
@@ -31,6 +31,7 @@ h3 {
 }
 
 div.parentDiv {
+  padding-top: 100px;
   align-items: center;
   display: flex;
   flex-direction: column;
