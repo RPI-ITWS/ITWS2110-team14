@@ -41,7 +41,7 @@ if (isset($_POST["submit"]) && isset($_SESSION["rcs_id"])) { //Getting data from
           // The file has been moved successfully
 
           // Save the path to the image in the database
-          $listingImage = $targetFile;
+          $listingImage = $dbFile;
         } else {
           // header to index page with error
           header("Location: index.html?error=Sorry, there was an error uploading your file.");
