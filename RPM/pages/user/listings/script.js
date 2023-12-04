@@ -66,10 +66,9 @@ function fetchListings(category) {
             // code to remove the listing
           });
 
-          listingDiv.appendChild(removeButton);
           listingsElement.appendChild(listingDiv);
         }
-        
+
       }
     });
 }
