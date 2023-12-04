@@ -8,6 +8,13 @@
   include_once("../../../database/connect.php");
 
   try {
+    if (isset($_POST["listing_id"])) {
+      $listing_id = $_POST["listing_id"];
+    } else {
+      // Handle the error
+      echo json_encode(array('success' => false, 'message' => 'No listing ID provided'));
+      exit();
+    }
     if (isset($_SESSION["rcs_id"])) { //Get response from remove listing button
       $updatedStatus = FALSE;
       $rcs_id = $_SESSION["rcs_id"];
