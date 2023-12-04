@@ -79,7 +79,7 @@ window.addEventListener('load', function() {
     this.document.getElementById('location').textContent = "Lives: " + data.user_location;
     this.document.getElementById('major').textContent = "Major(s): " + data.major;
     this.document.getElementById('numListings').textContent = "Active Listings: " + data.total_listings;
-    this.document.getElementById('profilePhoto').src = data.image_path;
+    this.document.getElementById('ProfilePhoto').src = data.image_path;
 
   })
   .catch(error => {
