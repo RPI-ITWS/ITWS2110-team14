@@ -65,6 +65,8 @@ function fetchListings(category) {
             event.preventDefault(); // Prevent the browser from following the link
             event.stopPropagation(); // Prevent the click event from bubbling up to the listingDiv
             
+            console.log('Remove button clicked:', listing.listing_id);
+
             fetch('remove_listing.php', {
               method: 'POST',
               headers: {
