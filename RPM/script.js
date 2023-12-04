@@ -88,7 +88,7 @@ loginButton.addEventListener("click", () => {
   setTimeout(function () {
     console.log("Login clicked, redirecting");
     //check to see if the user is logged in
-    fetch("/RPM/globals/components/navbar/check_login.php")
+    fetch("/RPM/database/check_login.php")
     .then((response) => response.json())
     .then((data) => {
       console.log("Logged in as " + data.rcs_id);
