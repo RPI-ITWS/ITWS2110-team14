@@ -71,10 +71,10 @@
 
 
     //Getting data from form 
-    $first_name = htmlspecialchars($_POST["firstName"], ENT_QUOTES, 'UTF-8');
-    $last_name = htmlspecialchars($_POST["lastName"], ENT_QUOTES, 'UTF-8');
-    $phone_number = htmlspecialchars($_POST["phoneNumber"], ENT_QUOTES, 'UTF-8');
-    $user_location = htmlspecialchars($_POST["userLocation"], ENT_QUOTES, 'UTF-8');
+    if(isset($_POST["firstName"])) $first_name = htmlspecialchars($_POST["firstName"], ENT_QUOTES, 'UTF-8');
+    if(isset($_POST["lastName"])) $last_name = htmlspecialchars($_POST["lastName"], ENT_QUOTES, 'UTF-8');
+    if(isset($_POST["phoneNumber"])) $phone_number = htmlspecialchars($_POST["phoneNumber"], ENT_QUOTES, 'UTF-8');
+    if(isset($_POST["userLocation"])) $user_location = htmlspecialchars($_POST["userLocation"], ENT_QUOTES, 'UTF-8');
     $image_path = $listingImage;
     //print data to check if working
     // echo $first_name . "<br>";
@@ -85,43 +85,43 @@
     //Inserting data into the database
     
     // Retrieve the current user data
-      // Assuming you have a session variable 'user_id' for the current user
-      $stmt = $pdo->prepare("SELECT * FROM users WHERE rcs_id = :id");
-      $stmt->execute(array(':id' => $_SESSION['rcs_id']));
-      $currentUser = $stmt->fetch(PDO::FETCH_ASSOC);
+    // Assuming you have a session variable 'user_id' for the current user
+    $stmt = $pdo->prepare("SELECT * FROM users WHERE rcs_id = :id");
+    $stmt->execute(array(':id' => $_SESSION['rcs_id']));
+    $currentUser = $stmt->fetch(PDO::FETCH_ASSOC);
 
-      // Compare the form data with the current user data
-      // Prepare an SQL UPDATE statement if the data differs
-      $sql = "UPDATE users SET ";
-      $params = array();
-      if ($firstName != $currentUser['first_name'] && $firstName != "") {
-        $sql .= "first_name = :firstName, ";
-        $params[':firstName'] = $first_name;
-      }
-      if ($lastName != $currentUser['last_name'] && $lastName != "") {
-        $sql .= "last_name = :lastName, ";
-        $params[':lastName'] = $last_name;
-      }
-      if ($phoneNumber != $currentUser['phone_number'] && $phoneNumber != "") {
-        $sql .= "phone_number = :phoneNumber, ";
-        $params[':phoneNumber'] = $phone_number;
-      }
-      if ($user_location != $currentUser['user_location'] && $user_location != "") {
-        $sql .= "user_location = :livingSpace, ";
-        $params[':livingSpace'] = $user_location;
-      }
-      if($image_path != $currentUser['image_path'] && $image_path != ""){
-        $sql .= "image_path = :profileImage, ";
-        $params[':profileImage'] = $image_path;
-      }
+    // Compare the form data with the current user data
+    // Prepare an SQL UPDATE statement if the data differs
+    $sql = "UPDATE users SET ";
+    $params = array();
+    if ($firstName != $currentUser['first_name'] && $firstName != "") {
+      $sql .= "first_name = :firstName, ";
+      $params[':firstName'] = $first_name;
+    }
+    if ($lastName != $currentUser['last_name'] && $lastName != "") {
+      $sql .= "last_name = :lastName, ";
+      $params[':lastName'] = $last_name;
+    }
+    if ($phoneNumber != $currentUser['phone_number'] && $phoneNumber != "") {
+      $sql .= "phone_number = :phoneNumber, ";
+      $params[':phoneNumber'] = $phone_number;
+    }
+    if ($user_location != $currentUser['user_location'] && $user_location != "") {
+      $sql .= "user_location = :livingSpace, ";
+      $params[':livingSpace'] = $user_location;
+    }
+    if($image_path != $currentUser['image_path'] && $image_path != ""){
+      $sql .= "image_path = :profileImage, ";
+      $params[':profileImage'] = $image_path;
+    }
 
-      // Remove the trailing comma and add the WHERE clause
-      $sql = rtrim($sql, ', ') . " WHERE rcs_id = :id";
-      $params[':id'] = $_SESSION['rcs_id'];
+    // Remove the trailing comma and add the WHERE clause
+    $sql = rtrim($sql, ', ') . " WHERE rcs_id = :id";
+    $params[':id'] = $_SESSION['rcs_id'];
 
-      // Execute the SQL statement
-      $stmt = $pdo->prepare($sql);
-      $stmt->execute($params);
+    // Execute the SQL statement
+    $stmt = $pdo->prepare($sql);
+    $stmt->execute($params);
 
 
     header("Location: index.html?success=Profile updated");
