@@ -24,7 +24,7 @@ body {
   opacity: 0;
   transition: opacity 1s;
   margin: 0 auto;
-  width: 365px;
+  width: 800px;
   height: 320px;
   display: flex;
   flex-direction: row;

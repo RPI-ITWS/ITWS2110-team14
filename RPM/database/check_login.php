@@ -1,11 +1,11 @@
 <?php
-
   if (session_status() == PHP_SESSION_NONE) {
     session_start();
   }
-  
-  if(!isset($_SESSION["rcs_id"])) {
-    header("Location: /RPM/pages/user/login");
+  header('Content-Type: application/json');
+  if (isset($_SESSION['loggedin']) && $_SESSION['loggedin'] === true) {
+      echo json_encode(['loggedin' => true, 'rcs_id' => $_SESSION['rcs_id']]);
+  } else {
+      echo json_encode(['loggedin' => false]);
   }
-
 ?>
