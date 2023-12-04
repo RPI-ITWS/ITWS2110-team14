@@ -51,7 +51,7 @@ function fetchListings(category) {
               </div>
               <div class="price"><h4>${listing.listing_title} - $${listing.price.toFixed(2)}</h4></div>
               <div class="description"><p>${listing.item_description}</p></div>
-              <button class="btn btn-primary" id = remove-button>Remove</button>
+              <button class="btn btn-primary" id="remove-button">Remove</button>
             </a>
           `;
 
