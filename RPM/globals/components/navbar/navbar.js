@@ -10,7 +10,6 @@ class NavBar extends HTMLElement {
     fetch("/RPM/globals/components/navbar/navbar-inner.html")
       .then((response) => response.text())
       .then((content) => {
-        console.log(content);
         this.innerHTML = `
           ${content}
         `;
@@ -31,8 +30,6 @@ window.addEventListener("load", function () {
     fetch("/RPM/globals/components/navbar/check_login.php")
     .then((response) => response.json())
     .then((data) => {
-      console.log("Logged in as " + data.rcs_id);
-      console.log("Logged in: " + data.loggedin);
       if (
         pathName === "/RPM/" ||
         (pathName === "/RPM/pages/about/" && data.loggedin) ||
