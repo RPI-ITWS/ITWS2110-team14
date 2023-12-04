@@ -87,7 +87,19 @@ function createRippleOnButton(func, targetButton) {
 loginButton.addEventListener("click", () => {
   setTimeout(function () {
     console.log("Login clicked, redirecting");
-    window.location.href = "/RPM/pages/user/login";
+    //check to see if the user is logged in
+    fetch("/RPM/globals/components/navbar/check_login.php")
+    .then((response) => response.json())
+    .then((data) => {
+      console.log("Logged in as " + data.rcs_id);
+      console.log("Logged in: " + data.loggedin);
+      if (data.loggedin) {
+        // The user is logged in
+        window.location.href = "/RPM/pages/marketplace";
+      } else {
+        window.location.href = "/RPM/pages/user/login";
+      }
+    });
   }, 1000);
 });
 
