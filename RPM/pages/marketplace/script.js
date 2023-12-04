@@ -1,15 +1,18 @@
 // script.js
 
 document.addEventListener("DOMContentLoaded", function() {
+  console.log('Page loaded');
   fetchListings('All');
 
-  document.getElementById('categories').addEventListener('click', function(event) {
-  if (event.target.tagName === 'A') {
-    event.preventDefault();
-    const category = event.target.getAttribute('data-category');
-    fetchListings(category);
-  }
-});
+  const categories = document.querySelectorAll('.categories a');
+  categories.forEach(category => {
+    category.addEventListener('click', function(event) {
+      event.preventDefault();
+      const category = event.target.getAttribute('data-category');
+      console.log('Category clicked:', category);
+      fetchListings(category);
+    });
+  });
 });
 
 function fetchListings(category) {
