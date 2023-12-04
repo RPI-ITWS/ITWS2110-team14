@@ -1,7 +1,7 @@
 // script.js
 
 document.addEventListener("DOMContentLoaded", function() {
-  fetch('get_listings.php')
+  fetch('get_listings.php?category=All')
     .then(response => response.json())
     .then(data => {
       console.log(data);
