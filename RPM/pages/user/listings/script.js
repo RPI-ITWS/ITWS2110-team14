@@ -69,6 +69,7 @@ function fetchListings(category) {
           listingDiv.appendChild(removeButton);
           listingsElement.appendChild(listingDiv);
         }
+        
       }
     });
 }

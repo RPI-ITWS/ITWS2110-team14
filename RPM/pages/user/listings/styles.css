@@ -10,7 +10,6 @@ body {
 
 a {
   text-decoration: none;
-  /* position: relative; */
 }
 
 a:hover {
@@ -144,6 +143,10 @@ a.categories {
 a.categories:hover {
   color: #4670fc;
 }
+.listing-link {
+  position: relative;
+}
+
 #remove-button {
   position: absolute;
   top: 10px;
