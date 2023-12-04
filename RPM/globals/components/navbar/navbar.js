@@ -30,12 +30,7 @@ window.addEventListener("load", function () {
     fetch("/RPM/globals/components/navbar/check_login.php")
     .then((response) => response.json())
     .then((data) => {
-      if (
-        pathName === "/RPM/" ||
-        (pathName === "/RPM/pages/about/" && data.loggedin) ||
-        pathName === "/RPM/pages/user/login/" ||
-        pathName === "/RPM/pages/user/create/"
-      ) {
+      if(!data.loggedin){
         return;
       }
     });
