@@ -21,7 +21,7 @@ a:hover {
   flex: 1;
   display: flex;
   flex-wrap: wrap;
-  overflow: scroll;
+  overflow-y: scroll;
 }
 
 .listing {
