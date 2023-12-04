@@ -44,60 +44,12 @@
       crossorigin="anonymous"
     ></script>
     <navbar-component></navbar-component>
+
     <!-- Listings -->
-    <div id="content">
-      <div
-        data-mdb-close-on-esc="false"
-        data-mdb-sidenav-init
-        class="search"
-        data-mdb-hidden="false"
-        data-mdb-position="absolute"
-        data-mdb-focus-trap="false"
-        data-mdb-scroll-container="#scroll-container"
-        role="navigation"
-      >
-        <h2>Search Marketplace</h2>
-        <form action="#" method="post">
-          <div class="input-group">
-            <div class="form-outline" data-mdb-input-init>
-              <input
-                type="search"
-                class="form-control"
-                placeholder="Search"
-                name="search"
-              />
-            </div>
-            <button
-              type="submit"
-              class="btn btn-primary"
-              name="save"
-              data-mdb-ripple-init
-            >
-              <i class="fas fa-search"></i>
-            </button>
-          </div>
-        </form>
-        <ul class="categories">
-          <li class="categories"><a class="categories" data-category="All">All</a></li>
-          <li class="categories"><a class="categories" data-category="Electronics">Electronics</a></li>
-          <li class="categories"><a class="categories" data-category="Furniture">Furniture</a></li>
-          <li class="categories"><a class="categories" data-category="Home">Home</a></li>
-          <li class="categories"><a class="categories" data-category="Kitchen">Kitchen</a></li>
-          <li class="categories"><a class="categories" data-category="School%20Supplies">School Supplies</a></li>
-          <li class="categories"><a class="categories" data-category="Textbooks">Textbooks</a></li>
-          <li class="categories"><a class="categories" data-category="Other">Other</a></li>
-        </ul>
-      </div>
+    <div id="content" class="col">
+      <h1>Today's Listings</h1>
+      <div class="listings"></div>
     </div>
-
-      </form>
-    </div>
-
-      <!-- Listings -->
-      <div id="content" class="col">
-        <h1>Today's Listings</h1>
-        <div class="listings"></div>
-      </div>
 
 
     <script src="script.js"></script>
