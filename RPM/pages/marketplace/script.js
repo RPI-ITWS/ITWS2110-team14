@@ -1,11 +1,34 @@
 // script.js
 
 document.addEventListener("DOMContentLoaded", function() {
-  fetch('get_listings.php?category=All')
+  console.log('Page loaded');
+  fetchListings('All');
+
+  const categories = document.querySelectorAll('.categories a');
+  categories.forEach(category => {
+    category.addEventListener('click', function(event) {
+      event.preventDefault();
+      const category = event.target.getAttribute('data-category');
+      console.log('Category clicked:', category);
+      fetchListings(category);
+    });
+  });
+});
+
+function fetchListings(category) {
+  fetch(`get_listings.php?category=${category}`)
     .then(response => response.json())
     .then(data => {
       console.log(data);
       const listingsElement = document.querySelector('.listings');
+      listingsElement.innerHTML = ''; // Clear existing listings
+
+      // If data is an empty array, display a message and fetch all listings
+      if (data.length === 0) {
+        alert('No results found. Displaying All listings.');
+        fetchListings('All');
+        return;
+      }
 
       for (let id in data) {
         const listing = data[id];
@@ -39,8 +62,5 @@ document.addEventListener("DOMContentLoaded", function() {
           listingsElement.appendChild(listingDiv);
         }
       }
-    })
-    .catch(error => {
-      console.error("Error fetching the JSON:", error);
     });
-});
+}
