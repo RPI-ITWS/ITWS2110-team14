@@ -5,14 +5,8 @@
   include_once("../../../database/connect.php");
   include_once("../../../database/check_login.php");
   
-  $category = isset($_GET['category']) ? $_GET['category'] : 'All';
-
-  if($category == "All"){
-    $stmt = $pdo->prepare("SELECT * FROM listings ORDER BY price ASC");
-  }else{
-    $stmt = $pdo->prepare("SELECT * FROM listings WHERE category = :category ORDER BY price ASC");
-    $stmt->bindValue(':category', $_GET['category']);
-  }
+  $stmt = $pdo->prepare("SELECT * FROM listings WHERE rcs_id = :rcs_id ORDER BY price ASC");
+  $stmt->bindValue(':rcs_id', $_SESSION['rcs_id']);
   // $stmt = $pdo->prepare("SELECT * FROM listings ORDER BY price ASC"); //Top listings are the cheaper ones or free
   $stmt->execute();
   $listings = $stmt->fetchAll(PDO::FETCH_ASSOC);
