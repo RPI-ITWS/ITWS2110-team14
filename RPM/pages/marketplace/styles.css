@@ -18,7 +18,7 @@ a:hover {
 
 #content {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   flex: 1;
   flex-wrap: wrap;
   margin: 20px auto 0;
@@ -28,6 +28,7 @@ a:hover {
 
 .search {
   padding: 15px;
+  
 }
 
 .listings {
@@ -41,6 +42,7 @@ a:hover {
 .listing {
   width: 330px;
   height: 400px;
+
   align-items: row;
 }
 
@@ -143,9 +145,7 @@ a.categories {
 a.categories:hover {
   color: #4670fc;
 }
-.container {
-  display: flex;
-}
+
 
 .sidebar {
   display: flex;

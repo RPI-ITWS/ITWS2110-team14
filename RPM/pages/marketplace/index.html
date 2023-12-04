@@ -47,18 +47,9 @@
     <navbar-component></navbar-component>
     <!-- Listings -->
     <div class="container">
-      <div class="sidbar">
-        <div  id="content">
-          <div
-            data-mdb-close-on-esc="false"
-            data-mdb-sidenav-init
-            class="search"
-            data-mdb-hidden="false"
-            data-mdb-position="absolute"
-            data-mdb-focus-trap="false"
-            data-mdb-scroll-container="#scroll-container"
-            role="navigation"
-          >
+      <div class="row">
+        <div class="col-md-4">
+          
             <h2>Search Marketplace</h2>
             <form action="search.php" method="get">
               <div class="input-group">
@@ -90,16 +81,26 @@
               <li class="categories"><a class="categories" data-category="Textbooks">Textbooks</a></li>
               <li class="categories"><a class="categories" data-category="Other">Other</a></li>
             </ul>
-          </div>
+          <!-- </div> -->
         </div>
-        <div class="divider">
+        <div class="divider col-1">
           <div class="vertical-divider"></div>
         </div>
-        <!-- Listings -->
-        <div id="content" >
-          <h1>Today's Listings</h1>
-          <div class="listings"></div>
-        </div>
+        <!-- <div
+            data-mdb-close-on-esc="false"
+            data-mdb-sidenav-init
+            data-mdb-hidden="false"
+            data-mdb-position="absolute"
+            data-mdb-focus-trap="false"
+            data-mdb-scroll-container="#scroll-container"
+            role="navigation"
+          > -->
+          <!-- Listings -->
+          <div class="col-md-6" >
+            <h1>Today's Listings</h1>
+            <div class="listings"></div>
+          </div>
+        <!-- </div> -->
       </div>
     </div>
 
