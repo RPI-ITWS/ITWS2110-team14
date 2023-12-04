@@ -73,17 +73,25 @@
           />
         </div>
 
-        <!-- Item Category -->
+       <!-- Current Living Arrangements -->
         <div class="form-group formPadding">
           <label for="listingCategory">Category</label>
-          <input
-            type="text"
-            class="form-control"
+          <select
+            class="form-select"
             id="listingCategory"
             name="listingCategory"
             value=""
             required
-          />
+          >
+            <option selected disabled value="">Choose...</option>
+            <option>Electronics</option>
+            <option>Furniture</option>
+            <option>Home</option>
+            <option>Kitchen</option>
+            <option>School Supplies</option>
+            <option>Textbooks</option>
+            <option>Other</option>
+          </select>
         </div>
 
         <!-- Item Quality -->

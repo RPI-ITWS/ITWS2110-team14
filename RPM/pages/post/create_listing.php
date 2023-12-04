@@ -30,13 +30,18 @@ if (isset($_POST["submit"]) && isset($_SESSION["rcs_id"])) { //Getting data from
       if ($size <= $maxSize) {
         // The file size is acceptable
         // Move the uploaded file to the images directory
-        $targetDir = "/RPM/pages/marketplace/images/";
+        
+        
+        $dbDir = "/RPM/pages/user/profile/images/";
+        $targetDir = "../marketplace/images/";
         $targetFile = $targetDir . basename($_FILES['listingImage']['name']);
+        $dbFile = $dbDir . basename($_FILES['listingImage']['name']);
+          
         if (move_uploaded_file($_FILES['listingImage']['tmp_name'], $targetFile)) {
           // The file has been moved successfully
 
           // Save the path to the image in the database
-          $listingImage = $targetFile;
+          $listingImage = $dbFile;
         } else {
           // header to index page with error
           header("Location: index.html?error=Sorry, there was an error uploading your file.");
@@ -68,11 +73,11 @@ if (isset($_POST["submit"]) && isset($_SESSION["rcs_id"])) { //Getting data from
   $listingDate = date('Y-m-d');
 
   //print data to check if working
-  echo $listingTitle . " " . $listingPrice . " " . $listingCondition . " " . $listingDescription . " " . $listingImage . " " . $listingColor . " " . $rcs_id . " " . $listingDate;
+  // echo $listingTitle . " " . $listingPrice . " " . $listingCondition . " " . $listingDescription . " " . $listingImage . " " . $listingColor . " " . $rcs_id . " " . $listingDate;
 
   //Inserting data into the database
   $insertData = $pdo->prepare("INSERT INTO listings (rcs_id, item_condition, item_description, listing_title, posting_date, price, category, image_path) 
-    VALUES (:rcs_id, :listingCondition, :listingDescription, :listingTitle, :listingDate, :listingPrice, :listingColor, :listingImage)");
+    VALUES (:rcs_id, :listingCondition, :listingDescription, :listingTitle, :listingDate, :listingPrice, :listingCategory, :listingImage)");
   $insertData->execute(array(
     ':rcs_id' => $rcs_id,
     ':listingCondition' => $listingCondition,

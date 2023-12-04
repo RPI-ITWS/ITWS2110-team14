@@ -14,14 +14,14 @@
       // $data = $stmt-> fetchAll(PDO::FETCH_ASSOC);
 
       // Getting data from form
-      $rcs_id = $_POST["rcs_id"];
-      $first_name = $_POST["firstName"];
-      $last_name = $_POST["lastName"];
-      $password = $_POST["password"];
-      $phone_number = $_POST["phoneNumber"];
-      $major = $_POST["major"];
-      $graduation_year = $_POST["gradYear"];
-      $location = $_POST["campus"];
+      $rcs_id = htmlspecialchars($_POST["rcs_id"], ENT_QUOTES, 'UTF-8');
+      $first_name = htmlspecialchars($_POST["firstName"], ENT_QUOTES, 'UTF-8');
+      $last_name = htmlspecialchars($_POST["lastName"], ENT_QUOTES, 'UTF-8');
+      $password = htmlspecialchars($_POST["password"], ENT_QUOTES, 'UTF-8');
+      $phone_number = htmlspecialchars($_POST["phoneNumber"], ENT_QUOTES, 'UTF-8');
+      $major = htmlspecialchars($_POST["major"], ENT_QUOTES, 'UTF-8');
+      $graduation_year = htmlspecialchars($_POST["gradYear"], ENT_QUOTES, 'UTF-8');
+      $location = htmlspecialchars($_POST["campus"], ENT_QUOTES, 'UTF-8');
       // $profile_picture = $_POST["profile_picture"];
       
       $date_joined = date('Y-m-d');

@@ -70,6 +70,22 @@ window.addEventListener('load', function() {
   if (card) {
     card.style.opacity = "1";
   }
+  this.fetch('get_profile.php')
+  .then(response => response.json())
+  .then(data => {
+    console.log(data);
+    this.document.getElementById('name').textContent = data.first_name + ' ' + data.last_name;
+    this.document.getElementById('grad').textContent = "Graduating Class: " + data.graduation_year;
+    this.document.getElementById('location').textContent = "Lives: " + data.user_location;
+    this.document.getElementById('major').textContent = "Major(s): " + data.major;
+    this.document.getElementById('numListings').textContent = "Active Listings: " + data.totalListings;
+    this.document.getElementById('ProfilePhoto').src = data.image_path;
+
+  })
+  .catch(error => {
+    console.error('Error:', error);
+  });
+
 });
 
 window.addEventListener('wheel', function(e) {
