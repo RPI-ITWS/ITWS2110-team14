@@ -3,8 +3,8 @@
 
   // Connect to the database
   header('Content-Type: application/json');
-  // error_reporting(E_ALL);
-  // ini_set('display_errors', 1);
+  error_reporting(E_ALL);
+  ini_set('display_errors', 1);
   session_start();
   include_once("../../../database/connect.php");
 
@@ -23,8 +23,7 @@
       $listing_id = $_POST["listing_id"];
       if (!empty($listing_id)) {
         $updateStatus = $pdo->prepare("UPDATE listings SET active = :updatedStatus WHERE listing_id = :listingId");
-        $updateStatus->bindParam(array(':updatedStatus' => $updatedStatus, ':listingId' => $listing_id));
-        $updateStatus->execute();
+        $updateStatus->execute(array(':updatedStatus' => $updatedStatus, ':listingId' => $listing_id));
 
         // Return a JSON response
         echo json_encode(array('success' => true, 'message' => 'Listing removed'));
