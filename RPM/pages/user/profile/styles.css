@@ -61,9 +61,8 @@ body {
   
 #ProfilePhoto {
   border-radius: 100%;
-  width: 180px;
-  height: 180px;
-  margin: 0.125rem;
+  width: 200px;
+  height: 200px;
 }
   
 #name {
