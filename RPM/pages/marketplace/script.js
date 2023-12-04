@@ -13,6 +13,15 @@ document.addEventListener("DOMContentLoaded", function() {
       fetchListings(category);
     });
   });
+
+  const searchForm = document.querySelector('form');
+  const searchBar = document.querySelector('input[name="listing_title"]');
+
+  searchForm.addEventListener('submit', function(event) {
+    event.preventDefault();
+    const searchString = searchBar.value;
+    searchListings(searchString);
+  });
 });
 
 function fetchListings(category) {
@@ -35,32 +44,62 @@ function fetchListings(category) {
 
         // Only process active listings
         if (listing.active) {
-          const listingDiv = document.createElement('div');
-          listingDiv.className = 'listing';
-          console.log(listing.listing_id);
-          listingDiv.setAttribute('data-id', listing.listing_id);
-          
-          const listingURL = `/RPM/pages/marketplace/listing/`;
-
-          listingDiv.innerHTML = `
-            <a href="${listingURL}" class="listing-link">
-              <div class="image">
-                <div class="image-content">
-                  <img src="${listing.image_path}" alt="${listing.listing_title}">
-                </div>
-              </div>
-              <div class="price"><h4>${listing.listing_title} - $${listing.price.toFixed(2)}</h4></div>
-              <div class="description"><p>${listing.item_description}</p></div>
-            </a>
-          `;
-
-          // Store id so the page knows which item clicked
-          listingDiv.addEventListener('click', function() {
-            localStorage.setItem('selectedListingId', listing.listing_id);
-          });
-
-          listingsElement.appendChild(listingDiv);
+          appendListing(listing, listingsElement);
         }
       }
     });
 }
+
+function searchListings(searchString) {
+  fetch(`search.php?listing_title=${searchString}`)
+    .then(response => response.json())
+    .then(data => {
+      const listingsElement = document.querySelector('.listings');
+      listingsElement.innerHTML = ''; // Clear existing listings
+
+      // If data is an empty array, display a message and fetch all listings
+      if (data.length === 0) {
+        alert('No results found. Displaying All listings.');
+        fetchListings('All');
+        return;
+      }
+
+      for (let id in data) {
+        const listing = data[id];
+
+        // Only process active listings
+        if (listing.active) {
+          appendListing(listing, listingsElement);
+        }
+      }
+    });
+}
+
+function appendListing(listing, listingsElement){
+  const listingDiv = document.createElement('div');
+  listingDiv.className = 'listing';
+  console.log(listing.listing_id);
+  listingDiv.setAttribute('data-id', listing.listing_id);
+  
+  const listingURL = `/RPM/pages/marketplace/listing/`;
+
+  listingDiv.innerHTML = `
+    <a href="${listingURL}" class="listing-link">
+      <div class="image">
+        <div class="image-content">
+          <img src="${listing.image_path}" alt="${listing.listing_title}">
+        </div>
+      </div>
+      <div class="price"><h4>${listing.listing_title} - $${listing.price.toFixed(2)}</h4></div>
+      <div class="description"><p>${listing.item_description}</p></div>
+    </a>
+  `;
+
+  // Store id so the page knows which item clicked
+  listingDiv.addEventListener('click', function() {
+    localStorage.setItem('selectedListingId', listing.listing_id);
+  });
+
+  listingsElement.appendChild(listingDiv);
+}
+
