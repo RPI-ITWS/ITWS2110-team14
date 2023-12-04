@@ -16,7 +16,7 @@
   // $data = $stmt-> fetch(PDO::FETCH_ASSOC);
 
 
-  if (isset($_POST["submit"]) && isset($_SESSION["rcs_id"])) { //Getting data from form
+  if (isset($_POST["save"]) && isset($_SESSION["rcs_id"])) { //Getting data from form
     // validate the image
     if (isset($_FILES['profileImage']) && $_FILES['profileImage']['error'] == UPLOAD_ERR_OK) {
       $finfo = new finfo(FILEINFO_MIME_TYPE);
