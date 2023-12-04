@@ -25,7 +25,7 @@ document.addEventListener("DOMContentLoaded", function() {
       headers: {
         'Content-Type': 'application/x-www-form-urlencoded',
       },
-      body: `id=${encodeURIComponent(listingData.seller_id)}`,
+      body: `rcs_id=${encodeURIComponent(listingData.seller_id)}`,
     })
     .then(response => response.json())
     .then(userData => {
