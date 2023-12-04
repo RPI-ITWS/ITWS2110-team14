@@ -30,13 +30,17 @@ window.addEventListener("load", function () {
     fetch("/RPM/globals/components/navbar/check_login.php")
     .then((response) => response.json())
     .then((data) => {
+      console.log("Logged in as " + data.rcs_id);
+      console.log("Logged in: " + data.loggedin);
       if (
-        pathName === "/RPM/"
-        
+        !data.loggedin 
       ) {
-        return;
+        shouldExit = true;      
       }
     });
+    if (shouldExit) {
+      return;
+    } 
     const userInfoElement = document.querySelector("#userInfo");
     const marketplaceElement = document.querySelector("#marketplace");
     const postElement = document.querySelector("#post");
