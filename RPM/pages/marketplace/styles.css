@@ -6,6 +6,7 @@ body {
   flex-direction: column;
   height: 100vh;
   margin: 0;
+  font-size: 20px;
 }
 
 a {
@@ -27,8 +28,8 @@ a:hover {
 .listing {
   width: 330px;
   height: 400px;
-  margin-left: calc((100% - 660px)/4) ;
-  margin-right: calc((100% - 660px)/4) ;
+  margin-left: calc((100% - 660px) / 4);
+  margin-right: calc((100% - 660px) / 4);
   align-items: row;
 }
 
@@ -59,9 +60,23 @@ a:hover {
   border-radius: 8;
 }
 
+.categories {
+  padding-top: 5px;
+  font-size: 26px;
+}
+
 .padding {
   padding-top: 10%;
   padding-left: 50px;
+}
+
+#imageDiv {
+  padding-top: 400px;
+}
+
+#logo {
+  width: 250px;
+  height: 400px;
 }
 
 .price {
@@ -79,6 +94,11 @@ a:hover {
   font-size: 13px;
   width: 330px;
   height: 40px;
+}
+
+#sidebar {
+  width: 280px;
+  height: 1385px;
 }
 
 .price h4,
@@ -109,7 +129,7 @@ a:hover {
   overflow-y: hidden;
 }
 .container {
-  max-width: 100%; 
+  max-width: 100%;
   margin-left: 70px;
 }
 
@@ -121,7 +141,6 @@ ul.categories {
 
 li.categories {
   color: black;
-  
 }
 
 li.categories:hover {
@@ -136,7 +155,6 @@ a.categories:hover {
   color: #4670fc;
 }
 
-
 .sidebar {
   display: flex;
   flex-direction: column;
@@ -150,13 +168,17 @@ a.categories:hover {
   justify-content: center;
   flex: 0 0 1%;
 }
-  
+
 .vertical-divider {
   margin: auto;
   border-width: 0;
   height: 100%;
   width: 1px;
-  background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0));
+  background: linear-gradient(
+    rgba(0, 0, 0, 0),
+    rgba(0, 0, 0, 0.2),
+    rgba(0, 0, 0, 0)
+  );
   border-right: none;
 }
 
