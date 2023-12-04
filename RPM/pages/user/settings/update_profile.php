@@ -115,7 +115,7 @@
       $params[':profileImage'] = $image_path;
     }
 
-    if (count($params) > 1) { // More than just the :id parameter
+    if (count($params) > 0) { // More than just the :id parameter
       // Remove the trailing comma and add the WHERE clause
       $sql = rtrim($sql, ', ') . " WHERE rcs_id = :id";
       $params[':id'] = $_SESSION['rcs_id'];
