@@ -71,12 +71,11 @@
 
 
     //Getting data from form 
-    $first_name = $_POST['firstName'];
-    $last_name = $_POST['lastName'];
-    $phone_number = $_POST['phoneNumber'];
-    $user_location = $_POST['livingSpace'];
+    $first_name = htmlspecialchars($_POST["firstName"], ENT_QUOTES, 'UTF-8');
+    $last_name = htmlspecialchars($_POST["lastName"], ENT_QUOTES, 'UTF-8');
+    $phone_number = htmlspecialchars($_POST["phoneNumber"], ENT_QUOTES, 'UTF-8');
+    $user_location = htmlspecialchars($_POST["userLocation"], ENT_QUOTES, 'UTF-8');
     $image_path = $listingImage;
-
     //print data to check if working
     // echo $first_name . "<br>";
     // echo $last_name . "<br>";

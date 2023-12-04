@@ -33,8 +33,8 @@ document.addEventListener("DOMContentLoaded", function() {
       document.getElementById('sellername').textContent = userData.first_name + " " + userData.last_name + ' (' + userData.rcs_id + ')';
       document.getElementById('sellername').href = `/RPM/pages/profile/?rcs_id=${encodeURIComponent(userData.rcs_id)}`;
       document.getElementById('seller-image').src = userData.image_path;
-      document.getElementById('contactinfo').textContent = userData.phone_number;
-      document.getElementById('contactinfo').href = `tel:${encodeURIComponent(userData.phone_number)}`;
+      document.getElementById('contactinfo').textContent = "Phone Number: " + userData.phone_number;
+      
     })
     .catch(error => {
       console.error("Error fetching the JSON:", error);
@@ -43,6 +43,8 @@ document.addEventListener("DOMContentLoaded", function() {
 
     document.querySelector('.image img').src = listingData.image_path;
     document.getElementById('listingTitle').textContent = listingData.listing_title;
+    document.getElementById('category').textContent = listingData.category;
+    document.getElementById('posteddate').textContent = listingData.posting_date;
     document.getElementById('condition').textContent = listingData.item_condition;
     document.getElementById('price').textContent = "$" + listingData.price.toFixed(2);
     document.getElementById('listingInfo').textContent = listingData.item_description;
