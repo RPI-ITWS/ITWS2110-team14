@@ -1,0 +1,13 @@
+body.dark-theme {
+  background-color: #333;
+  color: #fff;
+}
+
+.dark-theme button {
+  background-color: #444;
+  color: #fff;
+}
+
+.dark-theme a {
+  color: #ddd;
+}
