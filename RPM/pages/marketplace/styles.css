@@ -7,7 +7,7 @@ body {
   height: 100vh;
   margin: 0;
   overflow-x: hidden;
-  overflow-y: hidden;
+  overflow-y: auto;
 }
 
 a {
