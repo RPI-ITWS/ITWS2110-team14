@@ -66,13 +66,14 @@ function fetchListings(category) {
             event.stopPropagation(); // Prevent the click event from bubbling up to the listingDiv
             
             console.log('Remove button clicked:', listing.listing_id);
+            console.log(listing);
 
             fetch('remove_listing.php', {
               method: 'POST',
               headers: {
-                'Content-Type': 'application/json',
+                'Content-Type': 'application/x-www-form-urlencoded',
               },
-              body: JSON.stringify({ listing_id: listing.listing_id }),
+              body: `listing_id=${encodeURIComponent(listing.listing_id)}`,
             })
             .then(response => {
               if (!response.ok) {
