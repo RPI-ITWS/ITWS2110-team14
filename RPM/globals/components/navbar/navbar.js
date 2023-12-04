@@ -34,7 +34,10 @@ window.addEventListener("load", function () {
       console.log("Logged in as " + data.rcs_id);
       console.log("Logged in: " + data.loggedin);
       if (
-        !data.loggedin 
+        pathName === "/RPM/pages/user/login/" ||
+        pathName === "/RPM/pages/user/create/" ||
+        pathName === "/RPM/" ||
+        (pathName === "/RPM/pages/about/" && !data.loggedin)
       ) {
         shouldExit = true;      
       }
