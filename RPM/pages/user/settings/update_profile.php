@@ -107,8 +107,8 @@
       $params[':phoneNumber'] = $phone_number;
     }
     if ($user_location != $currentUser['user_location'] && $user_location != "") {
-      $sql .= "user_location = :livingSpace, ";
-      $params[':livingSpace'] = $user_location;
+      $sql .= "user_location = :userLocation, ";
+      $params[':userLocation'] = $user_location;
     }
     if($image_path != $currentUser['image_path'] && $image_path != ""){
       $sql .= "image_path = :profileImage, ";
