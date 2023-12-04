@@ -71,8 +71,19 @@ function fetchListings(category) {
 
             xhr.onload = function() {
               if (xhr.status === 200) {
-                // If the request was successful, remove the listingDiv from the DOM
-                listingsElement.removeChild(listingDiv);
+                // Parse the JSON response
+                const response = JSON.parse(xhr.responseText);
+
+                if (response.success) {
+                  // If the request was successful, remove the listingDiv from the DOM
+                  listingsElement.removeChild(listingDiv);
+
+                  // Display a success message
+                  alert(response.message);
+                } else {
+                  // Handle the error
+                  console.error(response.message);
+      }
               } else {
                 // Handle the error
                 console.error('An error occurred: ' + xhr.status);
