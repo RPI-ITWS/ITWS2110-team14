@@ -27,7 +27,7 @@ a:hover {
 }
 
 .listing {
-  width: 30%;
+  width: 400px;
   height: 400px;
 
   align-items: row;
