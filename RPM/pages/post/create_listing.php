@@ -35,7 +35,7 @@ if (isset($_POST["submit"]) && isset($_SESSION["rcs_id"])) { //Getting data from
         $dbDir = "/RPM/pages/user/profile/images/";
         $targetDir = "../marketplace/images/";
         $targetFile = $targetDir . basename($_FILES['listingImage']['name']);
-        $dbFile = $dbDir . $_SESSION['rcs_id'] . basename($_FILES['listingImage']['name']);
+        $dbFile = $dbDir . basename($_FILES['listingImage']['name']);
           
         if (move_uploaded_file($_FILES['listingImage']['tmp_name'], $targetFile)) {
           // The file has been moved successfully
