@@ -13,7 +13,7 @@
     $selectData->execute();
     $data = $selectData->fetch(PDO::FETCH_ASSOC);
 
-    $getData = $pdo->prepare("SELECT * FROM listings WHERE rcs_id = :rcs_id");
+    $getData = $pdo->prepare("SELECT * FROM listings WHERE rcs_id = :rcs_id AND 'active' = 1");
     $getData->bindParam(':rcs_id', $rcs_id);
     $getData->execute();
     $listings = $getData->fetchAll(PDO::FETCH_ASSOC);
