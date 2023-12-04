@@ -12,7 +12,7 @@
     $stmt = $pdo->prepare("SELECT * FROM users WHERE rcs_id = :rcs_id");
     $stmt->execute(array(':rcs_id' => $_POST['rcs_id']));
     $seller = $stmt->fetch(PDO::FETCH_ASSOC);
-    $seller = json_encode($listing);
+    $seller = json_encode($seller);
     echo $seller;
   }
   else {
