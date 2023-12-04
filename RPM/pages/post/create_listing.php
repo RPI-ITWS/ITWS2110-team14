@@ -32,7 +32,7 @@ if (isset($_POST["submit"]) && isset($_SESSION["rcs_id"])) { //Getting data from
         // Move the uploaded file to the images directory
         
         
-        $dbDir = "/RPM/pages/user/profile/images/";
+        $dbDir = "/RPM/pages/marketplace/images/";
         $targetDir = "../marketplace/images/";
         $targetFile = $targetDir . basename($_FILES['listingImage']['name']);
         $dbFile = $dbDir . basename($_FILES['listingImage']['name']);
