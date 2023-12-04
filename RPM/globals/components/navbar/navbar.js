@@ -31,10 +31,8 @@ window.addEventListener("load", function () {
     .then((response) => response.json())
     .then((data) => {
       if (
-        pathName === "/RPM/" ||
-        (pathName === "/RPM/pages/about/" && data.loggedin) ||
-        pathName === "/RPM/pages/user/login/" ||
-        pathName === "/RPM/pages/user/create/"
+        pathName === "/RPM/"
+        
       ) {
         return;
       }
