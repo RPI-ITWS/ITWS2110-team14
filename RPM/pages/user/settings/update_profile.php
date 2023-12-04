@@ -94,23 +94,23 @@
       // Prepare an SQL UPDATE statement if the data differs
       $sql = "UPDATE users SET ";
       $params = array();
-      if ($firstName != $currentUser['first_name']) {
+      if ($firstName != $currentUser['first_name'] && $firstName != "") {
         $sql .= "first_name = :firstName, ";
         $params[':firstName'] = $first_name;
       }
-      if ($lastName != $currentUser['last_name']) {
+      if ($lastName != $currentUser['last_name'] && $lastName != "") {
         $sql .= "last_name = :lastName, ";
         $params[':lastName'] = $last_name;
       }
-      if ($phoneNumber != $currentUser['phone_number']) {
+      if ($phoneNumber != $currentUser['phone_number'] && $phoneNumber != "") {
         $sql .= "phone_number = :phoneNumber, ";
         $params[':phoneNumber'] = $phone_number;
       }
-      if ($user_location != $currentUser['user_location']) {
+      if ($user_location != $currentUser['user_location'] && $user_location != "") {
         $sql .= "user_location = :livingSpace, ";
         $params[':livingSpace'] = $user_location;
       }
-      if($image_path != $currentUser['image_path']){
+      if($image_path != $currentUser['image_path'] && $image_path != ""){
         $sql .= "image_path = :profileImage, ";
         $params[':profileImage'] = $image_path;
       }
