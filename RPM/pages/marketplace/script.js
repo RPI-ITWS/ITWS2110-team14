@@ -23,8 +23,8 @@ function fetchListings(category) {
       const listingsElement = document.querySelector('.listings');
       listingsElement.innerHTML = ''; // Clear existing listings
 
-      // If data is an empty string, display a message and fetch all listings
-      if (data === '') {
+      // If data is an empty array, display a message and fetch all listings
+      if (data.length === 0) {
         alert('No results found. Displaying All listings.');
         fetchListings('All');
         return;
