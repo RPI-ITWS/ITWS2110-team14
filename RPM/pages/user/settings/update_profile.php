@@ -71,10 +71,10 @@
 
 
     //Getting data from form 
-    if(isset($_POST["firstName"])) $first_name = htmlspecialchars($_POST["firstName"], ENT_QUOTES, 'UTF-8');
-    if(isset($_POST["lastName"])) $last_name = htmlspecialchars($_POST["lastName"], ENT_QUOTES, 'UTF-8');
-    if(isset($_POST["phoneNumber"])) $phone_number = htmlspecialchars($_POST["phoneNumber"], ENT_QUOTES, 'UTF-8');
-    if(isset($_POST["userLocation"])) $user_location = htmlspecialchars($_POST["userLocation"], ENT_QUOTES, 'UTF-8');
+    if(isset($_POST["firstName"])) ? $first_name = htmlspecialchars($_POST["firstName"], ENT_QUOTES, 'UTF-8') : $first_name = "";
+    if(isset($_POST["lastName"])) ? $last_name = htmlspecialchars($_POST["lastName"], ENT_QUOTES, 'UTF-8') : $last_name = "";
+    if(isset($_POST["phoneNumber"])) ? $phone_number = htmlspecialchars($_POST["phoneNumber"], ENT_QUOTES, 'UTF-8') : $phone_number = "";
+    if(isset($_POST["userLocation"])) ? $user_location = htmlspecialchars($_POST["userLocation"], ENT_QUOTES, 'UTF-8') : $user_location = "";
     $image_path = $listingImage;
     //print data to check if working
     // echo $first_name . "<br>";
