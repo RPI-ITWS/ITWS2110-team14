@@ -115,16 +115,21 @@
       $params[':profileImage'] = $image_path;
     }
 
-    // Remove the trailing comma and add the WHERE clause
-    $sql = rtrim($sql, ', ') . " WHERE rcs_id = :id";
-    $params[':id'] = $_SESSION['rcs_id'];
+    if (count($params) > 1) { // More than just the :id parameter
+      // Remove the trailing comma and add the WHERE clause
+      $sql = rtrim($sql, ', ') . " WHERE rcs_id = :id";
+      $params[':id'] = $_SESSION['rcs_id'];
 
-    // Execute the SQL statement
-    $stmt = $pdo->prepare($sql);
-    $stmt->execute($params);
+      // Execute the SQL statement
+      $stmt = $pdo->prepare($sql);
+      $stmt->execute($params);
 
-
-    header("Location: index.html?success=Profile updated");
+      header("Location: index.html?success=Profile updated");
+    } else {
+      // No fields to update
+      // Handle this case as needed
+      header("Location: index.html?success=No fields to update");
+    }
   }
 
 ?>
