@@ -20,13 +20,29 @@ document.addEventListener("DOMContentLoaded", function() {
   .then(data => {
     console.log(data);
     let listingData = data;
+    fetch('get_seller.php', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/x-www-form-urlencoded',
+      },
+      body: `id=${encodeURIComponent(listingData.seller_id)}`,
+    })
+    .then(response => response.json())
+    .then(userData => {
+      console.log(userData);
+      document.getElementById('sellername').textContent = userData.firstName + userData.rcs_id;
+      })
+    .catch(error => {
+      console.error("Error fetching the JSON:", error);
+      // window.location.href = "/RPM/pages/marketplace/";
+    });
 
     document.querySelector('.image img').src = listingData.image_path;
     document.getElementById('listingTitle').textContent = listingData.listing_title;
     document.getElementById('condition').textContent = listingData.item_condition;
     document.getElementById('price').textContent = "$" + listingData.price.toFixed(2);
     document.getElementById('listingInfo').textContent = listingData.item_description;
-    document.getElementById('seller').textContent = listingData.rcs_id;
+    document.getElementById('sellername').textContent = + listingData.rcs_id;
 
     })
   .catch(error => {
