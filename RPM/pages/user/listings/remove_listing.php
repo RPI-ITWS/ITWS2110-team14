@@ -8,17 +8,17 @@ session_start();
 include_once("../../database/connect.php");
 
 try {
-  if (isset($_POST["submit"]) && isset($_SESSION["rcs_id"])) { //Get repsonse from remove listing button
+  if (isset($_SESSION["rcs_id"])) { //Get repsonse from remove listing button
     $updatedStatus = FALSE;
     $rcs_id = $_SESSION["rcs_id"];
     $listing_id = $_POST["listing_id"];
     $dbIsConnected = mysqli_connect($host, $username, $password, $dbName);
     if (!empty($listingTitle)) {
-      $updateStatus = $pdo->prepare("UPDATE listings SET active = '$updatedStatus' WHERE listing_id = '$listing_id'");
-      $updateStatus->bindParam(':updatedStatus', $updatedStatus);
+      $updateStatus = $pdo->prepare("UPDATE listings SET active = :updatedStatus WHERE listing_id = :listingId");
+      $updateStatus->bindParam(array(':updatedStatus' => $updatedStatus, ':listingId' => $listing_id));
       $updateStatus->execute();
       echo "Listing removed";
-      header("Location: ../pages/marketplace/index.html");
+      header("Location: index.html");
       exit();
     } 
   }
