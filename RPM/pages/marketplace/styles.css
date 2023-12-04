@@ -24,6 +24,7 @@ a:hover {
   margin: 20px auto 0;
   width: 1320px;
   overflow: hidden;
+  flex: 3;
 }
 
 .search {
@@ -143,3 +144,17 @@ a.categories {
 a.categories:hover {
   color: #4670fc;
 }
+.container {
+  display: flex;
+}
+
+.sidebar {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
+}
+
+/* .content {
+  flex: 3;
+} */
