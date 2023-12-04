@@ -73,7 +73,7 @@ function fetchListings(category) {
               headers: {
                 'Content-Type': 'application/x-www-form-urlencoded',
               },
-              body: `listing_id=${encodeURIComponent(listing.listing_id)}`,
+              body: 'listing_id=' + encodeURIComponent(listing.listing_id),
             })
             .then(response => {
               if (!response.ok) {
