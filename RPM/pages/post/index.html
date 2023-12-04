@@ -156,10 +156,13 @@
         const error = urlParams.get("error");
         if (error) {
           alert(error);
+          urlParams.delete("error");
         }
         if (urlParams.get("success")) {
-          alert("Listing successfully created!");
+          alert("Profile updated successfully!");
+          urlParams.delete("success");
         }
+        history.replaceState({}, '', "?" + urlParams.toString());
       };
     </script>
     <script src="/RPM/globals/theme/theme.js"></script>

@@ -90,13 +90,19 @@
 
     <script src="../../../script.js"></script>
     <script>
-      window.onload = function() {
-          const urlParams = new URLSearchParams(window.location.search);
-          const error = urlParams.get('error');
-          if (error) {
-              alert(error);
-          }
-      }
+      window.onload = function () {
+        const urlParams = new URLSearchParams(window.location.search);
+        const error = urlParams.get("error");
+        if (error) {
+          alert(error);
+          urlParams.delete("error");
+        }
+        if (urlParams.get("success")) {
+          alert("Profile updated successfully!");
+          urlParams.delete("success");
+        }
+        history.replaceState({}, '', "?" + urlParams.toString());
+      };
     </script> 
   </body>
 </html>
