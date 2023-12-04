@@ -8,7 +8,7 @@
 
   if(isset($_SESSION["rcs_id"])) {
     $rcs_id = $_SESSION["rcs_id"];
-    $selectData = $pdo->prepare("SELECT * FROM RPM_users WHERE rcs_id = :rcs_id");
+    $selectData = $pdo->prepare("SELECT * FROM users WHERE rcs_id = :rcs_id");
     $selectData->bindParam(':rcs_id', $rcs_id);
     $selectData->execute();
     $data = $selectData->fetch(PDO::FETCH_ASSOC);
