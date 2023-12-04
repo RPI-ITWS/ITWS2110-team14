@@ -9,11 +9,9 @@
 
   if($category == "All"){
     $stmt = $pdo->prepare("SELECT * FROM listings ORDER BY price ASC");
-    echo "All";
   }else{
     $stmt = $pdo->prepare("SELECT * FROM listings WHERE category = :category ORDER BY price ASC");
     $stmt->bindValue(':category', $_GET['category']);
-    echo "Not All";
   }
   // $stmt = $pdo->prepare("SELECT * FROM listings ORDER BY price ASC"); //Top listings are the cheaper ones or free
   $stmt->execute();
