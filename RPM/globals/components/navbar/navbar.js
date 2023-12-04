@@ -30,7 +30,10 @@ window.addEventListener("load", function () {
     fetch("/RPM/globals/components/navbar/check_login.php")
     .then((response) => response.json())
     .then((data) => {
+      console.log("Logged in as " + data.rcs_id);
+      console.log("Logged in: " + data.loggedin);
       if(!data.loggedin){
+        
         return;
       }
     });
