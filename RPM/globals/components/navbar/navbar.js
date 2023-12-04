@@ -76,6 +76,8 @@ window.addEventListener("load", function () {
           " ></li>" +
           '<li><a class="dropdown-item" href="/RPM/pages/user/settings/"' +
           ">Settings</a></li>" +
+          '<li><a class="dropdown-item" href="/RPM/pages/user/listings/"'+
+          '>Your Listings</a></li>'+
           '<li><hr class="dropdown-divider" /></li>' +
           '<li><a class="dropdown-item" href="/RPM/pages/user/logout/logout_user.php"' +
           ">Logout</a></li></ul> ";
