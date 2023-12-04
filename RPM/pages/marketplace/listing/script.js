@@ -30,7 +30,9 @@ document.addEventListener("DOMContentLoaded", function() {
     .then(response => response.json())
     .then(userData => {
       console.log(userData);
-      document.getElementById('sellername').textContent = userData.firstName + userData.rcs_id;
+      document.getElementById('sellername').textContent = userData.first_name + " " + userData.last_name + ' (' + userData.rcs_id + ')';
+      document.getElementById('sellername').href = `/RPM/pages/profile/?rcs_id=${encodeURIComponent(userData.rcs_id)}`;
+      document.getElementById('contactinfo').textContent = userData.phone_number;
     })
     .catch(error => {
       console.error("Error fetching the JSON:", error);
