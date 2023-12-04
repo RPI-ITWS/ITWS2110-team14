@@ -39,7 +39,9 @@ window.addEventListener("load", function () {
         pathName === "/RPM/" ||
         (pathName === "/RPM/pages/about/" && !data.loggedin)
       ) {
-        shouldExit = true;      
+        shouldExit = false;      
+      }else{
+        shouldExit = true;
       }
     });
     if (shouldExit) {
