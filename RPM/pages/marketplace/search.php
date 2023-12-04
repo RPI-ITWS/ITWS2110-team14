@@ -1,25 +1,15 @@
 <?php
-/*Implementation from https://biplabsinha345.medium.com/php-mysql-search-database-and-display-results-32334fc67af6 */
-//DB Credentials
-$host = "localhost";
-$dbName = "rpm";
-$username = 'root';
-$password = 'M4k3t14!';
-
-//Connect to DB
-$con = new PDO("mysql:host=$host;dbname=$dbName", $username, $password);
-
-$searchResult = "";
-
-if (isset($_POST["save"])) { //Get repsonse from search bar
-  if (!empty($_POST["search"])) {
-    $userSearch = $_POST["search"];
-    $sqlSearchQuery = $con -> prepare("SELECT * FROM listings WHERE listing_title LIKE '%$userSearch%'"); //Get all listings that have a similar title
-    $sqlSearchQuery -> execute();
-    $searchResult = $sqlSearchQuery -> fetchAll(PDO::FETCH_ASSOC);
-  }
-}
-else {
-  echo "No listings were found!";
-}
+  error_reporting(E_ALL);
+  ini_set('display_errors', 1);
+  session_start();
+  include_once("../../database/connect.php");
+  include_once("../../database/check_login.php");
+  
+  $stmt = $pdo->prepare("SELECT * FROM listings WHERE listing_title LIKE :listing_title ORDER BY price ASC");
+  $stmt->bindValue(':listing_title', '%' . $_GET['listing_title'] . '%');
+  
+  $stmt->execute();
+  $listings = $stmt->fetchAll(PDO::FETCH_ASSOC);
+  $listings = json_encode($listings);
+  echo $listings;
 ?>
