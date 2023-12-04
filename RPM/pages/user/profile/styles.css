@@ -34,6 +34,9 @@ body {
 .box {
   border-radius: 0.25rem;
   position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .content {
