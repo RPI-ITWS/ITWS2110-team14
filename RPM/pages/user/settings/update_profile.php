@@ -34,7 +34,7 @@
           // Move the uploaded file to the images directory
           $dbDir = "/RPM/pages/user/profile/images/";
           $targetDir = "../profile/images/";
-          $targetFile = $targetDir . $_SESSION['rcs_id'] . basename($_FILES['profileImage']['name']);
+          $targetFile = $targetDir . $_SESSION['rcs_id'] . "-" . basename($_FILES['profileImage']['name']);
           $dbFile = $dbDir . $_SESSION['rcs_id'] . basename($_FILES['profileImage']['name']);
           if (move_uploaded_file($_FILES['profileImage']['tmp_name'], $targetFile)) {
             // The file has been moved successfully
