@@ -1,11 +1,24 @@
 // script.js
 
 document.addEventListener("DOMContentLoaded", function() {
-  fetch('get_listings.php?category=All')
+  fetchListings('All');
+
+  document.getElementById('categories').addEventListener('click', function(event) {
+  if (event.target.tagName === 'A') {
+    event.preventDefault();
+    const category = event.target.getAttribute('data-category');
+    fetchListings(category);
+  }
+});
+});
+
+function fetchListings(category) {
+  fetch(`get_listings.php?category=${category}`)
     .then(response => response.json())
     .then(data => {
       console.log(data);
       const listingsElement = document.querySelector('.listings');
+      listingsElement.innerHTML = ''; // Clear existing listings
 
       for (let id in data) {
         const listing = data[id];
@@ -39,8 +52,5 @@ document.addEventListener("DOMContentLoaded", function() {
           listingsElement.appendChild(listingDiv);
         }
       }
-    })
-    .catch(error => {
-      console.error("Error fetching the JSON:", error);
     });
-});
+}
