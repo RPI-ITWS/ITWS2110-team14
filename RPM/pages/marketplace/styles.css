@@ -154,6 +154,22 @@ a.categories:hover {
   align-items: start;
 }
 
+.divider {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  flex: 0 0 1%;
+}
+  
+.vertical-divider {
+  margin: auto;
+  border-width: 0;
+  height: 100%;
+  width: 1px;
+  background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0));
+  border-right: none;
+}
+
 /* .content {
   flex: 3;
 } */
