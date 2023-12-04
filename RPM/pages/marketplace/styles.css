@@ -29,8 +29,8 @@ a:hover {
 .listing {
   width: 330px;
   height: 400px;
-  padding-left: calc((100% - 660px)/4) ;
-  padding-right: calc((100% - 660px)/4) ;
+  margin-left: calc((100% - 660px)/4) ;
+  margin-right: calc((100% - 660px)/4) ;
   align-items: row;
 }
 
