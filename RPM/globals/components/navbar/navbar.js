@@ -33,6 +33,7 @@ window.addEventListener("load", function () {
     .then((data) => {
       loggedIn = data.loggedin;
     });
+    console.log('loggedIn: ' + loggedIn);
     if (
       pathName === "/RPM/" ||
      (pathName === "/RPM/pages/about/" && loggedIn) ||
