@@ -51,7 +51,7 @@ function fetchListings(category) {
               </div>
               <div class="price"><h4>${listing.listing_title} - $${listing.price.toFixed(2)}</h4></div>
               <div class="description"><p>${listing.item_description}</p></div>
-              <button class="btn btn-primary">Remove</button>
+              <button class="btn btn-primary" id = remove-button>Remove</button>
             </a>
           `;
 
@@ -60,7 +60,7 @@ function fetchListings(category) {
             localStorage.setItem('selectedListingId', listing.listing_id);
           });
           
-          const removeButton = listingDiv.querySelector('.remove-button');
+          const removeButton = listingDiv.querySelector('#remove-button');
           removeButton.addEventListener('click', function(event) {
             event.stopPropagation(); // Prevent the click event from bubbling up to the listingDiv
             // code to remove the listing
