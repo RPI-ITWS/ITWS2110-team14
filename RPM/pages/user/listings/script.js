@@ -62,6 +62,7 @@ function fetchListings(category) {
           
           const removeButton = listingDiv.querySelector('#remove-button');
           removeButton.addEventListener('click', function(event) {
+            event.preventDefault(); // Prevent the browser from following the link
             event.stopPropagation(); // Prevent the click event from bubbling up to the listingDiv
             
             const xhr = new XMLHttpRequest();
