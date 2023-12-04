@@ -2,8 +2,9 @@
   /*The following code removes a listing from the marketplace by changing its active status to FALSE*/
 
   // Connect to the database
-  error_reporting(E_ALL);
-  ini_set('display_errors', 1);
+  header('Content-Type: application/json');
+  // error_reporting(E_ALL);
+  // ini_set('display_errors', 1);
   session_start();
   include_once("../../../database/connect.php");
 
