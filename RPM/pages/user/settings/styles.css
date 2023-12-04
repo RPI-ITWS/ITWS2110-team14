@@ -18,25 +18,29 @@ h3 {
   text-align: center;
 }
 
-.formPadding {
+#centerButton {
+  padding-left: 225px;
+}
+
+.paddingBottom {
   padding-bottom: 25px;
+}
+
+#profileImage {
+  font-size: 20px;
 }
 
 div.parentDiv {
   align-items: center;
   display: flex;
   flex-direction: column;
-  font-size: 30px;
+  font-size: 22px;
 }
 
 option {
   font-size: 20px;
 }
 
-#submitButton {
-  padding-top: 10px;
-  margin-bottom: 20px;
-}
 textarea {
   font-size: 20px;
 }

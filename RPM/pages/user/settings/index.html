@@ -39,39 +39,44 @@
     <div class="parentDiv">
       <h1>Profile Settings</h1>
 
-      <form action="update_profile.php" method="POST"  enctype="multipart/form-data" novalidate>
+      <form
+        action="update_profile.php"
+        method="POST"
+        enctype="multipart/form-data"
+        novalidate
+      >
         <!-- first name -->
-            <div class="form-group paddingBottom inputFontSize">
-              <input
-                type="text"
-                class="form-control"
-                id="firstName"
-                name="firstName"
-                placeholder="First Name"
-                value=""
-                required
-              />
-            </div>
-            <!-- last name -->
-            <div class="form-group paddingBottom inputFontSize">
-              <input
-                type="text"
-                class="form-control"
-                id="lastName"
-                name="lastName"
-                placeholder="Last Name"
-                value=""
-                required
-              />
-            </div>
+        <div class="form-group paddingBottom inputFontSize">
+          <input
+            type="text"
+            class="form-control"
+            id="firstName"
+            name="firstName"
+            placeholder="First Name"
+            value=""
+            required
+          />
+        </div>
+        <!-- last name -->
+        <div class="form-group paddingBottom inputFontSize">
+          <input
+            type="text"
+            class="form-control"
+            id="lastName"
+            name="lastName"
+            placeholder="Last Name"
+            value=""
+            required
+          />
+        </div>
 
         <!-- Phone Number -->
-        <div class="form-group formPadding">
-          <label for="phoneNumber">Phone Number</label>
+        <div class="form-group paddingBottom">
           <input
             type="text"
             class="form-control"
             id="phoneNumber"
+            placeholder="Phone Number"
             name="phoneNumber"
             value=""
             required
@@ -79,7 +84,7 @@
         </div>
 
         <!-- Current Living Arrangements -->
-        <div class="form-group formPadding">
+        <div class="form-group paddingBottom">
           <label for="livingSpace">Current Living Arrangements</label>
           <select
             class="form-select"
@@ -116,7 +121,7 @@
         </div>
 
         <!-- Image for Profile -->
-        <div class="form-group formPadding">
+        <div class="form-group paddingBottom">
           <label for="profileImage">Insert a Profile Picture</label>
           <input
             type="file"
@@ -140,17 +145,17 @@
       </form>
     </div>
     <script>
-      window.onload = function() {
-          const urlParams = new URLSearchParams(window.location.search);
-          const error = urlParams.get('error');
-          if (error) {
-              alert(error);
-          }
-          if(urlParams.get('success')) {
-              alert('Profile updated successfully!');
-          }
-      }
-    </script> 
+      window.onload = function () {
+        const urlParams = new URLSearchParams(window.location.search);
+        const error = urlParams.get("error");
+        if (error) {
+          alert(error);
+        }
+        if (urlParams.get("success")) {
+          alert("Profile updated successfully!");
+        }
+      };
+    </script>
   </body>
 </html>
 <!-- <img -->
@@ -159,4 +164,3 @@
 <!-- id="listingImage" -->
 <!-- alt="Image of your item!" -->
 <!-- /> -->
-
