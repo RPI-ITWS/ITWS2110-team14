@@ -27,6 +27,7 @@ window.addEventListener("load", function () {
   }
 
   function showUserInfo() {
+    let shouldExit = false;
     fetch("/RPM/globals/components/navbar/check_login.php")
     .then((response) => response.json())
     .then((data) => {
