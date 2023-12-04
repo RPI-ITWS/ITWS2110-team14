@@ -39,19 +39,31 @@
     <div class="parentDiv">
       <h1>Profile Settings</h1>
 
-      <form action="../php/update_profile.php" method="POST" novalidate>
-        <!-- Profile Name -->
-        <div class="form-group formPadding">
-          <label for="profileName">Name</label>
-          <input
-            type="text"
-            class="form-control"
-            id="profileName"
-            name="profileName"
-            value=""
-            required
-          />
-        </div>
+      <form action="update_profile.php" method="POST"  enctype="multipart/form-data" novalidate>
+        <!-- first name -->
+            <div class="form-group paddingBottom inputFontSize">
+              <input
+                type="text"
+                class="form-control"
+                id="firstName"
+                name="firstName"
+                placeholder="First Name"
+                value=""
+                required
+              />
+            </div>
+            <!-- last name -->
+            <div class="form-group paddingBottom inputFontSize">
+              <input
+                type="text"
+                class="form-control"
+                id="lastName"
+                name="lastName"
+                placeholder="Last Name"
+                value=""
+                required
+              />
+            </div>
 
         <!-- Phone Number -->
         <div class="form-group formPadding">
@@ -101,19 +113,6 @@
             <option>Warren Hall</option>
             <option>Off-Campus</option>
           </select>
-        </div>
-
-        <!-- Listing Description -->
-        <div class="form-group formPadding">
-          <label for="gradClass">Graduating Class</label>
-          <textarea
-            class="form-control"
-            id="gradClass"
-            rows="1"
-            name="gradClass"
-            value=""
-            required
-          ></textarea>
         </div>
 
         <!-- Image for Profile -->

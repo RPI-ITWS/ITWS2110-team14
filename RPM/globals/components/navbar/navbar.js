@@ -28,9 +28,9 @@ window.addEventListener("load", function () {
 
   function showUserInfo() {
     if (
-      pathName === "/RPM/" &&
-      "/RPM/pages/about/" &&
-      "/RPM/pages/user/login/" &&
+      pathName === "/RPM/" ||
+      "/RPM/pages/about/" ||
+      "/RPM/pages/user/login/" ||
       "/RPM/pages/user/create/"
     ) {
       return;
