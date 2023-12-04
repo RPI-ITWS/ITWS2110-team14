@@ -40,8 +40,8 @@ a:hover {
 }
 
 .listing {
-  width: 330px;
-  height: 400px;
+  width: 95%;
+  height: 95%;
 
   align-items: row;
 }
