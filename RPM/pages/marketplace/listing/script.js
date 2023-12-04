@@ -23,9 +23,6 @@ document.addEventListener("DOMContentLoaded", function() {
     console.log("rcs_id:", listingData.rcs_id);
     fetch('get_seller.php', {
       method: 'POST',
-      headers: {
-        'Content-Type': 'application/x-www-form-urlencoded',
-      },
       body: `rcs_id=${listingData.rcs_id}`,
     })
     .then(response => response.json())
