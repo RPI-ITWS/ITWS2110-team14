@@ -5,12 +5,23 @@ document.addEventListener("DOMContentLoaded", function() {
   fetchListings('All');
 
   const categories = document.querySelectorAll('.categories a');
+
   categories.forEach(category => {
     category.addEventListener('click', function(event) {
       event.preventDefault();
       const category = event.target.getAttribute('data-category');
       console.log('Category clicked:', category);
       fetchListings(category);
+    });
+
+    category.addEventListener('mouseover', function(event) {
+      event.target.style.color = '#4670fc';
+      event.target.parentNode.style.color = '#4670fc';
+    });
+
+    category.addEventListener('mouseout', function(event) {
+      event.target.style.color = '';
+      event.target.parentNode.style.color = '';
     });
   });
 

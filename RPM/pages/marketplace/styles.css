@@ -6,6 +6,8 @@ body {
   flex-direction: column;
   height: 100vh;
   margin: 0;
+  overflow-x: hidden;
+  overflow-y: hidden;
 }
 
 a {
@@ -104,10 +106,6 @@ a:hover {
   }
 }
 
-.removeScroll {
-  overflow-x: hidden;
-  overflow-y: hidden;
-}
 .container {
   max-width: 100%; 
   margin-left: 70px;
@@ -124,18 +122,9 @@ li.categories {
   
 }
 
-li.categories:hover {
-  color: #4670fc;
-}
-
 a.categories {
   color: black;
 }
-
-a.categories:hover {
-  color: #4670fc;
-}
-
 
 .sidebar {
   display: flex;
