@@ -25,7 +25,7 @@ function fetchListings(category) {
 
       // If data is an empty string, display a message and fetch all listings
       if (data === '') {
-        listingsElement.innerHTML = '<p>No results found.</p>';
+        alert('No results found. Displaying All listings.');
         fetchListings('All');
         return;
       }
