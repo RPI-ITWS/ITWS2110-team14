@@ -37,11 +37,13 @@ a:hover {
   display: flex;
   flex-wrap: wrap;
   overflow: scroll;
+  height: 95%;
+  width: 95%;
 }
 
 .listing {
-  width: 95%;
-  height: 95%;
+  width: 330px;
+  height: 400px;
 
   align-items: row;
 }
