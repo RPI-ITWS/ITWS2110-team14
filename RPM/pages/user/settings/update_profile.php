@@ -64,9 +64,9 @@
         header("Location: index.html?error=Please upload a PNG image.");
       }
     } else {
-      // No file was uploaded, or there was an error
-      // echo "An error occurred during file upload.";
-      header("Location: index.html?error=An error occurred during file upload.");
+      // No file was uploaded
+      // echo "No file was uploaded.";
+      $listingImage = "";
     }
 
 
