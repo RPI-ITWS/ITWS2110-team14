@@ -94,15 +94,15 @@
     // Prepare an SQL UPDATE statement if the data differs
     $sql = "UPDATE users SET ";
     $params = array();
-    if ($firstName != $currentUser['first_name'] && $firstName != "") {
+    if ($first_name != $currentUser['first_name'] && $first_name != "") {
       $sql .= "first_name = :firstName, ";
       $params[':firstName'] = $first_name;
     }
-    if ($lastName != $currentUser['last_name'] && $lastName != "") {
+    if ($last_name != $currentUser['last_name'] && $last_name != "") {
       $sql .= "last_name = :lastName, ";
       $params[':lastName'] = $last_name;
     }
-    if ($phoneNumber != $currentUser['phone_number'] && $phoneNumber != "") {
+    if ($phone_number != $currentUser['phone_number'] && $phone_number != "") {
       $sql .= "phone_number = :phoneNumber, ";
       $params[':phoneNumber'] = $phone_number;
     }
