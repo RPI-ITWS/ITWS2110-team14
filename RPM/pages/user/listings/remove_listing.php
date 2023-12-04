@@ -18,7 +18,7 @@
       exit();
     }
     if (isset($_SESSION["rcs_id"])) { //Get response from remove listing button
-      $updatedStatus = FALSE;
+      $updatedStatus = 0;
       $rcs_id = $_SESSION["rcs_id"];
       $listing_id = $_POST["listing_id"];
       if (!empty($listing_id)) {
