@@ -67,7 +67,7 @@
           ':user_location' => $location
         ));
           echo "User Created";
-          header("Location: ../../marketplace/index.html"); //Redirect user back to main page
+          header("Location: ../login"); //Redirect user back to login
           exit();
         }
       }
