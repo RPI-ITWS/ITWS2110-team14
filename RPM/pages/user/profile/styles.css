@@ -57,11 +57,9 @@ body {
 }
   
 #ProfilePhoto {
-  width: 180px;
-  position: absolute;
-  top: 20%;
-  left: 25%;
   border-radius: 100%;
+  width: 180px;
+  height: 180px;
 }
   
 #name {
