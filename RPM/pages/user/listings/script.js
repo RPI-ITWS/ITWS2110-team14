@@ -51,6 +51,7 @@ function fetchListings(category) {
               </div>
               <div class="price"><h4>${listing.listing_title} - $${listing.price.toFixed(2)}</h4></div>
               <div class="description"><p>${listing.item_description}</p></div>
+              <button class="remove-button">Remove</button>
             </a>
           `;
 
@@ -58,17 +59,14 @@ function fetchListings(category) {
           listingDiv.addEventListener('click', function() {
             localStorage.setItem('selectedListingId', listing.listing_id);
           });
-
-          const removeButton = document.createElement('button');
-          removeButton.textContent = 'Remove';
-          removeButton.className = 'remove-button';
+          
+          const removeButton = listingDiv.querySelector('.remove-button');
           removeButton.addEventListener('click', function(event) {
             event.stopPropagation(); // Prevent the click event from bubbling up to the listingDiv
-            // ... code to remove the listing ...
+            // code to remove the listing
           });
 
           listingDiv.appendChild(removeButton);
-
           listingsElement.appendChild(listingDiv);
         }
       }
