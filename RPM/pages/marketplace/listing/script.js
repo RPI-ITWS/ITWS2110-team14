@@ -20,12 +20,13 @@ document.addEventListener("DOMContentLoaded", function() {
   .then(data => {
     console.log(data);
     let listingData = data;
+
     fetch('get_seller.php', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/x-www-form-urlencoded',
       },
-      body: `rcs_id=${encodeURIComponent(listingData.rcs_id)}`,
+      body: `rcs_id=${listingData.rcs_id}`,
     })
     .then(response => response.json())
     .then(userData => {
