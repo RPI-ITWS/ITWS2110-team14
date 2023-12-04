@@ -32,7 +32,7 @@
         if ($size <= $maxSize) {
           // The file size is acceptable
           // Move the uploaded file to the images directory
-          $targetDir = "/RPM/pages/marketplace/images/";
+          $targetDir = "/RPM/pages/user/profile/images/";
           $targetFile = $targetDir . basename($_FILES['profileImage']['name']);
           if (move_uploaded_file($_FILES['profileImage']['tmp_name'], $targetFile)) {
             // The file has been moved successfully
