@@ -23,6 +23,13 @@ function fetchListings(category) {
       const listingsElement = document.querySelector('.listings');
       listingsElement.innerHTML = ''; // Clear existing listings
 
+      // If data is an empty string, display a message and fetch all listings
+      if (data === '') {
+        listingsElement.innerHTML = '<p>No results found.</p>';
+        fetchListings('All');
+        return;
+      }
+
       for (let id in data) {
         const listing = data[id];
 
