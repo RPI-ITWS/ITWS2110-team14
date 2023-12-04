@@ -27,14 +27,21 @@ window.addEventListener("load", function () {
   }
 
   function showUserInfo() {
+    let loggedIn = false;
+    fetch("/RPM/globals/components/navbar/check_login.php")
+    .then((response) => response.json())
+    .then((data) => {
+      loggedIn = data.loggedin;
+    });
     if (
       pathName === "/RPM/" ||
-      pathName === "/RPM/pages/about/" ||
+     ( pathName === "/RPM/pages/about/" && !loggedIn) ||
       pathName === "/RPM/pages/user/login/" ||
       pathName === "/RPM/pages/user/create/"
     ) {
       return;
     }
+    
     const userInfoElement = document.querySelector("#userInfo");
     const marketplaceElement = document.querySelector("#marketplace");
     const postElement = document.querySelector("#post");
