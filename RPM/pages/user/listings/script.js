@@ -59,6 +59,16 @@ function fetchListings(category) {
             localStorage.setItem('selectedListingId', listing.listing_id);
           });
 
+          const removeButton = document.createElement('button');
+          removeButton.textContent = 'Remove';
+          removeButton.className = 'remove-button';
+          removeButton.addEventListener('click', function(event) {
+            event.stopPropagation(); // Prevent the click event from bubbling up to the listingDiv
+            // ... code to remove the listing ...
+          });
+
+          listingDiv.appendChild(removeButton);
+
           listingsElement.appendChild(listingDiv);
         }
       }
