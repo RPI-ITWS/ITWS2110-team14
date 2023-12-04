@@ -147,7 +147,10 @@ button.buyButton {
 }
 
 .seller-image {
-  border-radius: 100%;
   width: 180px;
   height: 180px;
+}
+.box {
+  border-radius: 0.25rem;
+  position: relative;
 }
