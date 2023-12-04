@@ -9,6 +9,7 @@
 
   try {
     $_POST = json_decode(file_get_contents("php://input"), true);
+    var_dump($_POST);
     if (isset($_POST["listing_id"])) {
       $listing_id = $_POST["listing_id"];
     } else {
