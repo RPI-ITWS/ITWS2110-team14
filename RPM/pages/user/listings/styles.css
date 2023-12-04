@@ -10,6 +10,7 @@ body {
 
 a {
   text-decoration: none;
+  position: relative;
 }
 
 a:hover {
@@ -142,4 +143,9 @@ a.categories {
 
 a.categories:hover {
   color: #4670fc;
+}
+.btn.btn-primary {
+  position: absolute;
+  top: 10px;
+  right: 10px;
 }
