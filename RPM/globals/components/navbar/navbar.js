@@ -27,26 +27,19 @@ window.addEventListener("load", function () {
   }
 
   function showUserInfo() {
-    let shouldExit = false;
     fetch("/RPM/globals/components/navbar/check_login.php")
     .then((response) => response.json())
     .then((data) => {
-      console.log("Logged in as " + data.rcs_id);
-      console.log("Logged in: " + data.loggedin);
+      
       if (
-        pathName === "/RPM/pages/user/login/" ||
-        pathName === "/RPM/pages/user/create/" ||
         pathName === "/RPM/" ||
-        (pathName === "/RPM/pages/about/" && !data.loggedin)
+        (pathName === "/RPM/pages/about/" && !data.loggedin) ||
+        pathName === "/RPM/pages/user/login/" ||
+        pathName === "/RPM/pages/user/create/"
       ) {
-        shouldExit = false;      
-      }else{
-        shouldExit = true;
+        return;
       }
     });
-    if (shouldExit) {
-      return;
-    } 
     const userInfoElement = document.querySelector("#userInfo");
     const marketplaceElement = document.querySelector("#marketplace");
     const postElement = document.querySelector("#post");
