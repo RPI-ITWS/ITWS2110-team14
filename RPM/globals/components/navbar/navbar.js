@@ -46,6 +46,7 @@ window.addEventListener("load", function () {
         return;
       }
     });
+    console.log("here");
     if(exit){
       console.log("exit");
       return;
