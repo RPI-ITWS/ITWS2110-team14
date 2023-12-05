@@ -42,6 +42,7 @@ window.addEventListener("load", function () {
         pathName == "/RPM/pages/user/create/"
       ) {
         exit = true;
+        console.log("please exit");
         return;
       }
     });
