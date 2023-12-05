@@ -50,12 +50,12 @@
         
       } else {
         //redirect to login page with error message
-        header("Location: index.html?error=Incorrect Password");
+        header("Location: index.html?error=Incorrect username or password");
         exit();
       }
     }else{
       //redirect to login page with error message
-      header("Location: index.html?error=User does not exist");
+      header("Location: index.html?error=Incorrect username or password");
       exit();
     }
 
