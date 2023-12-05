@@ -18,6 +18,10 @@ a:hover {
   text-decoration: none;
 }
 
+.row {
+  margin: 32px;
+}
+
 .listings {
   background-color: #3a4750;
   flex: 1;
