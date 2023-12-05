@@ -159,7 +159,7 @@
           urlParams.delete("error");
         }
         if (urlParams.get("success")) {
-          alert("Profile updated successfully!");
+          alert(success);
           urlParams.delete("success");
         }
         history.replaceState({}, '', "?" + urlParams.toString());
