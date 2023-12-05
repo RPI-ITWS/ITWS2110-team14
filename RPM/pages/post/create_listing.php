@@ -91,6 +91,8 @@
 
 
     header("Location: index.html?success=Your listing has been created.");
+  }else{
+    header("Location: ../user/login/index.html?error=You must be logged in to create a listing.");
   }
-  header("Location: ../user/login/index.html?error=You must be logged in to create a listing.");
+  
 ?>
