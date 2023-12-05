@@ -28,6 +28,7 @@ window.addEventListener("load", function () {
 
   function showUserInfo() {
     let loggedIn = false;
+    let exit = false;
     fetch("/RPM/globals/components/navbar/check_login.php")
     .then((response) => response.json())
     .then((data) => {
@@ -39,9 +40,12 @@ window.addEventListener("load", function () {
         pathName === "/RPM/pages/user/login/" ||
         pathName === "/RPM/pages/user/create/"
       ) {
+        exit = true;
         return;
       }
     });
+    if(exit)
+      return;
     
     const userInfoElement = document.querySelector("#userInfo");
     const marketplaceElement = document.querySelector("#marketplace");
