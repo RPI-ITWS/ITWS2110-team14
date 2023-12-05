@@ -37,19 +37,14 @@ window.addEventListener("load", function () {
       console.log('loggedIn: ' + loggedIn);
       if(
         pathName == "/RPM/" ||
-        pathName == "/RPM/pages/about/" ||
+        (pathName == "/RPM/pages/about/" && !loggedIn) ||
         pathName == "/RPM/pages/user/login/" ||
         pathName == "/RPM/pages/user/create/"
       ) {
-        exit = true;
         console.log("please exit");
         return;
       }
-      console.log(exit);
-      if(exit){
-        console.log("exit");
-        return;
-      }
+      
       const userInfoElement = document.querySelector("#userInfo");
       const marketplaceElement = document.querySelector("#marketplace");
       const postElement = document.querySelector("#post");
