@@ -46,7 +46,7 @@ window.addEventListener("load", function () {
         return;
       }
     });
-    console.log("here");
+    console.log(exit);
     if(exit){
       console.log("exit");
       return;
