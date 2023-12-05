@@ -44,9 +44,10 @@ window.addEventListener("load", function () {
         return;
       }
     });
-    if(exit)
+    if(exit){
+      console.log("exit");
       return;
-    
+    }
     const userInfoElement = document.querySelector("#userInfo");
     const marketplaceElement = document.querySelector("#marketplace");
     const postElement = document.querySelector("#post");
