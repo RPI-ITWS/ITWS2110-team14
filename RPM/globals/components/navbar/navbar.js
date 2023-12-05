@@ -36,10 +36,10 @@ window.addEventListener("load", function () {
       loggedIn = data.loggedin;
       console.log('loggedIn: ' + loggedIn);
       if(
-        pathName === "/RPM/" ||
-        pathName === "/RPM/pages/about/" ||
-        pathName === "/RPM/pages/user/login/" ||
-        pathName === "/RPM/pages/user/create/"
+        pathName == "/RPM/" ||
+        pathName == "/RPM/pages/about/" ||
+        pathName == "/RPM/pages/user/login/" ||
+        pathName == "/RPM/pages/user/create/"
       ) {
         exit = true;
         return;
