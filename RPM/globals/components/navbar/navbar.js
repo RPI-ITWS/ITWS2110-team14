@@ -32,16 +32,18 @@ window.addEventListener("load", function () {
     .then((response) => response.json())
     .then((data) => {
       loggedIn = data.loggedin;
+      console.log('loggedIn: ' + loggedIn);
+      if (!loggedIn){
+        return;
+      }else if(
+        pathName === "/RPM/" ||
+        pathName === "/RPM/pages/about/" ||
+        pathName === "/RPM/pages/user/login/" ||
+        pathName === "/RPM/pages/user/create/"
+      ) {
+        return;
+      }
     });
-    console.log('loggedIn: ' + loggedIn);
-    if (
-      pathName === "/RPM/" ||
-     (pathName === "/RPM/pages/about/" && loggedIn) ||
-      pathName === "/RPM/pages/user/login/" ||
-      pathName === "/RPM/pages/user/create/"
-    ) {
-      return;
-    }
     
     const userInfoElement = document.querySelector("#userInfo");
     const marketplaceElement = document.querySelector("#marketplace");
