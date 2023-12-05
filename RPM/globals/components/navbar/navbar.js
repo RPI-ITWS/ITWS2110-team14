@@ -45,27 +45,28 @@ window.addEventListener("load", function () {
         console.log("please exit");
         return;
       }
-    });
-    console.log(exit);
-    if(exit){
-      console.log("exit");
-      return;
-    }
-    const userInfoElement = document.querySelector("#userInfo");
-    const marketplaceElement = document.querySelector("#marketplace");
-    const postElement = document.querySelector("#post");
-    if (userInfoElement) {
-      userInfoElement.style.display = "block";
-      marketplaceElement.style.display = "block";
-      postElement.style.display = "block";
-      clearInterval(intervalID);
-    } else {
-      checkCount++;
-      if (checkCount >= 300) {
-        console.error("Element #userInfo not found after 30 seconds.");
-        clearInterval(intervalID);
+      console.log(exit);
+      if(exit){
+        console.log("exit");
+        return;
       }
-    }
+      const userInfoElement = document.querySelector("#userInfo");
+      const marketplaceElement = document.querySelector("#marketplace");
+      const postElement = document.querySelector("#post");
+      if (userInfoElement) {
+        userInfoElement.style.display = "block";
+        marketplaceElement.style.display = "block";
+        postElement.style.display = "block";
+        clearInterval(intervalID);
+      } else {
+        checkCount++;
+        if (checkCount >= 300) {
+          console.error("Element #userInfo not found after 30 seconds.");
+          clearInterval(intervalID);
+        }
+      }
+    });
+    
   }
   const intervalID = setInterval(showUserInfo, 100);
 
